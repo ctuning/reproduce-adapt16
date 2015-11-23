@@ -1,3 +1,7 @@
+#ifdef XOPENME
+#include <xopenme.h>
+#endif
+
 #include "base_hf1.h"
 #include "__ic__helper__.h"
 
@@ -227,12 +231,38 @@ void fir_filter_int(const long* in,long* out,long in_len,
 
 
 int main(){
+  long ct_repeat=0;
+  long ct_repeat_max=1;
+  int ct_return=0;
+
 	long  output[OUTSIZE];
 
 	int j;
+
+#ifdef XOPENME
+  xopenme_init(1,2);
+#endif
+
+  if (getenv("CT_REPEAT_MAIN")!=NULL) ct_repeat_max=atol(getenv("CT_REPEAT_MAIN"));
+
+#ifdef XOPENME
+  xopenme_clock_start(0);
+#endif
+
+  for (ct_repeat=0; ct_repeat<ct_repeat_max; ct_repeat++)
+  {
+
 	for(j=0; j<2000; j++){
 		fir_filter_int(in_data,output,700,fir_int,35,285);
 	}
+
+  }
+
+#ifdef XOPENME
+  xopenme_clock_end(0);
+  xopenme_dump_state();
+  xopenme_finish();
+#endif
 
 	return 0;
 }

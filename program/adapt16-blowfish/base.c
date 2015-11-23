@@ -1,3 +1,7 @@
+#ifdef XOPENME
+#include <xopenme.h>
+#endif
+
 #include <stdlib.h>
 #include <string.h>
 #include "base_hf1.h"
@@ -384,6 +388,10 @@ void BF_cfb64_encrypt(unsigned char *in, unsigned char *out, long length,
 
 
 int main(){
+  long ct_repeat=0;
+  long ct_repeat_max=1;
+  int ct_return=0;
+
    unsigned char ukey[8];
    unsigned char indata[40],outdata[40],ivec[8] = {0};
    int num;
@@ -391,6 +399,12 @@ int main(){
    int encordec=-1;
    char *cp,ch;
    int n2;
+
+#ifdef XOPENME
+  xopenme_init(1,2);
+#endif
+
+  if (getenv("CT_REPEAT_MAIN")!=NULL) ct_repeat_max=atol(getenv("CT_REPEAT_MAIN"));
 
    {
       encordec = 1;
@@ -424,6 +438,13 @@ int main(){
          exit(-1);
       }
 
+#ifdef XOPENME
+  xopenme_clock_start(0);
+#endif
+
+  for (ct_repeat=0; ct_repeat<ct_repeat_max; ct_repeat++)
+  {
+
       i=0;
       for(n2 = 0; n2 < 256; ++n2)
       {
@@ -436,6 +457,16 @@ int main(){
 
          i=0;
       }
+
+  }
+
+#ifdef XOPENME
+  xopenme_clock_end(0);
+  xopenme_dump_state();
+  xopenme_finish();
+#endif
+
+
    }
 
    return 0;

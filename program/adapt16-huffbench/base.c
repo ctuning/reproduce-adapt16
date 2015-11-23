@@ -1,3 +1,7 @@
+#ifdef XOPENME
+#include <xopenme.h>
+#endif
+
 #include "base_hf1.h"
 #include "__ic__helper__.h"
 
@@ -85,14 +89,40 @@ void compdecomp(byte * data, size_t data_len){
 
 
 int main(){
+  long ct_repeat=0;
+  long ct_repeat_max=1;
+  int ct_return=0;
+
+#ifdef XOPENME
+  xopenme_init(1,2);
+#endif
+
+  if (getenv("CT_REPEAT_MAIN")!=NULL) ct_repeat_max=atol(getenv("CT_REPEAT_MAIN"));
+
 	// initialization
 	byte * test_data = generate_test_data(TEST_SIZE);
+
+#ifdef XOPENME
+  xopenme_clock_start(0);
+#endif
+
+  for (ct_repeat=0; ct_repeat<ct_repeat_max; ct_repeat++)
+  {
 
 	// what we're timing
 	int j;
 	for(j=0; j<100; j++){
 		compdecomp(test_data,TEST_SIZE);
 	}
+
+  }
+
+#ifdef XOPENME
+  xopenme_clock_end(0);
+  xopenme_dump_state();
+  xopenme_finish();
+#endif
+
 
 	// release resources
 	free(test_data);

@@ -1,0 +1,1345 @@
+{
+  "features": {
+    "compiler_version": {
+      "raw": [
+        "arm-linux-androideabi-gcc (GCC) 4.9 20140827 (prerelease)", 
+        "Copyright (C) 2014 Free Software Foundation, Inc.", 
+        "This is free software; see the source for copying conditions.  There is NO", 
+        "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.", 
+        "", 
+        ""
+      ], 
+      "list": [
+        "4", 
+        "9"
+      ], 
+      "str": "4.9"
+    }
+  }, 
+  "characteristics": {}, 
+  "compiler_description_uoa": "llvm-35x-arm-adapt16-via-ck", 
+  "choices": {
+    "cmd_key": "default", 
+    "no_state_check": "yes", 
+    "module_uoa": "b0ac08fe1d3c2615", 
+    "dataset_file": "", 
+    "repeat": 500000, 
+    "data_uoa": "adapt16-adpcm", 
+    "compile_type": "dynamic", 
+    "target_os_bits": "32", 
+    "host_os": "windows-64", 
+    "target_os": "android5-arm", 
+    "device_id": "SWQ49TFIT8YLU4DE"
+  }, 
+  "fail": "no", 
+  "state": {
+    "tmp_dir": "tmp", 
+    "cur_dir": "D:\\Work1\\CK\\ck-repos\\ck-autotuning\\demo\\autotuning-compiler-flags-adapt16-gcc-android-win"
+  }, 
+  "dependencies": {
+    "xopenme": {
+      "sort": 20, 
+      "bat": "call D:\\Work1\\CK\\ck-repos\\fgg-local-win\\env\\d49499018a9eddac\\env.bat\n", 
+      "cus": {
+        "add_include_path": "yes", 
+        "path_install": "D:\\!FGG\\Installations\\lib-rtl-xopenme-0.3-gcc-4.6.0-android5-arm-32", 
+        "skip_add_to_bin": "yes", 
+        "dynamic_lib": "librtlxopenme.so", 
+        "extra_dir": "", 
+        "static_lib": "librtlxopenme.a", 
+        "path_include": "D:\\!FGG\\Installations\\lib-rtl-xopenme-0.3-gcc-4.6.0-android5-arm-32\\include", 
+        "include_name": "xopenme.h", 
+        "version": "0.3", 
+        "path_lib": "D:\\!FGG\\Installations\\lib-rtl-xopenme-0.3-gcc-4.6.0-android5-arm-32\\lib", 
+        "skip_add_to_path": "yes", 
+        "env_prefix": "CK_ENV_LIB_RTL_XOPENME", 
+        "version_int": 3
+      }, 
+      "tags": "lib,xopenme", 
+      "num_entries": 1, 
+      "choices": [
+        "d49499018a9eddac"
+      ], 
+      "uoa": "d49499018a9eddac", 
+      "dict": {
+        "env": {
+          "CK_ENV_LIB_RTL_XOPENME_INCLUDE_NAME": "xopenme.h", 
+          "CK_ENV_LIB_RTL_XOPENME_DYNAMIC_NAME": "librtlxopenme.so", 
+          "CK_ENV_LIB_RTL_XOPENME_STATIC_NAME": "librtlxopenme.a"
+        }, 
+        "tags": [
+          "32bits", 
+          "host-os-windows-64", 
+          "lang-c", 
+          "lang-cpp", 
+          "lang-f77", 
+          "lang-f90", 
+          "lang-f95", 
+          "lib", 
+          "rtl", 
+          "target-os-android5-arm", 
+          "v0", 
+          "v0.3", 
+          "xopenme"
+        ], 
+        "customize": {
+          "add_include_path": "yes", 
+          "path_install": "D:\\!FGG\\Installations\\lib-rtl-xopenme-0.3-gcc-4.6.0-android5-arm-32", 
+          "skip_add_to_bin": "yes", 
+          "dynamic_lib": "librtlxopenme.so", 
+          "extra_dir": "", 
+          "static_lib": "librtlxopenme.a", 
+          "path_include": "D:\\!FGG\\Installations\\lib-rtl-xopenme-0.3-gcc-4.6.0-android5-arm-32\\include", 
+          "include_name": "xopenme.h", 
+          "version": "0.3", 
+          "path_lib": "D:\\!FGG\\Installations\\lib-rtl-xopenme-0.3-gcc-4.6.0-android5-arm-32\\lib", 
+          "skip_add_to_path": "yes", 
+          "env_prefix": "CK_ENV_LIB_RTL_XOPENME", 
+          "version_int": 3
+        }, 
+        "setup": {
+          "target_os_bits": "32", 
+          "version": "0.3", 
+          "host_os_uoa": "7a95e0754c37610a", 
+          "target_os_uoa": "66395254948c0b71", 
+          "deps_compiler": "ede44bca1982e735"
+        }, 
+        "env_script": "env.bat", 
+        "package_uoa": "0573487b8121d094", 
+        "soft_uoa": "673507878d649b4a", 
+        "deps": {
+          "compiler": {
+            "sort": 10, 
+            "bat": "call D:\\Work1\\CK\\ck-repos\\fgg-local-win\\env\\ede44bca1982e735\\env.bat\n", 
+            "cus": {
+              "libstdcpppath_include": "", 
+              "platform_path_configured": "yes", 
+              "extra_path_configured": "yes", 
+              "can_strip_dynamic_lib": "yes", 
+              "build_dir_name": "gcc", 
+              "env_prefix": "CK_ENV_COMPILER_GCC", 
+              "retarget": "yes", 
+              "languages": [
+                "C", 
+                "CPP"
+              ], 
+              "tool_prefix_configured": "yes", 
+              "path_bin": "D:\\!FGG\\Installations\\android-ndk-r10d\\toolchains\\arm-linux-androideabi-4.6\\prebuilt\\windows-x86_64\\bin", 
+              "platform_path": "D:\\!FGG\\Installations\\android-ndk-r10d\\platforms", 
+              "add_extra_path_configured": "yes", 
+              "version": "4.6.0", 
+              "skip_add_to_ld_path": "yes", 
+              "version_int": 40600, 
+              "libstdcpppath_configured": "yes", 
+              "libstdcpppath_include_configured": "yes", 
+              "libstdcpppath": "", 
+              "tool_prefix": "arm-linux-androideabi-", 
+              "add_extra_path": "D:\\!FGG\\Installations\\android-ndk-r10d\\prebuilt\\windows-x86_64\\bin", 
+              "path_install": "D:\\!FGG\\Installations\\android-ndk-r10d\\toolchains\\arm-linux-androideabi-4.6\\prebuilt\\windows-x86_64"
+            }, 
+            "tags": "compiler,lang-cpp", 
+            "build_dir_name": "gcc", 
+            "num_entries": 1, 
+            "uoa": "ede44bca1982e735", 
+            "dict": {
+              "env": {
+                "CK_SYS_ROOT": "D:\\!FGG\\Installations\\android-ndk-r10d\\platforms\\android-5\\arch-arm", 
+                "CK_COMPILER_FLAGS_OBLIGATORY": "--sysroot \"D:\\!FGG\\Installations\\android-ndk-r10d\\platforms\\android-5\\arch-arm\" ", 
+                "CK_AR": "arm-linux-androideabi-ar", 
+                "CK_FLAGS_DLL_EXTRA": "", 
+                "CK_LIB_EXT": ".a", 
+                "CK_OPT_SIZE": "-Os", 
+                "CK_OPT_SPEED": "-O3", 
+                "CK_COMPILER_FLAG_PTHREAD_LIB": "-lpthread", 
+                "CK_CC": "arm-linux-androideabi-gcc", 
+                "CK_COMPILER_FLAG_GPROF": "-pg", 
+                "CK_ENV_LIB_STDCPP_DYNAMIC": "", 
+                "CK_LB_OUTPUT": "", 
+                "CK_FLAGS_STATIC_LIB": "-fPIC", 
+                "CK_FLAG_PREFIX_VAR": "-D", 
+                "CK_ENV_LIB_STDCPP_INCLUDE_EXTRA": "", 
+                "CK_EXTRA_LIB_M": "-lm", 
+                "CK_FLAG_PREFIX_LIB_DIR": "-L", 
+                "CK_FLAGS_CREATE_OBJ": "-c", 
+                "CK_LINKER_FLAG_OPENMP": "-lgomp", 
+                "CK_EXTRA_LIB_DL": "-ldl", 
+                "CK_ENV_LIB_STDCPP_STATIC": "", 
+                "CK_OBJ_EXT": ".o", 
+                "CK_FLAGS_OUTPUT": "-o ", 
+                "CK_LB": "arm-linux-androideabi-ar rcs", 
+                "CK_ENV_LIB_STDCPP_INCLUDE": "", 
+                "CK_LD": "arm-linux-androideabi-ld", 
+                "CK_COMPILER_FLAG_CPP11": "-std=c++11", 
+                "CK_COMPILER_FLAG_OPENMP": "-fopenmp", 
+                "CK_PLUGIN_FLAG": "-fplugin=", 
+                "CK_DLL_EXT": ".so", 
+                "CK_CXX": "arm-linux-androideabi-g++", 
+                "CK_ASM_EXT": ".s", 
+                "CK_FLAG_PREFIX_INCLUDE": "-I", 
+                "CK_LD_FLAGS_EXTRA": "", 
+                "CK_OBJDUMP": "arm-linux-androideabi-objdump -d", 
+                "CK_EXE_EXT": ".out", 
+                "CK_PROFILER": "gprof", 
+                "CK_FLAGS_DLL": "-shared -fPIC", 
+                "CK_FLAGS_STATIC_BIN": "-static -fPIC", 
+                "CK_OPT_SPEED_SAFE": "-O2", 
+                "CK_GPROF_OUT_FILE": "gmon.out", 
+                "CK_MAKE": "make", 
+                "CK_COMPILER_FLAG_PLUGIN": "-fplugin=", 
+                "CK_FLAGS_CREATE_ASM": "-S", 
+                "CK_COMPILER_PREFIX": "arm-linux-androideabi-"
+              }, 
+              "tags": [
+                "32bits", 
+                "compiler", 
+                "gcc", 
+                "host-os-windows-64", 
+                "lang-c", 
+                "lang-cpp", 
+                "target-os-android5-arm", 
+                "v4", 
+                "v4.6", 
+                "v4.6.0"
+              ], 
+              "customize": {
+                "libstdcpppath_include": "", 
+                "platform_path_configured": "yes", 
+                "extra_path_configured": "yes", 
+                "can_strip_dynamic_lib": "yes", 
+                "build_dir_name": "gcc", 
+                "env_prefix": "CK_ENV_COMPILER_GCC", 
+                "retarget": "yes", 
+                "languages": [
+                  "C", 
+                  "CPP"
+                ], 
+                "tool_prefix_configured": "yes", 
+                "path_bin": "D:\\!FGG\\Installations\\android-ndk-r10d\\toolchains\\arm-linux-androideabi-4.6\\prebuilt\\windows-x86_64\\bin", 
+                "platform_path": "D:\\!FGG\\Installations\\android-ndk-r10d\\platforms", 
+                "add_extra_path_configured": "yes", 
+                "version": "4.6.0", 
+                "skip_add_to_ld_path": "yes", 
+                "version_int": 40600, 
+                "libstdcpppath_configured": "yes", 
+                "libstdcpppath_include_configured": "yes", 
+                "libstdcpppath": "", 
+                "tool_prefix": "arm-linux-androideabi-", 
+                "add_extra_path": "D:\\!FGG\\Installations\\android-ndk-r10d\\prebuilt\\windows-x86_64\\bin", 
+                "path_install": "D:\\!FGG\\Installations\\android-ndk-r10d\\toolchains\\arm-linux-androideabi-4.6\\prebuilt\\windows-x86_64"
+              }, 
+              "setup": {
+                "target_os_bits": "32", 
+                "version": "4.6.0", 
+                "host_os_uoa": "7a95e0754c37610a", 
+                "target_os_uoa": "66395254948c0b71"
+              }, 
+              "env_script": "env.bat", 
+              "soft_uoa": "bfc4274b1d8f83bb", 
+              "deps": {}
+            }, 
+            "ver": "4.6.0", 
+            "local": "yes"
+          }
+        }
+      }, 
+      "ver": "0.3", 
+      "local": "yes"
+    }, 
+    "compiler": {
+      "bat": "call D:\\Work1\\CK\\ck-repos\\fgg-local-win\\env\\1004ad4886b499b6\\env.bat\n", 
+      "cus": {
+        "libstdcpppath_include": "", 
+        "platform_path_configured": "yes", 
+        "extra_path_configured": "yes", 
+        "can_strip_dynamic_lib": "yes", 
+        "build_dir_name": "gcc", 
+        "env_prefix": "CK_ENV_COMPILER_GCC", 
+        "retarget": "yes", 
+        "languages": [
+          "C", 
+          "CPP"
+        ], 
+        "tool_prefix_configured": "yes", 
+        "path_bin": "D:\\!FGG\\Installations\\android-ndk-r10d\\toolchains\\arm-linux-androideabi-4.9\\prebuilt\\windows-x86_64\\bin", 
+        "platform_path": "D:\\!FGG\\Installations\\android-ndk-r10d\\platforms", 
+        "add_extra_path_configured": "yes", 
+        "version": "4.9.0", 
+        "skip_add_to_ld_path": "yes", 
+        "version_int": 40900, 
+        "libstdcpppath_configured": "yes", 
+        "libstdcpppath_include_configured": "yes", 
+        "libstdcpppath": "", 
+        "tool_prefix": "arm-linux-androideabi-", 
+        "add_extra_path": "D:\\!FGG\\Installations\\android-ndk-r10d\\prebuilt\\windows-x86_64\\bin", 
+        "path_install": "D:\\!FGG\\Installations\\android-ndk-r10d\\toolchains\\arm-linux-androideabi-4.9\\prebuilt\\windows-x86_64"
+      }, 
+      "tags": "compiler,lang-c", 
+      "build_dir_name": "gcc", 
+      "num_entries": 1, 
+      "choices": [
+        "1004ad4886b499b6", 
+        "9b5b637fa4661ab6", 
+        "ede44bca1982e735"
+      ], 
+      "uoa": "1004ad4886b499b6", 
+      "dict": {
+        "env": {
+          "CK_SYS_ROOT": "D:\\!FGG\\Installations\\android-ndk-r10d\\platforms\\android-5\\arch-arm", 
+          "CK_COMPILER_FLAGS_OBLIGATORY": "--sysroot \"D:\\!FGG\\Installations\\android-ndk-r10d\\platforms\\android-5\\arch-arm\" ", 
+          "CK_AR": "arm-linux-androideabi-ar", 
+          "CK_FLAGS_DLL_EXTRA": "", 
+          "CK_LIB_EXT": ".a", 
+          "CK_OPT_SIZE": "-Os", 
+          "CK_OPT_SPEED": "-O3", 
+          "CK_COMPILER_FLAG_PTHREAD_LIB": "-lpthread", 
+          "CK_CC": "arm-linux-androideabi-gcc", 
+          "CK_COMPILER_FLAG_GPROF": "-pg", 
+          "CK_ENV_LIB_STDCPP_DYNAMIC": "", 
+          "CK_LB_OUTPUT": "", 
+          "CK_FLAGS_STATIC_LIB": "-fPIC", 
+          "CK_FLAG_PREFIX_VAR": "-D", 
+          "CK_ENV_LIB_STDCPP_INCLUDE_EXTRA": "", 
+          "CK_EXTRA_LIB_M": "-lm", 
+          "CK_FLAG_PREFIX_LIB_DIR": "-L", 
+          "CK_FLAGS_CREATE_OBJ": "-c", 
+          "CK_LINKER_FLAG_OPENMP": "-lgomp", 
+          "CK_EXTRA_LIB_DL": "-ldl", 
+          "CK_ENV_LIB_STDCPP_STATIC": "", 
+          "CK_OBJ_EXT": ".o", 
+          "CK_FLAGS_OUTPUT": "-o ", 
+          "CK_LB": "arm-linux-androideabi-ar rcs", 
+          "CK_ENV_LIB_STDCPP_INCLUDE": "", 
+          "CK_LD": "arm-linux-androideabi-ld", 
+          "CK_COMPILER_FLAG_CPP11": "-std=c++11", 
+          "CK_COMPILER_FLAG_OPENMP": "-fopenmp", 
+          "CK_PLUGIN_FLAG": "-fplugin=", 
+          "CK_DLL_EXT": ".so", 
+          "CK_CXX": "arm-linux-androideabi-g++", 
+          "CK_ASM_EXT": ".s", 
+          "CK_FLAG_PREFIX_INCLUDE": "-I", 
+          "CK_LD_FLAGS_EXTRA": "", 
+          "CK_OBJDUMP": "arm-linux-androideabi-objdump -d", 
+          "CK_EXE_EXT": ".out", 
+          "CK_PROFILER": "gprof", 
+          "CK_FLAGS_DLL": "-shared -fPIC", 
+          "CK_FLAGS_STATIC_BIN": "-static -fPIC", 
+          "CK_OPT_SPEED_SAFE": "-O2", 
+          "CK_GPROF_OUT_FILE": "gmon.out", 
+          "CK_MAKE": "make", 
+          "CK_COMPILER_FLAG_PLUGIN": "-fplugin=", 
+          "CK_FLAGS_CREATE_ASM": "-S", 
+          "CK_COMPILER_PREFIX": "arm-linux-androideabi-"
+        }, 
+        "tags": [
+          "32bits", 
+          "compiler", 
+          "gcc", 
+          "host-os-windows-64", 
+          "lang-c", 
+          "lang-cpp", 
+          "target-os-android5-arm", 
+          "v4", 
+          "v4.9", 
+          "v4.9.0"
+        ], 
+        "customize": {
+          "libstdcpppath_include": "", 
+          "platform_path_configured": "yes", 
+          "extra_path_configured": "yes", 
+          "can_strip_dynamic_lib": "yes", 
+          "build_dir_name": "gcc", 
+          "env_prefix": "CK_ENV_COMPILER_GCC", 
+          "retarget": "yes", 
+          "languages": [
+            "C", 
+            "CPP"
+          ], 
+          "tool_prefix_configured": "yes", 
+          "path_bin": "D:\\!FGG\\Installations\\android-ndk-r10d\\toolchains\\arm-linux-androideabi-4.9\\prebuilt\\windows-x86_64\\bin", 
+          "platform_path": "D:\\!FGG\\Installations\\android-ndk-r10d\\platforms", 
+          "add_extra_path_configured": "yes", 
+          "version": "4.9.0", 
+          "skip_add_to_ld_path": "yes", 
+          "version_int": 40900, 
+          "libstdcpppath_configured": "yes", 
+          "libstdcpppath_include_configured": "yes", 
+          "libstdcpppath": "", 
+          "tool_prefix": "arm-linux-androideabi-", 
+          "add_extra_path": "D:\\!FGG\\Installations\\android-ndk-r10d\\prebuilt\\windows-x86_64\\bin", 
+          "path_install": "D:\\!FGG\\Installations\\android-ndk-r10d\\toolchains\\arm-linux-androideabi-4.9\\prebuilt\\windows-x86_64"
+        }, 
+        "setup": {
+          "target_os_bits": "32", 
+          "version": "4.9.0", 
+          "host_os_uoa": "7a95e0754c37610a", 
+          "target_os_uoa": "66395254948c0b71"
+        }, 
+        "env_script": "env.bat", 
+        "soft_uoa": "bfc4274b1d8f83bb", 
+        "deps": {}
+      }, 
+      "ver": "4.9.0", 
+      "local": "yes"
+    }
+  }, 
+  "ready": "yes", 
+  "choices_desc": {
+    "##compiler_flags#fno-use-init-array": {
+      "sort": "10310", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fno-use-init-array", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fno-use-init-array"
+    }, 
+    "##compiler_flags#mno-global-merge": {
+      "sort": "10550", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-mno-global-merge", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -mno-global-merge"
+    }, 
+    "##compiler_flags#fno-merge-all-constants": {
+      "sort": "10180", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fno-merge-all-constants", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fno-merge-all-constants"
+    }, 
+    "##compiler_flags#fvisibility-inlines-hidden": {
+      "sort": "10490", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fvisibility-inlines-hidden", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fvisibility-inlines-hidden"
+    }, 
+    "##dataset_file": {
+      "has_choice": "yes", 
+      "sort": 1100, 
+      "tags": [
+        "setup"
+      ], 
+      "type": "text", 
+      "choices": []
+    }, 
+    "##compiler_flags#fno-rtti": {
+      "sort": "10200", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fno-rtti", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fno-rtti"
+    }, 
+    "##compiler_flags#ftemplate-backtrace-limit": {
+      "sort": 30020, 
+      "explore_stop": 800, 
+      "tags": [
+        "basic", 
+        "parametric", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "explore_start": 200, 
+      "explore_prefix": "-ftemplate-backtrace-limit=", 
+      "type": "integer", 
+      "explore_step": 1, 
+      "desc": "compiler flag: -ftemplate-backtrace-limit"
+    }, 
+    "##compiler_flags#fno-elide-type": {
+      "sort": "10140", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fno-elide-type", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fno-elide-type"
+    }, 
+    "##compiler_flags#fno-use-cxa-atexit": {
+      "sort": "10300", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fno-use-cxa-atexit", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fno-use-cxa-atexit"
+    }, 
+    "##compiler_flags#fno-elide-constructors": {
+      "sort": "10130", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fno-elide-constructors", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fno-elide-constructors"
+    }, 
+    "##compiler_flags#fno-inline": {
+      "sort": "10150", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fno-inline", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fno-inline"
+    }, 
+    "##compiler_flags#fno-show-source-location": {
+      "sort": "10230", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fno-show-source-location", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fno-show-source-location"
+    }, 
+    "##compiler_flags#fno-unroll-loops": {
+      "sort": "10290", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fno-unroll-loops", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fno-unroll-loops"
+    }, 
+    "##compiler_flags#base_opt": {
+      "sort": 10000, 
+      "tags": [
+        "base", 
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "choice": [
+        "-O3", 
+        "-O1", 
+        "-O2"
+      ], 
+      "type": "text", 
+      "desc": "base compiler flag"
+    }, 
+    "##compiler_flags#fno-limit-debug-info": {
+      "sort": "10170", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fno-limit-debug-info", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fno-limit-debug-info"
+    }, 
+    "##compiler_flags#fmerge-all-constants": {
+      "sort": "10050", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fmerge-all-constants", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fmerge-all-constants"
+    }, 
+    "##compiler_env_uoa": {
+      "has_choice": "yes", 
+      "sort": 2000, 
+      "type": "uoa", 
+      "choices": [
+        "1004ad4886b499b6", 
+        "9b5b637fa4661ab6", 
+        "ede44bca1982e735"
+      ]
+    }, 
+    "##compiler_flags#fno-zero-initialized-in-bss": {
+      "sort": "10320", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fno-zero-initialized-in-bss", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fno-zero-initialized-in-bss"
+    }, 
+    "##compiler_flags#fno-show-column": {
+      "sort": "10220", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fno-show-column", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fno-show-column"
+    }, 
+    "##compiler_flags#flimit-debug-info": {
+      "sort": "10040", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-flimit-debug-info", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -flimit-debug-info"
+    }, 
+    "##compiler_flags#ffast-math": {
+      "sort": "10020", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-ffast-math", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -ffast-math"
+    }, 
+    "##compiler_flags#fshort-enums": {
+      "sort": "10390", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fshort-enums", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fshort-enums"
+    }, 
+    "##compiler_flags#funroll-loops": {
+      "sort": "10460", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-funroll-loops", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -funroll-loops"
+    }, 
+    "##compiler_flags#ftree-vectorize": {
+      "sort": "10440", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-ftree-vectorize", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -ftree-vectorize"
+    }, 
+    "##compiler_flags#msoft-float": {
+      "sort": "10580", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-msoft-float", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -msoft-float"
+    }, 
+    "##compiler_flags#fno-trapping-math": {
+      "sort": "10280", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fno-trapping-math", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fno-trapping-math"
+    }, 
+    "##compiler_flags#freciprocal-math": {
+      "sort": "10370", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-freciprocal-math", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -freciprocal-math"
+    }, 
+    "##compiler_flags#funsafe-math-optimizations": {
+      "sort": "10470", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-funsafe-math-optimizations", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -funsafe-math-optimizations"
+    }, 
+    "##compiler_flags#fomit-frame-pointer ": {
+      "sort": "10330", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fomit-frame-pointer ", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fomit-frame-pointer "
+    }, 
+    "##compiler_flags#fno-signed-zeros": {
+      "sort": "10250", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fno-signed-zeros", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fno-signed-zeros"
+    }, 
+    "##compiler_flags#ffp-contract": {
+      "sort": 31000, 
+      "tags": [
+        "base", 
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-ffp-contract=off", 
+        "-ffp-contract=fast", 
+        "-ffp-contract=on"
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -ffp-contract"
+    }, 
+    "##compiler_flags#fno-spell-checking": {
+      "sort": "10260", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fno-spell-checking", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fno-spell-checking"
+    }, 
+    "##compiler_flags#foptimize-sibling-calls": {
+      "sort": "10340", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-foptimize-sibling-calls", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -foptimize-sibling-calls"
+    }, 
+    "##compiler_flags#fno-autolink": {
+      "sort": "10070", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fno-autolink", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fno-autolink"
+    }, 
+    "##compiler_flags#fno-assume-sane-operator-new": {
+      "sort": "10060", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fno-assume-sane-operator-new", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fno-assume-sane-operator-new"
+    }, 
+    "##compiler_flags#mregparm": {
+      "sort": 30030, 
+      "explore_stop": 32, 
+      "tags": [
+        "basic", 
+        "parametric", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "explore_start": 0, 
+      "explore_prefix": "-mregparm=", 
+      "type": "integer", 
+      "explore_step": 1, 
+      "desc": "compiler flag: -mregparm"
+    }, 
+    "##compiler_flags#fno-dollars-in-identifiers": {
+      "sort": "10120", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fno-dollars-in-identifiers", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fno-dollars-in-identifiers"
+    }, 
+    "##compiler_flags#fmodules-prune-after": {
+      "sort": 30000, 
+      "explore_stop": 120, 
+      "tags": [
+        "basic", 
+        "parametric", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "explore_start": 10, 
+      "explore_prefix": "-fmodules-prune-after=", 
+      "type": "integer", 
+      "explore_step": 1, 
+      "desc": "compiler flag: -fmodules-prune-after"
+    }, 
+    "##compiler_flags#ffinite-math-only": {
+      "sort": "10030", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-ffinite-math-only", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -ffinite-math-only"
+    }, 
+    "##compiler_flags#ftree-slp-vectorize": {
+      "sort": "10430", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-ftree-slp-vectorize", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -ftree-slp-vectorize"
+    }, 
+    "##compiler_flags#fno-constant-cfstrings": {
+      "sort": "10100", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fno-constant-cfstrings", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fno-constant-cfstrings"
+    }, 
+    "##compiler_flags#mstrict-align": {
+      "sort": "10590", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-mstrict-align", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -mstrict-align"
+    }, 
+    "##compiler_flags#fno-threadsafe-statics": {
+      "sort": "10270", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fno-threadsafe-statics", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fno-threadsafe-statics"
+    }, 
+    "##compiler_flags#fstrict-aliasing": {
+      "sort": "10400", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fstrict-aliasing", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fstrict-aliasing"
+    }, 
+    "##compiler_flags#funit-at-a-time": {
+      "sort": "10450", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-funit-at-a-time", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -funit-at-a-time"
+    }, 
+    "##compiler_flags#munaligned-access": {
+      "sort": "10610", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-munaligned-access", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -munaligned-access"
+    }, 
+    "##compiler_flags#fsched-interblock": {
+      "sort": "10380", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fsched-interblock", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fsched-interblock"
+    }, 
+    "##compiler_flags#fwritable-strings": {
+      "sort": "10510", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fwritable-strings", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fwritable-strings"
+    }, 
+    "##compiler_flags#fpascal-strings": {
+      "sort": "10350", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fpascal-strings", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fpascal-strings"
+    }, 
+    "##compiler_flags#fuse-init-array": {
+      "sort": "10480", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fuse-init-array", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fuse-init-array"
+    }, 
+    "##compiler_flags#fmodules-prune-interval": {
+      "sort": 30010, 
+      "explore_stop": 120, 
+      "tags": [
+        "basic", 
+        "parametric", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "explore_start": 10, 
+      "explore_prefix": "-fmodules-prune-interval=", 
+      "type": "integer", 
+      "explore_step": 1, 
+      "desc": "compiler flag: -fmodules-prune-interval"
+    }, 
+    "##compiler_flags#fno-sanitize-recover": {
+      "sort": "10210", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fno-sanitize-recover", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fno-sanitize-recover"
+    }, 
+    "##compiler_flags#fno-operator-names": {
+      "sort": "10190", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fno-operator-names", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fno-operator-names"
+    }, 
+    "##compiler_flags#fno-diagnostics-fixit-info": {
+      "sort": "10110", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fno-diagnostics-fixit-info", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fno-diagnostics-fixit-info"
+    }, 
+    "##compiler_flags#fassociative-math": {
+      "sort": "10010", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fassociative-math", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fassociative-math"
+    }, 
+    "##compiler_flags#mfloat-abi=softfp": {
+      "sort": "10530", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-mfloat-abi=softfp", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -mfloat-abi=softfp"
+    }, 
+    "##compiler_flags#fwrapv": {
+      "sort": "10500", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fwrapv", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fwrapv"
+    }, 
+    "##compiler_flags#fno-builtin": {
+      "sort": "10080", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fno-builtin", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fno-builtin"
+    }, 
+    "##compiler_flags#mtune=native": {
+      "sort": "10600", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-mtune=native", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -mtune=native"
+    }, 
+    "##compiler_flags#fno-signed-char": {
+      "sort": "10240", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fno-signed-char", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fno-signed-char"
+    }, 
+    "##compiler_flags#fno-lax-vector-conversions": {
+      "sort": "10160", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fno-lax-vector-conversions", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fno-lax-vector-conversions"
+    }, 
+    "##compiler_flags#fstrict-enums": {
+      "sort": "10410", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fstrict-enums", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fstrict-enums"
+    }, 
+    "##compiler_flags#momit-leaf-frame-pointer": {
+      "sort": "10560", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-momit-leaf-frame-pointer", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -momit-leaf-frame-pointer"
+    }, 
+    "##compiler_flags#mrestrict-it": {
+      "sort": "10570", 
+      "tags": [
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-mrestrict-it", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -mrestrict-it"
+    }
+  }, 
+  "speed": "yes"
+}

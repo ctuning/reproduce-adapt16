@@ -1,0 +1,10 @@
+{
+  "data_uoa_list":["demo-autotune-flags-adapt16-gcc-android-win-i10", "demo-autotune-flags-adapt16-gcc-android-win-i10-pareto", "demo-autotune-flags-adapt16-gcc-android-win-best"],
+
+  "flat_keys_list":[
+    "##characteristics#compile#obj_size#min",
+    "##characteristics#run#execution_time_kernel_0#center",
+    "##characteristics#run#execution_time_kernel_0#halfrange"
+  ]
+
+}

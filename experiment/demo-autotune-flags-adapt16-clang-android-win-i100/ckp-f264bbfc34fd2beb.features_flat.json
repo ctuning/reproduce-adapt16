@@ -1,0 +1,20 @@
+{
+  "##choices#cmd_key": "default", 
+  "##choices#compile_type": "dynamic", 
+  "##choices#compiler_flags#base_opt": "-O3", 
+  "##choices#compiler_flags#fmodules-prune-after": "-fmodules-prune-after=98", 
+  "##choices#compiler_flags#fno-elide-constructors": "-fno-elide-constructors", 
+  "##choices#compiler_flags#fno-rtti": "-fno-rtti", 
+  "##choices#compiler_flags#foptimize-sibling-calls": "-foptimize-sibling-calls", 
+  "##choices#compiler_flags#ftemplate-backtrace-limit": "-ftemplate-backtrace-limit=555", 
+  "##choices#data_uoa": "adapt16-adpcm", 
+  "##choices#dataset_file": "", 
+  "##choices#device_id": "SWQ49TFIT8YLU4DE", 
+  "##choices#host_os": "windows-64", 
+  "##choices#joined_compiler_flags": "-O3 -fmodules-prune-after=98 -ftemplate-backtrace-limit=555 -fno-elide-constructors -fno-rtti -foptimize-sibling-calls", 
+  "##choices#module_uoa": "b0ac08fe1d3c2615", 
+  "##choices#no_state_check": "yes", 
+  "##choices#repeat": 500000, 
+  "##choices#target_os": "android5-arm", 
+  "##choices#target_os_bits": "32"
+}

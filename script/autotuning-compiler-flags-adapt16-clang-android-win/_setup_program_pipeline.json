@@ -1,0 +1,9 @@
+{
+ "prepare":"yes",
+ "save_to_file":"_setup_program_pipeline_tmp.json",
+ "data_uoa":"adapt16-adpcm",
+ "target_os":"android5-arm",
+ "no_state_check":"yes",
+ "compiler_description_uoa":"llvm-35x-arm-adapt16-via-ck"
+}
+

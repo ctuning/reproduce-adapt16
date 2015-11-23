@@ -1,0 +1,2477 @@
+
+D:\Work1\CK\ck-repos\reproduce-adapt16\script\autotuning-compiler-flags-adapt16-gcc-android-win>ck autotune pipeline:program pipeline_from_file=_setup_program_pipeline_tmp.json @autotune_program_pipeline_i100.json  
+Initializing device ...
+
+Random seed: 12346
+
+***************************************************************************************
+Pipeline iteration: 1 of 100
+
+  Vector of flattened and updated choices:
+    ##compiler_flags#base_opt=-O3
+    ##compiler_flags#openmp=-fopenmp
+    ##compiler_flags#flto=-flto
+    ##compiler_flags#fsched_stalled_insns_dep=-fsched-stalled-insns-dep=0
+    ##compiler_flags#fsched_stalled_insns=-fsched-stalled-insns=0
+    ##compiler_flags#finline_limit=-finline-limit=2
+    ##compiler_flags#param_min_crossjump_insns=--param min-crossjump-insns=3
+    ##compiler_flags#param_max_grow_copy_bb_insns=--param max-grow-copy-bb-insns=4
+    ##compiler_flags#param_max_goto_duplication_insns=--param max-goto-duplication-insns=4
+    ##compiler_flags#param_max_inline_insns_single=--param max-inline-insns-single=256
+    ##compiler_flags#param_max_inline_insns_auto=--param max-inline-insns-auto=32
+    ##compiler_flags#param_large_function_insns=--param large-function-insns=1024
+    ##compiler_flags#param_large_function_growth=--param large-function-growth=32
+    ##compiler_flags#param_large_unit_insns=--param large-unit-insns=4096
+    ##compiler_flags#param_inline_unit_growth=--param inline-unit-growth=16
+    ##compiler_flags#param_ipcp_unit_growth=--param ipcp-unit-growth=4
+    ##compiler_flags#param_large_stack_frame=--param large-stack-frame=128
+    ##compiler_flags#param_large_stack_frame_growth=--param large-stack-frame-growth=512
+    ##compiler_flags#param_max_inline_insns_recursive=--param max-inline-insns-recursive=128
+    ##compiler_flags#param_max_inline_insns_recursive_auto=--param max-inline-insns-recursive-auto=128
+    ##compiler_flags#param_max_inline_recursive_depth=--param max-inline-recursive-depth=4
+    ##compiler_flags#param_max_inline_recursive_depth_auto=--param max-inline-recursive-depth-auto=4
+    ##compiler_flags#param_min_inline_recursive_probability=--param min-inline-recursive-probability=4
+    ##compiler_flags#param_min_vect_loop_bound=--param min-vect-loop-bound=1
+    ##compiler_flags#param_max_unrolled_insns=--param max-unrolled-insns=32
+    ##compiler_flags#param_max_unroll_times=--param max-unroll-times=2
+    ##compiler_flags#param_omega_max_vars=--param omega-max-vars=64
+    ##compiler_flags#param_omega_max_geqs=--param omega-max-geqs=128
+    ##compiler_flags#param_omega_max_eqs=--param omega-max-eqs=64
+    ##compiler_flags#param_omega_max_wild_cards=--param omega-max-wild-cards=8
+    ##compiler_flags#param_omega_hash_table_size=--param omega-hash-table-size=256
+    ##compiler_flags#param_omega_max_keys=--param omega-max-keys=256
+    ##compiler_flags#param_omega_eliminate_redundant_constraints=--param omega-eliminate-redundant-constraints=0
+    ##compiler_flags#param_tracer_min_branch_ratio=--param tracer-min-branch-ratio=0
+    ##compiler_flags#param_max_cse_path_length=--param max-cse-path-length=4
+    ##compiler_flags#param_max_cse_insns=--param max-cse-insns=512
+    ##compiler_flags#param_max_reload_search_insns=--param max-reload-search-insns=64
+    ##compiler_flags#param_max_cselib_memory_locations=--param max-cselib-memory-locations=256
+    ##compiler_flags#param_max_sched_ready_insns=--param max-sched-ready-insns=64
+    ##compiler_flags#param_max_sched_region_blocks=--param max-sched-region-blocks=4
+    ##compiler_flags#param_max_pipeline_region_blocks=--param max-pipeline-region-blocks=8
+    ##compiler_flags#param_max_sched_region_insns=--param max-sched-region-insns=32
+    ##compiler_flags#param_max_pipeline_region_insns=--param max-pipeline-region-insns=64
+    ##compiler_flags#param_min_spec_prob=--param min-spec-prob=30
+    ##compiler_flags#param_max_sched_extend_regions_iters=--param max-sched-extend-regions-iters=0
+    ##compiler_flags#param_max_sched_insn_conflict_delay=--param max-sched-insn-conflict-delay=2
+    ##compiler_flags#param_sched_spec_prob_cutoff=--param sched-spec-prob-cutoff=30
+    ##compiler_flags#param_sched_mem_true_dep_cost=--param sched-mem-true-dep-cost=1
+    ##compiler_flags#param_selsched_max_lookahead=--param selsched-max-lookahead=32
+    ##compiler_flags#param_selsched_max_sched_times=--param selsched-max-sched-times=1
+    ##compiler_flags#param_max_last_value_rtl=--param max-last-value-rtl=4096
+    ##compiler_flags#param_min_virtual_mappings=--param min-virtual-mappings=32
+    ##compiler_flags#param_virtual_mappings_ratio=--param virtual-mappings-ratio=1
+    ##compiler_flags#param_max_fields_for_field_sensitive=--param max-fields-for-field-sensitive=0
+    ##compiler_flags#param_sccvn_max_scc_size=--param sccvn-max-scc-size=4096
+    ##compiler_flags#param_ira_max_loops_num=--param ira-max-loops-num=32
+    ##compiler_flags#param_ira_max_conflict_table_size=--param ira-max-conflict-table-size=1024
+    ##compiler_flags#falign_functions=-falign-functions
+    ##compiler_flags#falign_jumps=-falign-jumps
+    ##compiler_flags#falign_labels=-falign-labels
+    ##compiler_flags#falign_loops=-falign-loops
+    ##compiler_flags#fbranch_count_reg=-fbranch-count-reg
+    ##compiler_flags#fbranch_target_load_optimize=-fbranch-target-load-optimize
+    ##compiler_flags#fbranch_target_load_optimize2=-fbranch-target-load-optimize2
+    ##compiler_flags#fbtr_bb_exclusive=-fbtr-bb-exclusive
+    ##compiler_flags#fcaller_saves=-fcaller-saves
+    ##compiler_flags#fconserve_stack=-fconserve-stack
+    ##compiler_flags#fcprop_registers=-fcprop-registers
+    ##compiler_flags#fcrossjumping=-fcrossjumping
+    ##compiler_flags#fcse_follow_jumps=-fcse-follow-jumps
+    ##compiler_flags#fcse_skip_blocks=-fcse-skip-blocks
+    ##compiler_flags#fcx_limited_range=-fcx-limited-range
+    ##compiler_flags#fdce=-fdce
+    ##compiler_flags#fdefer_pop=-fdefer-pop
+    ##compiler_flags#fdelete_null_pointer_checks=-fdelete-null-pointer-checks
+    ##compiler_flags#fdse=-fdse
+    ##compiler_flags#fearly_inlining=-fearly-inlining
+    ##compiler_flags#fexpensive_optimizations=-fexpensive-optimizations
+    ##compiler_flags#fforward_propagate=-fforward-propagate
+    ##compiler_flags#ffunction_cse=-ffunction-cse
+    ##compiler_flags#fgcse=-fgcse
+    ##compiler_flags#fgcse_after_reload=-fgcse-after-reload
+    ##compiler_flags#fgcse_las=-fgcse-las
+    ##compiler_flags#fgcse_lm=-fgcse-lm
+    ##compiler_flags#fgcse_sm=-fgcse-sm
+    ##compiler_flags#fguess_branch_probability=-fguess-branch-probability
+    ##compiler_flags#fif_conversion=-fif-conversion
+    ##compiler_flags#fif_conversion2=-fif-conversion2
+    ##compiler_flags#findirect_inlining=-findirect-inlining
+    ##compiler_flags#finline_functions=-finline-functions
+    ##compiler_flags#finline_functions_called_once=-finline-functions-called-once
+    ##compiler_flags#finline_small_functions=-finline-small-functions
+    ##compiler_flags#fipa_cp=-fipa-cp
+    ##compiler_flags#fipa_cp_clone=-fipa-cp-clone
+    ##compiler_flags#fipa_matrix_reorg=-fipa-matrix-reorg
+    ##compiler_flags#fipa_pta=-fipa-pta
+    ##compiler_flags#fipa_pure_const=-fipa-pure-const
+    ##compiler_flags#fipa_reference=-fipa-reference
+    ##compiler_flags#fipa_struct_reorg=-fipa-struct-reorg
+    ##compiler_flags#fira_share_save_slots=-fira-share-save-slots
+    ##compiler_flags#fira_share_spill_slots=-fira-share-spill-slots
+    ##compiler_flags#fivopts=-fivopts
+    ##compiler_flags#floop_block=-floop-block
+    ##compiler_flags#floop_interchange=-floop-interchange
+    ##compiler_flags#floop_strip_mine=-floop-strip-mine
+    ##compiler_flags#fmerge_constants=-fmerge-constants
+    ##compiler_flags#fmodulo_sched=-fmodulo-sched
+    ##compiler_flags#fmodulo_sched_allow_regmoves=-fmodulo-sched-allow-regmoves
+    ##compiler_flags#fmove_loop_invariants=-fmove-loop-invariants
+    ##compiler_flags#fomit_frame_pointer=-fomit-frame-pointer
+    ##compiler_flags#foptimize_sibling_calls=-foptimize-sibling-calls
+    ##compiler_flags#fpeel_loops=-fpeel-loops
+    ##compiler_flags#fpeephole=-fpeephole
+    ##compiler_flags#fpeephole2=-fpeephole2
+    ##compiler_flags#fpredictive_commoning=-fpredictive-commoning
+    ##compiler_flags#fprefetch_loop_arrays=-fprefetch-loop-arrays
+    ##compiler_flags#fregmove=-fregmove
+    ##compiler_flags#frename_registers=-frename-registers
+    ##compiler_flags#freorder_blocks=-freorder-blocks
+    ##compiler_flags#freorder_blocks_and_partition=-freorder-blocks-and-partition
+    ##compiler_flags#freorder_functions=-freorder-functions
+    ##compiler_flags#frerun_cse_after_loop=-frerun-cse-after-loop
+    ##compiler_flags#freschedule_modulo_scheduled_loops=-freschedule-modulo-scheduled-loops
+    ##compiler_flags#fsched_interblock=-fsched-interblock
+    ##compiler_flags#fsched_spec=-fsched-spec
+    ##compiler_flags#fsched_spec_load=-fsched-spec-load
+    ##compiler_flags#fsched_spec_load_dangerous=-fsched-spec-load-dangerous
+    ##compiler_flags#fsched2_use_superblocks=-fsched2-use-superblocks
+    ##compiler_flags#fschedule_insns=-fschedule-insns
+    ##compiler_flags#fschedule_insns2=-fschedule-insns2
+    ##compiler_flags#fsee=-fsee
+    ##compiler_flags#fsel_sched_pipelining=-fsel-sched-pipelining
+    ##compiler_flags#fsel_sched_pipelining_outer_loops=-fsel-sched-pipelining-outer-loops
+    ##compiler_flags#fselective_scheduling=-fselective-scheduling
+    ##compiler_flags#fselective_scheduling2=-fselective-scheduling2
+    ##compiler_flags#fsignaling_nans=-fsignaling-nans
+    ##compiler_flags#fsingle_precision_constant=-fsingle-precision-constant
+    ##compiler_flags#fsplit_ivs_in_unroller=-fsplit-ivs-in-unroller
+    ##compiler_flags#fsplit_wide_types=-fsplit-wide-types
+    ##compiler_flags#fstrict_aliasing=-fstrict-aliasing
+    ##compiler_flags#fstrict_overflow=-fstrict-overflow
+    ##compiler_flags#fthread_jumps=-fthread-jumps
+    ##compiler_flags#ftracer=-ftracer
+    ##compiler_flags#ftree_builtin_call_dce=-ftree-builtin-call-dce
+    ##compiler_flags#ftree_ccp=-ftree-ccp
+    ##compiler_flags#ftree_ch=-ftree-ch
+    ##compiler_flags#ftree_copy_prop=-ftree-copy-prop
+    ##compiler_flags#ftree_copyrename=-ftree-copyrename
+    ##compiler_flags#ftree_dce=-ftree-dce
+    ##compiler_flags#ftree_dominator_opts=-ftree-dominator-opts
+    ##compiler_flags#ftree_dse=-ftree-dse
+    ##compiler_flags#ftree_fre=-ftree-fre
+    ##compiler_flags#ftree_loop_distribution=-ftree-loop-distribution
+    ##compiler_flags#ftree_loop_im=-ftree-loop-im
+    ##compiler_flags#ftree_loop_ivcanon=-ftree-loop-ivcanon
+    ##compiler_flags#ftree_loop_linear=-ftree-loop-linear
+    ##compiler_flags#ftree_loop_optimize=-ftree-loop-optimize
+    ##compiler_flags#ftree_pre=-ftree-pre
+    ##compiler_flags#ftree_reassoc=-ftree-reassoc
+    ##compiler_flags#ftree_sink=-ftree-sink
+    ##compiler_flags#ftree_sra=-ftree-sra
+    ##compiler_flags#ftree_switch_conversion=-ftree-switch-conversion
+    ##compiler_flags#ftree_ter=-ftree-ter
+    ##compiler_flags#ftree_vect_loop_version=-ftree-vect-loop-version
+    ##compiler_flags#ftree_vectorize=-ftree-vectorize
+    ##compiler_flags#ftree_vrp=-ftree-vrp
+    ##compiler_flags#funroll_all_loops=-funroll-all-loops
+    ##compiler_flags#funsafe_loop_optimizations=-funsafe-loop-optimizations
+    ##compiler_flags#funsafe_math_optimizations=-funsafe-math-optimizations
+    ##compiler_flags#funswitch_loops=-funswitch-loops
+    ##compiler_flags#fvariable_expansion_in_unroller=-fvariable-expansion-in-unroller
+    ##compiler_flags#fvect_cost_model=-fvect-cost-model
+    ##compiler_flags#fweb=-fweb
+
+      ------------------- Statistical repetition: 1 of 2 -------------------
+
+Initializing universal program pipeline ...
+
+***************************************************************************************
+Obtaining platform parameters and checking other obligatory choices for the pipeline ...
+
+Initializing device ...
+
+OS CK UOA:     android5-arm (66395254948c0b71)
+
+OS name:       Android 4.2.2
+Short OS name: Linux version 3.4.5
+Long OS name:  Linux version 3.4.5 (z00182893@ubuntu) (gcc version 4.6.x-google 20120106 (prerelease) (GCC) ) #1 SMP PREEMPT Thu Aug 14 21:28:23 CST 2014
+OS bits:       32
+***************************************************************************************
+  Selected host platform: windows-64
+  Selected target platform: android5-arm
+  Selected target device ID: SWQ49TFIT8YLU4DE
+  Selected program: adapt16-adpcm (4947d2131df8ff45)
+  Selected command line: default
+  Selected dependencies: 
+      xopenme env = d49499018a9eddac; tags = ["32bits", "host-os-windows-64", "lang-c", "lang-cpp", "lang-f77", "lang-f90", "lang-f95", "lib", "rtl", "target-os-android5-arm", "v0", "v0.3", "xopenme"]
+      compiler env = 1004ad4886b499b6; tags = ["32bits", "compiler", "gcc", "host-os-windows-64", "lang-c", "lang-cpp", "target-os-android5-arm", "v4", "v4.9", "v4.9.0"]
+
+Loading compiler description: gcc-49x (a013e4e4d92ed26a) ...
+***************************************************************************************
+Setting CPU frequency to max (if supported) ...
+
+
+CMD to set CPU frequency:
+  /data/local/tmp/tools/ck-set-cpu-performance
+/system/bin/sh: /data/local/tmp/tools/ck-set-cpu-performance: not found
+***************************************************************************************
+Setting GPU frequency to max (if supported) ...
+
+
+CMD to set GPU frequency:
+  /data/local/tmp/tools/ck-set-gpu-performance
+/system/bin/sh: /data/local/tmp/tools/ck-set-gpu-performance: not found
+***************************************************************************************
+Detecting all target platform features ...
+
+***************************************************************************************
+Detecting OS and CPU features ...
+
+Number of logical processors: 1
+CPU name:                     MT6572
+CPU sub name:                 ARMv7 Processor rev 3 (v7l)
+CPU ABI:                      armeabi-v7a
+CPU features:                 swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls vfpv4 idiva idivt
+
+CPU frequency:
+  CPU0 = 1001.0 MHz
+CPU max frequency:
+  CPU0 = 1300.0 MHz
+CPU all frequencies (Hz):
+  CPU0 = []
+***************************************************************************************
+Detecting accelerator features ...
+
+GPU name: ARM, Mali-400 MP, OpenGL ES-CM 1.1
+
+Trying to read GPU frequency:
+  adb  -s SWQ49TFIT8YLU4DE shell /data/local/tmp/tools/ck-print-gpu-freq >c:\temp\tmp-ck-rce7vj
+***************************************************************************************
+Detecting system features ...
+
+Platform name:   HUAWEI Y330-U01
+Platform vendor: HUAWEI
+Platform model:  Y330-U01
+***************************************************************************************
+Compile program ...
+
+Cleaning working directory ...
+
+***************************************************************************************
+Current directory: D:\Work1\CK\ck-repos\reproduce-adapt16\program\adapt16-adpcm\tmp
+
+***************************************************************************************
+
+Resolving dependencies ...
+
+D:\Work1\CK\ck-repos\reproduce-adapt16\program\adapt16-adpcm\tmp>call D:\Work1\CK\ck-repos\fgg-local-win\env\1004ad4886b499b6\env.bat 
+***************************************************************************************
+Detected compiler version: 4.9
+
+***************************************************************************************
+Compiler vars:
+  XOPENME=
+***************************************************************************************
+
+Executing prepared batch file tmp-g8hyxx.bat ...
+
+D:\Work1\CK\ck-repos\reproduce-adapt16\program\adapt16-adpcm\tmp>call D:\Work1\CK\ck-repos\fgg-local-win\env\1004ad4886b499b6\env.bat 
+arm-linux-androideabi-gcc -c --sysroot "D:\!FGG\Installations\android-ndk-r10d\platforms\android-5\arch-arm"   -I..\ -DXOPENME -I"D:\!FGG\Installations\lib-rtl-xopenme-0.3-gcc-4.6.0-android5-arm-32\include" -O3 -fopenmp -flto -fsched-stalled-insns-dep=0 -fsched-stalled-insns=0 -finline-limit=2 --param min-crossjump-insns=3 --param max-grow-copy-bb-insns=4 --param max-goto-duplication-insns=4 --param max-inline-insns-single=256 --param max-inline-insns-auto=32 --param large-function-insns=1024 --param large-function-growth=32 --param large-unit-insns=4096 --param inline-unit-growth=16 --param ipcp-unit-growth=4 --param large-stack-frame=128 --param large-stack-frame-growth=512 --param max-inline-insns-recursive=128 --param max-inline-insns-recursive-auto=128 --param max-inline-recursive-depth=4 --param max-inline-recursive-depth-auto=4 --param min-inline-recursive-probability=4 --param min-vect-loop-bound=1 --param max-unrolled-insns=32 --param max-unroll-times=2 --param omega-max-vars=64 --param omega-max-geqs=128 --param omega-max-eqs=64 --param omega-max-wild-cards=8 --param omega-hash-table-size=256 --param omega-max-keys=256 --param omega-eliminate-redundant-constraints=0 --param tracer-min-branch-ratio=0 --param max-cse-path-length=4 --param max-cse-insns=512 --param max-reload-search-insns=64 --param max-cselib-memory-locations=256 --param max-sched-ready-insns=64 --param max-sched-region-blocks=4 --param max-pipeline-region-blocks=8 --param max-sched-region-insns=32 --param max-pipeline-region-insns=64 --param min-spec-prob=30 --param max-sched-extend-regions-iters=0 --param max-sched-insn-conflict-delay=2 --param sched-spec-prob-cutoff=30 --param sched-mem-true-dep-cost=1 --param selsched-max-lookahead=32 --param selsched-max-sched-times=1 --param max-last-value-rtl=4096 --param min-virtual-mappings=32 --param virtual-mappings-ratio=1 --param max-fields-for-field-sensitive=0 --param sccvn-max-scc-size=4096 --param ira-max-loops-num=32 --param ira-max-conflict-table-size=1024 -falign-functions -falign-jumps -falign-labels -falign-loops -fbranch-count-reg -fbranch-target-load-optimize -fbranch-target-load-optimize2 -fbtr-bb-exclusive -fcaller-saves -fconserve-stack -fcprop-registers -fcrossjumping -fcse-follow-jumps -fcse-skip-blocks -fcx-limited-range -fdce -fdefer-pop -fdelete-null-pointer-checks -fdse -fearly-inlining -fexpensive-optimizations -fforward-propagate -ffunction-cse -fgcse -fgcse-after-reload -fgcse-las -fgcse-lm -fgcse-sm -fguess-branch-probability -fif-conversion -fif-conversion2 -findirect-inlining -finline-functions -finline-functions-called-once -finline-small-functions -fipa-cp -fipa-cp-clone -fipa-matrix-reorg -fipa-pta -fipa-pure-const -fipa-reference -fipa-struct-reorg -fira-share-save-slots -fira-share-spill-slots -fivopts -floop-block -floop-interchange -floop-strip-mine -fmerge-constants -fmodulo-sched -fmodulo-sched-allow-regmoves -fmove-loop-invariants -fomit-frame-pointer -foptimize-sibling-calls -fpeel-loops -fpeephole -fpeephole2 -fpredictive-commoning -fprefetch-loop-arrays -fregmove -frename-registers -freorder-blocks -freorder-blocks-and-partition -freorder-functions -frerun-cse-after-loop -freschedule-modulo-scheduled-loops -fsched-interblock -fsched-spec -fsched-spec-load -fsched-spec-load-dangerous -fsched2-use-superblocks -fschedule-insns -fschedule-insns2 -fsee -fsel-sched-pipelining -fsel-sched-pipelining-outer-loops -fselective-scheduling -fselective-scheduling2 -fsignaling-nans -fsingle-precision-constant -fsplit-ivs-in-unroller -fsplit-wide-types -fstrict-aliasing -fstrict-overflow -fthread-jumps -ftracer -ftree-builtin-call-dce -ftree-ccp -ftree-ch -ftree-copy-prop -ftree-copyrename -ftree-dce -ftree-dominator-opts -ftree-dse -ftree-fre -ftree-loop-distribution -ftree-loop-im -ftree-loop-ivcanon -ftree-loop-linear -ftree-loop-optimize -ftree-pre -ftree-reassoc -ftree-sink -ftree-sra -ftree-switch-conversion -ftree-ter -ftree-vect-loop-version -ftree-vectorize -ftree-vrp -funroll-all-loops -funsafe-loop-optimizations -funsafe-math-optimizations -funswitch-loops -fvariable-expansion-in-unroller -fvect-cost-model -fweb ..\base.c  -o base.o
+***************************************************************************************
+Compilation time: 0.200 sec.; Object size: 0; MD5: 
+Warning: compilation failed!
+***************************************************************************************
+Pipeline failed (compilation failed - return code 1 !=0 )!
+***************************************************************************************
+Pipeline iteration: 2 of 100
+
+  Vector of flattened and updated choices:
+    ##compiler_flags#base_opt=-Ofast
+    ##compiler_flags#openmp=-fopenmp
+    ##compiler_flags#flto=-flto
+    ##compiler_flags#fsched_stalled_insns_dep=-fsched-stalled-insns-dep=0
+    ##compiler_flags#fsched_stalled_insns=-fsched-stalled-insns=0
+    ##compiler_flags#finline_limit=-finline-limit=2
+    ##compiler_flags#param_min_crossjump_insns=--param min-crossjump-insns=3
+    ##compiler_flags#param_max_grow_copy_bb_insns=--param max-grow-copy-bb-insns=4
+    ##compiler_flags#param_max_goto_duplication_insns=--param max-goto-duplication-insns=4
+    ##compiler_flags#param_max_inline_insns_single=--param max-inline-insns-single=256
+    ##compiler_flags#param_max_inline_insns_auto=--param max-inline-insns-auto=51
+    ##compiler_flags#param_large_function_insns=--param large-function-insns=1024
+    ##compiler_flags#param_large_function_growth=--param large-function-growth=32
+    ##compiler_flags#param_large_unit_insns=--param large-unit-insns=4096
+    ##compiler_flags#param_inline_unit_growth=--param inline-unit-growth=16
+    ##compiler_flags#param_ipcp_unit_growth=--param ipcp-unit-growth=4
+    ##compiler_flags#param_large_stack_frame=--param large-stack-frame=128
+    ##compiler_flags#param_large_stack_frame_growth=--param large-stack-frame-growth=512
+    ##compiler_flags#param_max_inline_insns_recursive=--param max-inline-insns-recursive=128
+    ##compiler_flags#param_max_inline_insns_recursive_auto=--param max-inline-insns-recursive-auto=128
+    ##compiler_flags#param_max_inline_recursive_depth=--param max-inline-recursive-depth=4
+    ##compiler_flags#param_max_inline_recursive_depth_auto=--param max-inline-recursive-depth-auto=4
+    ##compiler_flags#param_min_inline_recursive_probability=--param min-inline-recursive-probability=4
+    ##compiler_flags#param_min_vect_loop_bound=--param min-vect-loop-bound=1
+    ##compiler_flags#param_max_unrolled_insns=--param max-unrolled-insns=32
+    ##compiler_flags#param_max_unroll_times=--param max-unroll-times=2
+    ##compiler_flags#param_omega_max_vars=--param omega-max-vars=64
+    ##compiler_flags#param_omega_max_geqs=--param omega-max-geqs=128
+    ##compiler_flags#param_omega_max_eqs=--param omega-max-eqs=64
+    ##compiler_flags#param_omega_max_wild_cards=--param omega-max-wild-cards=8
+    ##compiler_flags#param_omega_hash_table_size=--param omega-hash-table-size=256
+    ##compiler_flags#param_omega_max_keys=--param omega-max-keys=290
+    ##compiler_flags#param_omega_eliminate_redundant_constraints=--param omega-eliminate-redundant-constraints=0
+    ##compiler_flags#param_tracer_min_branch_ratio=--param tracer-min-branch-ratio=0
+    ##compiler_flags#param_max_cse_path_length=--param max-cse-path-length=4
+    ##compiler_flags#param_max_cse_insns=--param max-cse-insns=1573
+    ##compiler_flags#param_max_reload_search_insns=--param max-reload-search-insns=64
+    ##compiler_flags#param_max_cselib_memory_locations=--param max-cselib-memory-locations=256
+    ##compiler_flags#param_max_sched_ready_insns=--param max-sched-ready-insns=64
+    ##compiler_flags#param_max_sched_region_blocks=--param max-sched-region-blocks=4
+    ##compiler_flags#param_max_pipeline_region_blocks=--param max-pipeline-region-blocks=8
+    ##compiler_flags#param_max_sched_region_insns=--param max-sched-region-insns=32
+    ##compiler_flags#param_max_pipeline_region_insns=--param max-pipeline-region-insns=83
+    ##compiler_flags#param_min_spec_prob=--param min-spec-prob=30
+    ##compiler_flags#param_max_sched_extend_regions_iters=--param max-sched-extend-regions-iters=0
+    ##compiler_flags#param_max_sched_insn_conflict_delay=--param max-sched-insn-conflict-delay=2
+    ##compiler_flags#param_sched_spec_prob_cutoff=--param sched-spec-prob-cutoff=30
+    ##compiler_flags#param_sched_mem_true_dep_cost=--param sched-mem-true-dep-cost=1
+    ##compiler_flags#param_selsched_max_lookahead=--param selsched-max-lookahead=32
+    ##compiler_flags#param_selsched_max_sched_times=--param selsched-max-sched-times=1
+    ##compiler_flags#param_max_last_value_rtl=--param max-last-value-rtl=4096
+    ##compiler_flags#param_min_virtual_mappings=--param min-virtual-mappings=152
+    ##compiler_flags#param_virtual_mappings_ratio=--param virtual-mappings-ratio=2
+    ##compiler_flags#param_max_fields_for_field_sensitive=--param max-fields-for-field-sensitive=0
+    ##compiler_flags#param_sccvn_max_scc_size=--param sccvn-max-scc-size=4096
+    ##compiler_flags#param_ira_max_loops_num=--param ira-max-loops-num=32
+    ##compiler_flags#param_ira_max_conflict_table_size=--param ira-max-conflict-table-size=3001
+    ##compiler_flags#falign_functions=-falign-functions
+    ##compiler_flags#falign_jumps=-falign-jumps
+    ##compiler_flags#falign_labels=-falign-labels
+    ##compiler_flags#falign_loops=-falign-loops
+    ##compiler_flags#fbranch_count_reg=-fbranch-count-reg
+    ##compiler_flags#fbranch_target_load_optimize=-fbranch-target-load-optimize
+    ##compiler_flags#fbranch_target_load_optimize2=-fbranch-target-load-optimize2
+    ##compiler_flags#fbtr_bb_exclusive=-fbtr-bb-exclusive
+    ##compiler_flags#fcaller_saves=-fcaller-saves
+    ##compiler_flags#fconserve_stack=-fconserve-stack
+    ##compiler_flags#fcprop_registers=-fcprop-registers
+    ##compiler_flags#fcrossjumping=-fcrossjumping
+    ##compiler_flags#fcse_follow_jumps=-fcse-follow-jumps
+    ##compiler_flags#fcse_skip_blocks=-fcse-skip-blocks
+    ##compiler_flags#fcx_limited_range=-fcx-limited-range
+    ##compiler_flags#fdce=-fdce
+    ##compiler_flags#fdefer_pop=-fdefer-pop
+    ##compiler_flags#fdelete_null_pointer_checks=-fdelete-null-pointer-checks
+    ##compiler_flags#fdse=-fdse
+    ##compiler_flags#fearly_inlining=-fno-early-inlining
+    ##compiler_flags#fexpensive_optimizations=-fexpensive-optimizations
+    ##compiler_flags#fforward_propagate=-fforward-propagate
+    ##compiler_flags#ffunction_cse=-ffunction-cse
+    ##compiler_flags#fgcse=-fgcse
+    ##compiler_flags#fgcse_after_reload=-fgcse-after-reload
+    ##compiler_flags#fgcse_las=-fgcse-las
+    ##compiler_flags#fgcse_lm=-fgcse-lm
+    ##compiler_flags#fgcse_sm=-fgcse-sm
+    ##compiler_flags#fguess_branch_probability=-fguess-branch-probability
+    ##compiler_flags#fif_conversion=-fif-conversion
+    ##compiler_flags#fif_conversion2=-fif-conversion2
+    ##compiler_flags#findirect_inlining=-findirect-inlining
+    ##compiler_flags#finline_functions=-finline-functions
+    ##compiler_flags#finline_functions_called_once=-finline-functions-called-once
+    ##compiler_flags#finline_small_functions=-finline-small-functions
+    ##compiler_flags#fipa_cp=-fipa-cp
+    ##compiler_flags#fipa_cp_clone=-fipa-cp-clone
+    ##compiler_flags#fipa_matrix_reorg=-fipa-matrix-reorg
+    ##compiler_flags#fipa_pta=-fipa-pta
+    ##compiler_flags#fipa_pure_const=-fipa-pure-const
+    ##compiler_flags#fipa_reference=-fipa-reference
+    ##compiler_flags#fipa_struct_reorg=-fipa-struct-reorg
+    ##compiler_flags#fira_share_save_slots=-fira-share-save-slots
+    ##compiler_flags#fira_share_spill_slots=-fira-share-spill-slots
+    ##compiler_flags#fivopts=-fivopts
+    ##compiler_flags#floop_block=-floop-block
+    ##compiler_flags#floop_interchange=-floop-interchange
+    ##compiler_flags#floop_strip_mine=-floop-strip-mine
+    ##compiler_flags#fmerge_constants=-fmerge-constants
+    ##compiler_flags#fmodulo_sched=-fmodulo-sched
+    ##compiler_flags#fmodulo_sched_allow_regmoves=-fno-modulo-sched-allow-regmoves
+    ##compiler_flags#fmove_loop_invariants=-fmove-loop-invariants
+    ##compiler_flags#fomit_frame_pointer=-fomit-frame-pointer
+    ##compiler_flags#foptimize_sibling_calls=-foptimize-sibling-calls
+    ##compiler_flags#fpeel_loops=-fpeel-loops
+    ##compiler_flags#fpeephole=-fpeephole
+    ##compiler_flags#fpeephole2=-fpeephole2
+    ##compiler_flags#fpredictive_commoning=-fpredictive-commoning
+    ##compiler_flags#fprefetch_loop_arrays=-fprefetch-loop-arrays
+    ##compiler_flags#fregmove=-fregmove
+    ##compiler_flags#frename_registers=-frename-registers
+    ##compiler_flags#freorder_blocks=-freorder-blocks
+    ##compiler_flags#freorder_blocks_and_partition=-freorder-blocks-and-partition
+    ##compiler_flags#freorder_functions=-freorder-functions
+    ##compiler_flags#frerun_cse_after_loop=-frerun-cse-after-loop
+    ##compiler_flags#freschedule_modulo_scheduled_loops=-freschedule-modulo-scheduled-loops
+    ##compiler_flags#fsched_interblock=-fsched-interblock
+    ##compiler_flags#fsched_spec=-fsched-spec
+    ##compiler_flags#fsched_spec_load=-fsched-spec-load
+    ##compiler_flags#fsched_spec_load_dangerous=-fsched-spec-load-dangerous
+    ##compiler_flags#fsched2_use_superblocks=-fsched2-use-superblocks
+    ##compiler_flags#fschedule_insns=-fschedule-insns
+    ##compiler_flags#fschedule_insns2=-fschedule-insns2
+    ##compiler_flags#fsee=-fsee
+    ##compiler_flags#fsel_sched_pipelining=-fno-sel-sched-pipelining
+    ##compiler_flags#fsel_sched_pipelining_outer_loops=-fsel-sched-pipelining-outer-loops
+    ##compiler_flags#fselective_scheduling=-fselective-scheduling
+    ##compiler_flags#fselective_scheduling2=-fselective-scheduling2
+    ##compiler_flags#fsignaling_nans=-fsignaling-nans
+    ##compiler_flags#fsingle_precision_constant=-fsingle-precision-constant
+    ##compiler_flags#fsplit_ivs_in_unroller=-fsplit-ivs-in-unroller
+    ##compiler_flags#fsplit_wide_types=-fsplit-wide-types
+    ##compiler_flags#fstrict_aliasing=-fstrict-aliasing
+    ##compiler_flags#fstrict_overflow=-fstrict-overflow
+    ##compiler_flags#fthread_jumps=-fno-thread-jumps
+    ##compiler_flags#ftracer=-ftracer
+    ##compiler_flags#ftree_builtin_call_dce=-ftree-builtin-call-dce
+    ##compiler_flags#ftree_ccp=-ftree-ccp
+    ##compiler_flags#ftree_ch=-ftree-ch
+    ##compiler_flags#ftree_copy_prop=-ftree-copy-prop
+    ##compiler_flags#ftree_copyrename=-ftree-copyrename
+    ##compiler_flags#ftree_dce=-ftree-dce
+    ##compiler_flags#ftree_dominator_opts=-ftree-dominator-opts
+    ##compiler_flags#ftree_dse=-ftree-dse
+    ##compiler_flags#ftree_fre=-ftree-fre
+    ##compiler_flags#ftree_loop_distribution=-ftree-loop-distribution
+    ##compiler_flags#ftree_loop_im=-ftree-loop-im
+    ##compiler_flags#ftree_loop_ivcanon=-ftree-loop-ivcanon
+    ##compiler_flags#ftree_loop_linear=-ftree-loop-linear
+    ##compiler_flags#ftree_loop_optimize=-ftree-loop-optimize
+    ##compiler_flags#ftree_pre=-ftree-pre
+    ##compiler_flags#ftree_reassoc=-ftree-reassoc
+    ##compiler_flags#ftree_sink=-ftree-sink
+    ##compiler_flags#ftree_sra=-ftree-sra
+    ##compiler_flags#ftree_switch_conversion=-ftree-switch-conversion
+    ##compiler_flags#ftree_ter=-ftree-ter
+    ##compiler_flags#ftree_vect_loop_version=-ftree-vect-loop-version
+    ##compiler_flags#ftree_vectorize=-ftree-vectorize
+    ##compiler_flags#ftree_vrp=-ftree-vrp
+    ##compiler_flags#funroll_all_loops=-funroll-all-loops
+    ##compiler_flags#funsafe_loop_optimizations=-funsafe-loop-optimizations
+    ##compiler_flags#funsafe_math_optimizations=-funsafe-math-optimizations
+    ##compiler_flags#funswitch_loops=-funswitch-loops
+    ##compiler_flags#fvariable_expansion_in_unroller=-fvariable-expansion-in-unroller
+    ##compiler_flags#fvect_cost_model=-fvect-cost-model
+    ##compiler_flags#fweb=-fweb
+
+      ------------------- Statistical repetition: 1 of 2 -------------------
+
+Initializing universal program pipeline ...
+
+***************************************************************************************
+Obtaining platform parameters and checking other obligatory choices for the pipeline ...
+
+Initializing device ...
+
+OS CK UOA:     android5-arm (66395254948c0b71)
+
+OS name:       Android 4.2.2
+Short OS name: Linux version 3.4.5
+Long OS name:  Linux version 3.4.5 (z00182893@ubuntu) (gcc version 4.6.x-google 20120106 (prerelease) (GCC) ) #1 SMP PREEMPT Thu Aug 14 21:28:23 CST 2014
+OS bits:       32
+***************************************************************************************
+  Selected host platform: windows-64
+  Selected target platform: android5-arm
+  Selected target device ID: SWQ49TFIT8YLU4DE
+  Selected program: adapt16-adpcm (4947d2131df8ff45)
+  Selected command line: default
+  Selected dependencies: 
+      xopenme env = d49499018a9eddac; tags = ["32bits", "host-os-windows-64", "lang-c", "lang-cpp", "lang-f77", "lang-f90", "lang-f95", "lib", "rtl", "target-os-android5-arm", "v0", "v0.3", "xopenme"]
+      compiler env = 1004ad4886b499b6; tags = ["32bits", "compiler", "gcc", "host-os-windows-64", "lang-c", "lang-cpp", "target-os-android5-arm", "v4", "v4.9", "v4.9.0"]
+
+Loading compiler description: gcc-49x (a013e4e4d92ed26a) ...
+***************************************************************************************
+Setting CPU frequency to max (if supported) ...
+
+
+CMD to set CPU frequency:
+  /data/local/tmp/tools/ck-set-cpu-performance
+/system/bin/sh: /data/local/tmp/tools/ck-set-cpu-performance: not found
+***************************************************************************************
+Setting GPU frequency to max (if supported) ...
+
+
+CMD to set GPU frequency:
+  /data/local/tmp/tools/ck-set-gpu-performance
+/system/bin/sh: /data/local/tmp/tools/ck-set-gpu-performance: not found
+***************************************************************************************
+Detecting all target platform features ...
+
+***************************************************************************************
+Detecting OS and CPU features ...
+
+Number of logical processors: 1
+CPU name:                     MT6572
+CPU sub name:                 ARMv7 Processor rev 3 (v7l)
+CPU ABI:                      armeabi-v7a
+CPU features:                 swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls vfpv4 idiva idivt
+
+CPU frequency:
+  CPU0 = 1001.0 MHz
+CPU max frequency:
+  CPU0 = 1300.0 MHz
+CPU all frequencies (Hz):
+  CPU0 = []
+***************************************************************************************
+Detecting accelerator features ...
+
+GPU name: ARM, Mali-400 MP, OpenGL ES-CM 1.1
+
+Trying to read GPU frequency:
+  adb  -s SWQ49TFIT8YLU4DE shell /data/local/tmp/tools/ck-print-gpu-freq >c:\temp\tmp-ck-zezl8y
+***************************************************************************************
+Detecting system features ...
+
+Platform name:   HUAWEI Y330-U01
+Platform vendor: HUAWEI
+Platform model:  Y330-U01
+***************************************************************************************
+Compile program ...
+
+Cleaning working directory ...
+
+***************************************************************************************
+Current directory: D:\Work1\CK\ck-repos\reproduce-adapt16\program\adapt16-adpcm\tmp
+
+***************************************************************************************
+
+Resolving dependencies ...
+
+D:\Work1\CK\ck-repos\reproduce-adapt16\program\adapt16-adpcm\tmp>call D:\Work1\CK\ck-repos\fgg-local-win\env\1004ad4886b499b6\env.bat 
+***************************************************************************************
+Detected compiler version: 4.9
+
+***************************************************************************************
+Compiler vars:
+  XOPENME=
+***************************************************************************************
+
+Executing prepared batch file tmp-b_bucy.bat ...
+
+D:\Work1\CK\ck-repos\reproduce-adapt16\program\adapt16-adpcm\tmp>call D:\Work1\CK\ck-repos\fgg-local-win\env\1004ad4886b499b6\env.bat 
+arm-linux-androideabi-gcc -c --sysroot "D:\!FGG\Installations\android-ndk-r10d\platforms\android-5\arch-arm"   -I..\ -DXOPENME -I"D:\!FGG\Installations\lib-rtl-xopenme-0.3-gcc-4.6.0-android5-arm-32\include" -O3 -fopenmp -flto -fsched-stalled-insns-dep=0 -fsched-stalled-insns=0 -finline-limit=2 --param min-crossjump-insns=3 --param max-grow-copy-bb-insns=4 --param max-goto-duplication-insns=4 --param max-inline-insns-single=256 --param max-inline-insns-auto=51 --param large-function-insns=1024 --param large-function-growth=32 --param large-unit-insns=4096 --param inline-unit-growth=16 --param ipcp-unit-growth=4 --param large-stack-frame=128 --param large-stack-frame-growth=512 --param max-inline-insns-recursive=128 --param max-inline-insns-recursive-auto=128 --param max-inline-recursive-depth=4 --param max-inline-recursive-depth-auto=4 --param min-inline-recursive-probability=4 --param min-vect-loop-bound=1 --param max-unrolled-insns=32 --param max-unroll-times=2 --param omega-max-vars=64 --param omega-max-geqs=128 --param omega-max-eqs=64 --param omega-max-wild-cards=8 --param omega-hash-table-size=256 --param omega-max-keys=290 --param omega-eliminate-redundant-constraints=0 --param tracer-min-branch-ratio=0 --param max-cse-path-length=4 --param max-cse-insns=1573 --param max-reload-search-insns=64 --param max-cselib-memory-locations=256 --param max-sched-ready-insns=64 --param max-sched-region-blocks=4 --param max-pipeline-region-blocks=8 --param max-sched-region-insns=32 --param max-pipeline-region-insns=83 --param min-spec-prob=30 --param max-sched-extend-regions-iters=0 --param max-sched-insn-conflict-delay=2 --param sched-spec-prob-cutoff=30 --param sched-mem-true-dep-cost=1 --param selsched-max-lookahead=32 --param selsched-max-sched-times=1 --param max-last-value-rtl=4096 --param min-virtual-mappings=152 --param virtual-mappings-ratio=2 --param max-fields-for-field-sensitive=0 --param sccvn-max-scc-size=4096 --param ira-max-loops-num=32 --param ira-max-conflict-table-size=3001 -falign-functions -falign-jumps -falign-labels -falign-loops -fbranch-count-reg -fbranch-target-load-optimize -fbranch-target-load-optimize2 -fbtr-bb-exclusive -fcaller-saves -fconserve-stack -fcprop-registers -fcrossjumping -fcse-follow-jumps -fcse-skip-blocks -fcx-limited-range -fdce -fdefer-pop -fdelete-null-pointer-checks -fdse -fno-early-inlining -fexpensive-optimizations -fforward-propagate -ffunction-cse -fgcse -fgcse-after-reload -fgcse-las -fgcse-lm -fgcse-sm -fguess-branch-probability -fif-conversion -fif-conversion2 -findirect-inlining -finline-functions -finline-functions-called-once -finline-small-functions -fipa-cp -fipa-cp-clone -fipa-matrix-reorg -fipa-pta -fipa-pure-const -fipa-reference -fipa-struct-reorg -fira-share-save-slots -fira-share-spill-slots -fivopts -floop-block -floop-interchange -floop-strip-mine -fmerge-constants -fmodulo-sched -fno-modulo-sched-allow-regmoves -fmove-loop-invariants -fomit-frame-pointer -foptimize-sibling-calls -fpeel-loops -fpeephole -fpeephole2 -fpredictive-commoning -fprefetch-loop-arrays -fregmove -frename-registers -freorder-blocks -freorder-blocks-and-partition -freorder-functions -frerun-cse-after-loop -freschedule-modulo-scheduled-loops -fsched-interblock -fsched-spec -fsched-spec-load -fsched-spec-load-dangerous -fsched2-use-superblocks -fschedule-insns -fschedule-insns2 -fsee -fno-sel-sched-pipelining -fsel-sched-pipelining-outer-loops -fselective-scheduling -fselective-scheduling2 -fsignaling-nans -fsingle-precision-constant -fsplit-ivs-in-unroller -fsplit-wide-types -fstrict-aliasing -fstrict-overflow -fno-thread-jumps -ftracer -ftree-builtin-call-dce -ftree-ccp -ftree-ch -ftree-copy-prop -ftree-copyrename -ftree-dce -ftree-dominator-opts -ftree-dse -ftree-fre -ftree-loop-distribution -ftree-loop-im -ftree-loop-ivcanon -ftree-loop-linear -ftree-loop-optimize -ftree-pre -ftree-reassoc -ftree-sink -ftree-sra -ftree-switch-conversion -ftree-ter -ftree-vect-loop-version -ftree-vectorize -ftree-vrp -funroll-all-loops -funsafe-loop-optimizations -funsafe-math-optimizations -funswitch-loops -fvariable-expansion-in-unroller -fvect-cost-model -fweb ..\base.c  -o base.o
+***************************************************************************************
+Compilation time: 0.110 sec.; Object size: 0; MD5: 
+Warning: compilation failed!
+***************************************************************************************
+Pipeline failed (compilation failed - return code 1 !=0 )!
+***************************************************************************************
+Pipeline iteration: 3 of 100
+
+  Vector of flattened and updated choices:
+    ##compiler_flags#base_opt=-Ofast
+    ##compiler_flags#openmp=-fopenmp
+    ##compiler_flags#flto=-flto
+    ##compiler_flags#fsched_stalled_insns_dep=-fsched-stalled-insns-dep=0
+    ##compiler_flags#fsched_stalled_insns=-fsched-stalled-insns=0
+    ##compiler_flags#finline_limit=-finline-limit=2
+    ##compiler_flags#param_min_crossjump_insns=--param min-crossjump-insns=3
+    ##compiler_flags#param_max_grow_copy_bb_insns=--param max-grow-copy-bb-insns=13
+    ##compiler_flags#param_max_goto_duplication_insns=--param max-goto-duplication-insns=7
+    ##compiler_flags#param_max_inline_insns_single=--param max-inline-insns-single=256
+    ##compiler_flags#param_max_inline_insns_auto=--param max-inline-insns-auto=32
+    ##compiler_flags#param_large_function_insns=--param large-function-insns=1024
+    ##compiler_flags#param_large_function_growth=--param large-function-growth=32
+    ##compiler_flags#param_large_unit_insns=--param large-unit-insns=4096
+    ##compiler_flags#param_inline_unit_growth=--param inline-unit-growth=16
+    ##compiler_flags#param_ipcp_unit_growth=--param ipcp-unit-growth=4
+    ##compiler_flags#param_large_stack_frame=--param large-stack-frame=128
+    ##compiler_flags#param_large_stack_frame_growth=--param large-stack-frame-growth=512
+    ##compiler_flags#param_max_inline_insns_recursive=--param max-inline-insns-recursive=128
+    ##compiler_flags#param_max_inline_insns_recursive_auto=--param max-inline-insns-recursive-auto=128
+    ##compiler_flags#param_max_inline_recursive_depth=--param max-inline-recursive-depth=4
+    ##compiler_flags#param_max_inline_recursive_depth_auto=--param max-inline-recursive-depth-auto=4
+    ##compiler_flags#param_min_inline_recursive_probability=--param min-inline-recursive-probability=4
+    ##compiler_flags#param_min_vect_loop_bound=--param min-vect-loop-bound=1
+    ##compiler_flags#param_max_unrolled_insns=--param max-unrolled-insns=32
+    ##compiler_flags#param_max_unroll_times=--param max-unroll-times=2
+    ##compiler_flags#param_omega_max_vars=--param omega-max-vars=64
+    ##compiler_flags#param_omega_max_geqs=--param omega-max-geqs=423
+    ##compiler_flags#param_omega_max_eqs=--param omega-max-eqs=64
+    ##compiler_flags#param_omega_max_wild_cards=--param omega-max-wild-cards=8
+    ##compiler_flags#param_omega_hash_table_size=--param omega-hash-table-size=256
+    ##compiler_flags#param_omega_max_keys=--param omega-max-keys=256
+    ##compiler_flags#param_omega_eliminate_redundant_constraints=--param omega-eliminate-redundant-constraints=0
+    ##compiler_flags#param_tracer_min_branch_ratio=--param tracer-min-branch-ratio=23
+    ##compiler_flags#param_max_cse_path_length=--param max-cse-path-length=4
+    ##compiler_flags#param_max_cse_insns=--param max-cse-insns=512
+    ##compiler_flags#param_max_reload_search_insns=--param max-reload-search-insns=64
+    ##compiler_flags#param_max_cselib_memory_locations=--param max-cselib-memory-locations=256
+    ##compiler_flags#param_max_sched_ready_insns=--param max-sched-ready-insns=64
+    ##compiler_flags#param_max_sched_region_blocks=--param max-sched-region-blocks=4
+    ##compiler_flags#param_max_pipeline_region_blocks=--param max-pipeline-region-blocks=12
+    ##compiler_flags#param_max_sched_region_insns=--param max-sched-region-insns=32
+    ##compiler_flags#param_max_pipeline_region_insns=--param max-pipeline-region-insns=64
+    ##compiler_flags#param_min_spec_prob=--param min-spec-prob=30
+    ##compiler_flags#param_max_sched_extend_regions_iters=--param max-sched-extend-regions-iters=0
+    ##compiler_flags#param_max_sched_insn_conflict_delay=--param max-sched-insn-conflict-delay=2
+    ##compiler_flags#param_sched_spec_prob_cutoff=--param sched-spec-prob-cutoff=30
+    ##compiler_flags#param_sched_mem_true_dep_cost=--param sched-mem-true-dep-cost=1
+    ##compiler_flags#param_selsched_max_lookahead=--param selsched-max-lookahead=32
+    ##compiler_flags#param_selsched_max_sched_times=--param selsched-max-sched-times=1
+    ##compiler_flags#param_max_last_value_rtl=--param max-last-value-rtl=4096
+    ##compiler_flags#param_min_virtual_mappings=--param min-virtual-mappings=32
+    ##compiler_flags#param_virtual_mappings_ratio=--param virtual-mappings-ratio=1
+    ##compiler_flags#param_max_fields_for_field_sensitive=--param max-fields-for-field-sensitive=0
+    ##compiler_flags#param_sccvn_max_scc_size=--param sccvn-max-scc-size=4096
+    ##compiler_flags#param_ira_max_loops_num=--param ira-max-loops-num=32
+    ##compiler_flags#param_ira_max_conflict_table_size=--param ira-max-conflict-table-size=1024
+    ##compiler_flags#falign_functions=-fno-align-functions
+    ##compiler_flags#falign_jumps=-falign-jumps
+    ##compiler_flags#falign_labels=-falign-labels
+    ##compiler_flags#falign_loops=-falign-loops
+    ##compiler_flags#fbranch_count_reg=-fbranch-count-reg
+    ##compiler_flags#fbranch_target_load_optimize=-fno-branch-target-load-optimize
+    ##compiler_flags#fbranch_target_load_optimize2=-fbranch-target-load-optimize2
+    ##compiler_flags#fbtr_bb_exclusive=-fbtr-bb-exclusive
+    ##compiler_flags#fcaller_saves=-fcaller-saves
+    ##compiler_flags#fconserve_stack=-fconserve-stack
+    ##compiler_flags#fcprop_registers=-fcprop-registers
+    ##compiler_flags#fcrossjumping=-fcrossjumping
+    ##compiler_flags#fcse_follow_jumps=-fcse-follow-jumps
+    ##compiler_flags#fcse_skip_blocks=-fcse-skip-blocks
+    ##compiler_flags#fcx_limited_range=-fcx-limited-range
+    ##compiler_flags#fdce=-fno-dce
+    ##compiler_flags#fdefer_pop=-fdefer-pop
+    ##compiler_flags#fdelete_null_pointer_checks=-fdelete-null-pointer-checks
+    ##compiler_flags#fdse=-fdse
+    ##compiler_flags#fearly_inlining=-fearly-inlining
+    ##compiler_flags#fexpensive_optimizations=-fexpensive-optimizations
+    ##compiler_flags#fforward_propagate=-fforward-propagate
+    ##compiler_flags#ffunction_cse=-ffunction-cse
+    ##compiler_flags#fgcse=-fgcse
+    ##compiler_flags#fgcse_after_reload=-fgcse-after-reload
+    ##compiler_flags#fgcse_las=-fgcse-las
+    ##compiler_flags#fgcse_lm=-fgcse-lm
+    ##compiler_flags#fgcse_sm=-fgcse-sm
+    ##compiler_flags#fguess_branch_probability=-fguess-branch-probability
+    ##compiler_flags#fif_conversion=-fif-conversion
+    ##compiler_flags#fif_conversion2=-fif-conversion2
+    ##compiler_flags#findirect_inlining=-findirect-inlining
+    ##compiler_flags#finline_functions=-fno-inline-functions
+    ##compiler_flags#finline_functions_called_once=-finline-functions-called-once
+    ##compiler_flags#finline_small_functions=-fno-inline-small-functions
+    ##compiler_flags#fipa_cp=-fipa-cp
+    ##compiler_flags#fipa_cp_clone=-fipa-cp-clone
+    ##compiler_flags#fipa_matrix_reorg=-fno-ipa-matrix-reorg
+    ##compiler_flags#fipa_pta=-fipa-pta
+    ##compiler_flags#fipa_pure_const=-fipa-pure-const
+    ##compiler_flags#fipa_reference=-fipa-reference
+    ##compiler_flags#fipa_struct_reorg=-fipa-struct-reorg
+    ##compiler_flags#fira_share_save_slots=-fira-share-save-slots
+    ##compiler_flags#fira_share_spill_slots=-fira-share-spill-slots
+    ##compiler_flags#fivopts=-fivopts
+    ##compiler_flags#floop_block=-fno-loop-block
+    ##compiler_flags#floop_interchange=-floop-interchange
+    ##compiler_flags#floop_strip_mine=-floop-strip-mine
+    ##compiler_flags#fmerge_constants=-fmerge-constants
+    ##compiler_flags#fmodulo_sched=-fmodulo-sched
+    ##compiler_flags#fmodulo_sched_allow_regmoves=-fmodulo-sched-allow-regmoves
+    ##compiler_flags#fmove_loop_invariants=-fmove-loop-invariants
+    ##compiler_flags#fomit_frame_pointer=-fomit-frame-pointer
+    ##compiler_flags#foptimize_sibling_calls=-foptimize-sibling-calls
+    ##compiler_flags#fpeel_loops=-fpeel-loops
+    ##compiler_flags#fpeephole=-fpeephole
+    ##compiler_flags#fpeephole2=-fpeephole2
+    ##compiler_flags#fpredictive_commoning=-fpredictive-commoning
+    ##compiler_flags#fprefetch_loop_arrays=-fprefetch-loop-arrays
+    ##compiler_flags#fregmove=-fregmove
+    ##compiler_flags#frename_registers=-frename-registers
+    ##compiler_flags#freorder_blocks=-fno-reorder-blocks
+    ##compiler_flags#freorder_blocks_and_partition=-freorder-blocks-and-partition
+    ##compiler_flags#freorder_functions=-freorder-functions
+    ##compiler_flags#frerun_cse_after_loop=-frerun-cse-after-loop
+    ##compiler_flags#freschedule_modulo_scheduled_loops=-freschedule-modulo-scheduled-loops
+    ##compiler_flags#fsched_interblock=-fsched-interblock
+    ##compiler_flags#fsched_spec=-fsched-spec
+    ##compiler_flags#fsched_spec_load=-fsched-spec-load
+    ##compiler_flags#fsched_spec_load_dangerous=-fsched-spec-load-dangerous
+    ##compiler_flags#fsched2_use_superblocks=-fsched2-use-superblocks
+    ##compiler_flags#fschedule_insns=-fschedule-insns
+    ##compiler_flags#fschedule_insns2=-fschedule-insns2
+    ##compiler_flags#fsee=-fsee
+    ##compiler_flags#fsel_sched_pipelining=-fsel-sched-pipelining
+    ##compiler_flags#fsel_sched_pipelining_outer_loops=-fsel-sched-pipelining-outer-loops
+    ##compiler_flags#fselective_scheduling=-fselective-scheduling
+    ##compiler_flags#fselective_scheduling2=-fselective-scheduling2
+    ##compiler_flags#fsignaling_nans=-fsignaling-nans
+    ##compiler_flags#fsingle_precision_constant=-fsingle-precision-constant
+    ##compiler_flags#fsplit_ivs_in_unroller=-fsplit-ivs-in-unroller
+    ##compiler_flags#fsplit_wide_types=-fsplit-wide-types
+    ##compiler_flags#fstrict_aliasing=-fstrict-aliasing
+    ##compiler_flags#fstrict_overflow=-fstrict-overflow
+    ##compiler_flags#fthread_jumps=-fthread-jumps
+    ##compiler_flags#ftracer=-ftracer
+    ##compiler_flags#ftree_builtin_call_dce=-ftree-builtin-call-dce
+    ##compiler_flags#ftree_ccp=-ftree-ccp
+    ##compiler_flags#ftree_ch=-ftree-ch
+    ##compiler_flags#ftree_copy_prop=-fno-tree-copy-prop
+    ##compiler_flags#ftree_copyrename=-ftree-copyrename
+    ##compiler_flags#ftree_dce=-ftree-dce
+    ##compiler_flags#ftree_dominator_opts=-ftree-dominator-opts
+    ##compiler_flags#ftree_dse=-ftree-dse
+    ##compiler_flags#ftree_fre=-ftree-fre
+    ##compiler_flags#ftree_loop_distribution=-ftree-loop-distribution
+    ##compiler_flags#ftree_loop_im=-ftree-loop-im
+    ##compiler_flags#ftree_loop_ivcanon=-ftree-loop-ivcanon
+    ##compiler_flags#ftree_loop_linear=-ftree-loop-linear
+    ##compiler_flags#ftree_loop_optimize=-fno-tree-loop-optimize
+    ##compiler_flags#ftree_pre=-ftree-pre
+    ##compiler_flags#ftree_reassoc=-ftree-reassoc
+    ##compiler_flags#ftree_sink=-ftree-sink
+    ##compiler_flags#ftree_sra=-ftree-sra
+    ##compiler_flags#ftree_switch_conversion=-ftree-switch-conversion
+    ##compiler_flags#ftree_ter=-ftree-ter
+    ##compiler_flags#ftree_vect_loop_version=-ftree-vect-loop-version
+    ##compiler_flags#ftree_vectorize=-ftree-vectorize
+    ##compiler_flags#ftree_vrp=-ftree-vrp
+    ##compiler_flags#funroll_all_loops=-fno-unroll-all-loops
+    ##compiler_flags#funsafe_loop_optimizations=-funsafe-loop-optimizations
+    ##compiler_flags#funsafe_math_optimizations=-funsafe-math-optimizations
+    ##compiler_flags#funswitch_loops=-funswitch-loops
+    ##compiler_flags#fvariable_expansion_in_unroller=-fvariable-expansion-in-unroller
+    ##compiler_flags#fvect_cost_model=-fvect-cost-model
+    ##compiler_flags#fweb=-fweb
+
+      ------------------- Statistical repetition: 1 of 2 -------------------
+
+Initializing universal program pipeline ...
+
+***************************************************************************************
+Obtaining platform parameters and checking other obligatory choices for the pipeline ...
+
+Initializing device ...
+
+OS CK UOA:     android5-arm (66395254948c0b71)
+
+OS name:       Android 4.2.2
+Short OS name: Linux version 3.4.5
+Long OS name:  Linux version 3.4.5 (z00182893@ubuntu) (gcc version 4.6.x-google 20120106 (prerelease) (GCC) ) #1 SMP PREEMPT Thu Aug 14 21:28:23 CST 2014
+OS bits:       32
+***************************************************************************************
+  Selected host platform: windows-64
+  Selected target platform: android5-arm
+  Selected target device ID: SWQ49TFIT8YLU4DE
+  Selected program: adapt16-adpcm (4947d2131df8ff45)
+  Selected command line: default
+  Selected dependencies: 
+      xopenme env = d49499018a9eddac; tags = ["32bits", "host-os-windows-64", "lang-c", "lang-cpp", "lang-f77", "lang-f90", "lang-f95", "lib", "rtl", "target-os-android5-arm", "v0", "v0.3", "xopenme"]
+      compiler env = 1004ad4886b499b6; tags = ["32bits", "compiler", "gcc", "host-os-windows-64", "lang-c", "lang-cpp", "target-os-android5-arm", "v4", "v4.9", "v4.9.0"]
+
+Loading compiler description: gcc-49x (a013e4e4d92ed26a) ...
+***************************************************************************************
+Setting CPU frequency to max (if supported) ...
+
+
+CMD to set CPU frequency:
+  /data/local/tmp/tools/ck-set-cpu-performance
+/system/bin/sh: /data/local/tmp/tools/ck-set-cpu-performance: not found
+***************************************************************************************
+Setting GPU frequency to max (if supported) ...
+
+
+CMD to set GPU frequency:
+  /data/local/tmp/tools/ck-set-gpu-performance
+/system/bin/sh: /data/local/tmp/tools/ck-set-gpu-performance: not found
+***************************************************************************************
+Detecting all target platform features ...
+
+***************************************************************************************
+Detecting OS and CPU features ...
+
+Number of logical processors: 1
+CPU name:                     MT6572
+CPU sub name:                 ARMv7 Processor rev 3 (v7l)
+CPU ABI:                      armeabi-v7a
+CPU features:                 swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls vfpv4 idiva idivt
+
+CPU frequency:
+  CPU0 = 1001.0 MHz
+CPU max frequency:
+  CPU0 = 1300.0 MHz
+CPU all frequencies (Hz):
+  CPU0 = []
+***************************************************************************************
+Detecting accelerator features ...
+
+GPU name: ARM, Mali-400 MP, OpenGL ES-CM 1.1
+
+Trying to read GPU frequency:
+  adb  -s SWQ49TFIT8YLU4DE shell /data/local/tmp/tools/ck-print-gpu-freq >c:\temp\tmp-ck-8cdc6g
+***************************************************************************************
+Detecting system features ...
+
+Platform name:   HUAWEI Y330-U01
+Platform vendor: HUAWEI
+Platform model:  Y330-U01
+***************************************************************************************
+Compile program ...
+
+Cleaning working directory ...
+
+***************************************************************************************
+Current directory: D:\Work1\CK\ck-repos\reproduce-adapt16\program\adapt16-adpcm\tmp
+
+***************************************************************************************
+
+Resolving dependencies ...
+
+D:\Work1\CK\ck-repos\reproduce-adapt16\program\adapt16-adpcm\tmp>call D:\Work1\CK\ck-repos\fgg-local-win\env\1004ad4886b499b6\env.bat 
+***************************************************************************************
+Detected compiler version: 4.9
+
+***************************************************************************************
+Compiler vars:
+  XOPENME=
+***************************************************************************************
+
+Executing prepared batch file tmp-3p_stv.bat ...
+
+D:\Work1\CK\ck-repos\reproduce-adapt16\program\adapt16-adpcm\tmp>call D:\Work1\CK\ck-repos\fgg-local-win\env\1004ad4886b499b6\env.bat 
+arm-linux-androideabi-gcc -c --sysroot "D:\!FGG\Installations\android-ndk-r10d\platforms\android-5\arch-arm"   -I..\ -DXOPENME -I"D:\!FGG\Installations\lib-rtl-xopenme-0.3-gcc-4.6.0-android5-arm-32\include" -O3 -fopenmp -flto -fsched-stalled-insns-dep=0 -fsched-stalled-insns=0 -finline-limit=2 --param min-crossjump-insns=3 --param max-grow-copy-bb-insns=13 --param max-goto-duplication-insns=7 --param max-inline-insns-single=256 --param max-inline-insns-auto=32 --param large-function-insns=1024 --param large-function-growth=32 --param large-unit-insns=4096 --param inline-unit-growth=16 --param ipcp-unit-growth=4 --param large-stack-frame=128 --param large-stack-frame-growth=512 --param max-inline-insns-recursive=128 --param max-inline-insns-recursive-auto=128 --param max-inline-recursive-depth=4 --param max-inline-recursive-depth-auto=4 --param min-inline-recursive-probability=4 --param min-vect-loop-bound=1 --param max-unrolled-insns=32 --param max-unroll-times=2 --param omega-max-vars=64 --param omega-max-geqs=423 --param omega-max-eqs=64 --param omega-max-wild-cards=8 --param omega-hash-table-size=256 --param omega-max-keys=256 --param omega-eliminate-redundant-constraints=0 --param tracer-min-branch-ratio=23 --param max-cse-path-length=4 --param max-cse-insns=512 --param max-reload-search-insns=64 --param max-cselib-memory-locations=256 --param max-sched-ready-insns=64 --param max-sched-region-blocks=4 --param max-pipeline-region-blocks=12 --param max-sched-region-insns=32 --param max-pipeline-region-insns=64 --param min-spec-prob=30 --param max-sched-extend-regions-iters=0 --param max-sched-insn-conflict-delay=2 --param sched-spec-prob-cutoff=30 --param sched-mem-true-dep-cost=1 --param selsched-max-lookahead=32 --param selsched-max-sched-times=1 --param max-last-value-rtl=4096 --param min-virtual-mappings=32 --param virtual-mappings-ratio=1 --param max-fields-for-field-sensitive=0 --param sccvn-max-scc-size=4096 --param ira-max-loops-num=32 --param ira-max-conflict-table-size=1024 -fno-align-functions -falign-jumps -falign-labels -falign-loops -fbranch-count-reg -fno-branch-target-load-optimize -fbranch-target-load-optimize2 -fbtr-bb-exclusive -fcaller-saves -fconserve-stack -fcprop-registers -fcrossjumping -fcse-follow-jumps -fcse-skip-blocks -fcx-limited-range -fno-dce -fdefer-pop -fdelete-null-pointer-checks -fdse -fearly-inlining -fexpensive-optimizations -fforward-propagate -ffunction-cse -fgcse -fgcse-after-reload -fgcse-las -fgcse-lm -fgcse-sm -fguess-branch-probability -fif-conversion -fif-conversion2 -findirect-inlining -fno-inline-functions -finline-functions-called-once -fno-inline-small-functions -fipa-cp -fipa-cp-clone -fno-ipa-matrix-reorg -fipa-pta -fipa-pure-const -fipa-reference -fipa-struct-reorg -fira-share-save-slots -fira-share-spill-slots -fivopts -fno-loop-block -floop-interchange -floop-strip-mine -fmerge-constants -fmodulo-sched -fmodulo-sched-allow-regmoves -fmove-loop-invariants -fomit-frame-pointer -foptimize-sibling-calls -fpeel-loops -fpeephole -fpeephole2 -fpredictive-commoning -fprefetch-loop-arrays -fregmove -frename-registers -fno-reorder-blocks -freorder-blocks-and-partition -freorder-functions -frerun-cse-after-loop -freschedule-modulo-scheduled-loops -fsched-interblock -fsched-spec -fsched-spec-load -fsched-spec-load-dangerous -fsched2-use-superblocks -fschedule-insns -fschedule-insns2 -fsee -fsel-sched-pipelining -fsel-sched-pipelining-outer-loops -fselective-scheduling -fselective-scheduling2 -fsignaling-nans -fsingle-precision-constant -fsplit-ivs-in-unroller -fsplit-wide-types -fstrict-aliasing -fstrict-overflow -fthread-jumps -ftracer -ftree-builtin-call-dce -ftree-ccp -ftree-ch -fno-tree-copy-prop -ftree-copyrename -ftree-dce -ftree-dominator-opts -ftree-dse -ftree-fre -ftree-loop-distribution -ftree-loop-im -ftree-loop-ivcanon -ftree-loop-linear -fno-tree-loop-optimize -ftree-pre -ftree-reassoc -ftree-sink -ftree-sra -ftree-switch-conversion -ftree-ter -ftree-vect-loop-version -ftree-vectorize -ftree-vrp -fno-unroll-all-loops -funsafe-loop-optimizations -funsafe-math-optimizations -funswitch-loops -fvariable-expansion-in-unroller -fvect-cost-model -fweb ..\base.c  -o base.o
+***************************************************************************************
+Compilation time: 0.089 sec.; Object size: 0; MD5: 
+Warning: compilation failed!
+***************************************************************************************
+Pipeline failed (compilation failed - return code 1 !=0 )!
+***************************************************************************************
+Pipeline iteration: 4 of 100
+
+  Vector of flattened and updated choices:
+    ##compiler_flags#base_opt=-O3
+    ##compiler_flags#openmp=-fopenmp
+    ##compiler_flags#flto=-flto
+    ##compiler_flags#fsched_stalled_insns_dep=-fsched-stalled-insns-dep=0
+    ##compiler_flags#fsched_stalled_insns=-fsched-stalled-insns=0
+    ##compiler_flags#finline_limit=-finline-limit=17
+    ##compiler_flags#param_min_crossjump_insns=--param min-crossjump-insns=3
+    ##compiler_flags#param_max_grow_copy_bb_insns=--param max-grow-copy-bb-insns=4
+    ##compiler_flags#param_max_goto_duplication_insns=--param max-goto-duplication-insns=4
+    ##compiler_flags#param_max_inline_insns_single=--param max-inline-insns-single=256
+    ##compiler_flags#param_max_inline_insns_auto=--param max-inline-insns-auto=32
+    ##compiler_flags#param_large_function_insns=--param large-function-insns=1024
+    ##compiler_flags#param_large_function_growth=--param large-function-growth=32
+    ##compiler_flags#param_large_unit_insns=--param large-unit-insns=4096
+    ##compiler_flags#param_inline_unit_growth=--param inline-unit-growth=16
+    ##compiler_flags#param_ipcp_unit_growth=--param ipcp-unit-growth=4
+    ##compiler_flags#param_large_stack_frame=--param large-stack-frame=128
+    ##compiler_flags#param_large_stack_frame_growth=--param large-stack-frame-growth=512
+    ##compiler_flags#param_max_inline_insns_recursive=--param max-inline-insns-recursive=128
+    ##compiler_flags#param_max_inline_insns_recursive_auto=--param max-inline-insns-recursive-auto=128
+    ##compiler_flags#param_max_inline_recursive_depth=--param max-inline-recursive-depth=4
+    ##compiler_flags#param_max_inline_recursive_depth_auto=--param max-inline-recursive-depth-auto=4
+    ##compiler_flags#param_min_inline_recursive_probability=--param min-inline-recursive-probability=4
+    ##compiler_flags#param_min_vect_loop_bound=--param min-vect-loop-bound=1
+    ##compiler_flags#param_max_unrolled_insns=--param max-unrolled-insns=32
+    ##compiler_flags#param_max_unroll_times=--param max-unroll-times=2
+    ##compiler_flags#param_omega_max_vars=--param omega-max-vars=64
+    ##compiler_flags#param_omega_max_geqs=--param omega-max-geqs=200
+    ##compiler_flags#param_omega_max_eqs=--param omega-max-eqs=164
+    ##compiler_flags#param_omega_max_wild_cards=--param omega-max-wild-cards=35
+    ##compiler_flags#param_omega_hash_table_size=--param omega-hash-table-size=523
+    ##compiler_flags#param_omega_max_keys=--param omega-max-keys=1000
+    ##compiler_flags#param_omega_eliminate_redundant_constraints=--param omega-eliminate-redundant-constraints=0
+    ##compiler_flags#param_tracer_min_branch_ratio=--param tracer-min-branch-ratio=0
+    ##compiler_flags#param_max_cse_path_length=--param max-cse-path-length=4
+    ##compiler_flags#param_max_cse_insns=--param max-cse-insns=512
+    ##compiler_flags#param_max_reload_search_insns=--param max-reload-search-insns=64
+    ##compiler_flags#param_max_cselib_memory_locations=--param max-cselib-memory-locations=256
+    ##compiler_flags#param_max_sched_ready_insns=--param max-sched-ready-insns=64
+    ##compiler_flags#param_max_sched_region_blocks=--param max-sched-region-blocks=4
+    ##compiler_flags#param_max_pipeline_region_blocks=--param max-pipeline-region-blocks=8
+    ##compiler_flags#param_max_sched_region_insns=--param max-sched-region-insns=32
+    ##compiler_flags#param_max_pipeline_region_insns=--param max-pipeline-region-insns=64
+    ##compiler_flags#param_min_spec_prob=--param min-spec-prob=30
+    ##compiler_flags#param_max_sched_extend_regions_iters=--param max-sched-extend-regions-iters=0
+    ##compiler_flags#param_max_sched_insn_conflict_delay=--param max-sched-insn-conflict-delay=2
+    ##compiler_flags#param_sched_spec_prob_cutoff=--param sched-spec-prob-cutoff=30
+    ##compiler_flags#param_sched_mem_true_dep_cost=--param sched-mem-true-dep-cost=1
+    ##compiler_flags#param_selsched_max_lookahead=--param selsched-max-lookahead=32
+    ##compiler_flags#param_selsched_max_sched_times=--param selsched-max-sched-times=1
+    ##compiler_flags#param_max_last_value_rtl=--param max-last-value-rtl=4096
+    ##compiler_flags#param_min_virtual_mappings=--param min-virtual-mappings=32
+    ##compiler_flags#param_virtual_mappings_ratio=--param virtual-mappings-ratio=1
+    ##compiler_flags#param_max_fields_for_field_sensitive=--param max-fields-for-field-sensitive=0
+    ##compiler_flags#param_sccvn_max_scc_size=--param sccvn-max-scc-size=4096
+    ##compiler_flags#param_ira_max_loops_num=--param ira-max-loops-num=32
+    ##compiler_flags#param_ira_max_conflict_table_size=--param ira-max-conflict-table-size=1024
+    ##compiler_flags#falign_functions=-falign-functions
+    ##compiler_flags#falign_jumps=-fno-align-jumps
+    ##compiler_flags#falign_labels=-falign-labels
+    ##compiler_flags#falign_loops=-falign-loops
+    ##compiler_flags#fbranch_count_reg=-fbranch-count-reg
+    ##compiler_flags#fbranch_target_load_optimize=-fbranch-target-load-optimize
+    ##compiler_flags#fbranch_target_load_optimize2=-fbranch-target-load-optimize2
+    ##compiler_flags#fbtr_bb_exclusive=-fbtr-bb-exclusive
+    ##compiler_flags#fcaller_saves=-fcaller-saves
+    ##compiler_flags#fconserve_stack=-fconserve-stack
+    ##compiler_flags#fcprop_registers=-fcprop-registers
+    ##compiler_flags#fcrossjumping=-fcrossjumping
+    ##compiler_flags#fcse_follow_jumps=-fcse-follow-jumps
+    ##compiler_flags#fcse_skip_blocks=-fcse-skip-blocks
+    ##compiler_flags#fcx_limited_range=-fcx-limited-range
+    ##compiler_flags#fdce=-fdce
+    ##compiler_flags#fdefer_pop=-fdefer-pop
+    ##compiler_flags#fdelete_null_pointer_checks=-fdelete-null-pointer-checks
+    ##compiler_flags#fdse=-fdse
+    ##compiler_flags#fearly_inlining=-fearly-inlining
+    ##compiler_flags#fexpensive_optimizations=-fexpensive-optimizations
+    ##compiler_flags#fforward_propagate=-fforward-propagate
+    ##compiler_flags#ffunction_cse=-ffunction-cse
+    ##compiler_flags#fgcse=-fgcse
+    ##compiler_flags#fgcse_after_reload=-fgcse-after-reload
+    ##compiler_flags#fgcse_las=-fgcse-las
+    ##compiler_flags#fgcse_lm=-fgcse-lm
+    ##compiler_flags#fgcse_sm=-fgcse-sm
+    ##compiler_flags#fguess_branch_probability=-fguess-branch-probability
+    ##compiler_flags#fif_conversion=-fif-conversion
+    ##compiler_flags#fif_conversion2=-fif-conversion2
+    ##compiler_flags#findirect_inlining=-findirect-inlining
+    ##compiler_flags#finline_functions=-finline-functions
+    ##compiler_flags#finline_functions_called_once=-finline-functions-called-once
+    ##compiler_flags#finline_small_functions=-finline-small-functions
+    ##compiler_flags#fipa_cp=-fipa-cp
+    ##compiler_flags#fipa_cp_clone=-fno-ipa-cp-clone
+    ##compiler_flags#fipa_matrix_reorg=-fipa-matrix-reorg
+    ##compiler_flags#fipa_pta=-fipa-pta
+    ##compiler_flags#fipa_pure_const=-fipa-pure-const
+    ##compiler_flags#fipa_reference=-fipa-reference
+    ##compiler_flags#fipa_struct_reorg=-fipa-struct-reorg
+    ##compiler_flags#fira_share_save_slots=-fira-share-save-slots
+    ##compiler_flags#fira_share_spill_slots=-fira-share-spill-slots
+    ##compiler_flags#fivopts=-fivopts
+    ##compiler_flags#floop_block=-floop-block
+    ##compiler_flags#floop_interchange=-floop-interchange
+    ##compiler_flags#floop_strip_mine=-floop-strip-mine
+    ##compiler_flags#fmerge_constants=-fmerge-constants
+    ##compiler_flags#fmodulo_sched=-fmodulo-sched
+    ##compiler_flags#fmodulo_sched_allow_regmoves=-fmodulo-sched-allow-regmoves
+    ##compiler_flags#fmove_loop_invariants=-fmove-loop-invariants
+    ##compiler_flags#fomit_frame_pointer=-fomit-frame-pointer
+    ##compiler_flags#foptimize_sibling_calls=-foptimize-sibling-calls
+    ##compiler_flags#fpeel_loops=-fpeel-loops
+    ##compiler_flags#fpeephole=-fpeephole
+    ##compiler_flags#fpeephole2=-fpeephole2
+    ##compiler_flags#fpredictive_commoning=-fpredictive-commoning
+    ##compiler_flags#fprefetch_loop_arrays=-fprefetch-loop-arrays
+    ##compiler_flags#fregmove=-fregmove
+    ##compiler_flags#frename_registers=-frename-registers
+    ##compiler_flags#freorder_blocks=-freorder-blocks
+    ##compiler_flags#freorder_blocks_and_partition=-freorder-blocks-and-partition
+    ##compiler_flags#freorder_functions=-freorder-functions
+    ##compiler_flags#frerun_cse_after_loop=-frerun-cse-after-loop
+    ##compiler_flags#freschedule_modulo_scheduled_loops=-freschedule-modulo-scheduled-loops
+    ##compiler_flags#fsched_interblock=-fsched-interblock
+    ##compiler_flags#fsched_spec=-fsched-spec
+    ##compiler_flags#fsched_spec_load=-fsched-spec-load
+    ##compiler_flags#fsched_spec_load_dangerous=-fsched-spec-load-dangerous
+    ##compiler_flags#fsched2_use_superblocks=-fsched2-use-superblocks
+    ##compiler_flags#fschedule_insns=-fschedule-insns
+    ##compiler_flags#fschedule_insns2=-fschedule-insns2
+    ##compiler_flags#fsee=-fsee
+    ##compiler_flags#fsel_sched_pipelining=-fsel-sched-pipelining
+    ##compiler_flags#fsel_sched_pipelining_outer_loops=-fsel-sched-pipelining-outer-loops
+    ##compiler_flags#fselective_scheduling=-fselective-scheduling
+    ##compiler_flags#fselective_scheduling2=-fselective-scheduling2
+    ##compiler_flags#fsignaling_nans=-fsignaling-nans
+    ##compiler_flags#fsingle_precision_constant=-fsingle-precision-constant
+    ##compiler_flags#fsplit_ivs_in_unroller=-fsplit-ivs-in-unroller
+    ##compiler_flags#fsplit_wide_types=-fsplit-wide-types
+    ##compiler_flags#fstrict_aliasing=-fstrict-aliasing
+    ##compiler_flags#fstrict_overflow=-fno-strict-overflow
+    ##compiler_flags#fthread_jumps=-fthread-jumps
+    ##compiler_flags#ftracer=-ftracer
+    ##compiler_flags#ftree_builtin_call_dce=-ftree-builtin-call-dce
+    ##compiler_flags#ftree_ccp=-ftree-ccp
+    ##compiler_flags#ftree_ch=-ftree-ch
+    ##compiler_flags#ftree_copy_prop=-ftree-copy-prop
+    ##compiler_flags#ftree_copyrename=-ftree-copyrename
+    ##compiler_flags#ftree_dce=-ftree-dce
+    ##compiler_flags#ftree_dominator_opts=-ftree-dominator-opts
+    ##compiler_flags#ftree_dse=-ftree-dse
+    ##compiler_flags#ftree_fre=-ftree-fre
+    ##compiler_flags#ftree_loop_distribution=-ftree-loop-distribution
+    ##compiler_flags#ftree_loop_im=-ftree-loop-im
+    ##compiler_flags#ftree_loop_ivcanon=-ftree-loop-ivcanon
+    ##compiler_flags#ftree_loop_linear=-ftree-loop-linear
+    ##compiler_flags#ftree_loop_optimize=-ftree-loop-optimize
+    ##compiler_flags#ftree_pre=-ftree-pre
+    ##compiler_flags#ftree_reassoc=-ftree-reassoc
+    ##compiler_flags#ftree_sink=-ftree-sink
+    ##compiler_flags#ftree_sra=-ftree-sra
+    ##compiler_flags#ftree_switch_conversion=-ftree-switch-conversion
+    ##compiler_flags#ftree_ter=-ftree-ter
+    ##compiler_flags#ftree_vect_loop_version=-ftree-vect-loop-version
+    ##compiler_flags#ftree_vectorize=-ftree-vectorize
+    ##compiler_flags#ftree_vrp=-fno-tree-vrp
+    ##compiler_flags#funroll_all_loops=-funroll-all-loops
+    ##compiler_flags#funsafe_loop_optimizations=-funsafe-loop-optimizations
+    ##compiler_flags#funsafe_math_optimizations=-funsafe-math-optimizations
+    ##compiler_flags#funswitch_loops=-funswitch-loops
+    ##compiler_flags#fvariable_expansion_in_unroller=-fvariable-expansion-in-unroller
+    ##compiler_flags#fvect_cost_model=-fvect-cost-model
+    ##compiler_flags#fweb=-fweb
+
+      ------------------- Statistical repetition: 1 of 2 -------------------
+
+Initializing universal program pipeline ...
+
+***************************************************************************************
+Obtaining platform parameters and checking other obligatory choices for the pipeline ...
+
+Initializing device ...
+
+OS CK UOA:     android5-arm (66395254948c0b71)
+
+OS name:       Android 4.2.2
+Short OS name: Linux version 3.4.5
+Long OS name:  Linux version 3.4.5 (z00182893@ubuntu) (gcc version 4.6.x-google 20120106 (prerelease) (GCC) ) #1 SMP PREEMPT Thu Aug 14 21:28:23 CST 2014
+OS bits:       32
+***************************************************************************************
+  Selected host platform: windows-64
+  Selected target platform: android5-arm
+  Selected target device ID: SWQ49TFIT8YLU4DE
+  Selected program: adapt16-adpcm (4947d2131df8ff45)
+  Selected command line: default
+  Selected dependencies: 
+      xopenme env = d49499018a9eddac; tags = ["32bits", "host-os-windows-64", "lang-c", "lang-cpp", "lang-f77", "lang-f90", "lang-f95", "lib", "rtl", "target-os-android5-arm", "v0", "v0.3", "xopenme"]
+      compiler env = 1004ad4886b499b6; tags = ["32bits", "compiler", "gcc", "host-os-windows-64", "lang-c", "lang-cpp", "target-os-android5-arm", "v4", "v4.9", "v4.9.0"]
+
+Loading compiler description: gcc-49x (a013e4e4d92ed26a) ...
+***************************************************************************************
+Setting CPU frequency to max (if supported) ...
+
+
+CMD to set CPU frequency:
+  /data/local/tmp/tools/ck-set-cpu-performance
+/system/bin/sh: /data/local/tmp/tools/ck-set-cpu-performance: not found
+***************************************************************************************
+Setting GPU frequency to max (if supported) ...
+
+
+CMD to set GPU frequency:
+  /data/local/tmp/tools/ck-set-gpu-performance
+/system/bin/sh: /data/local/tmp/tools/ck-set-gpu-performance: not found
+***************************************************************************************
+Detecting all target platform features ...
+
+***************************************************************************************
+Detecting OS and CPU features ...
+
+Number of logical processors: 1
+CPU name:                     MT6572
+CPU sub name:                 ARMv7 Processor rev 3 (v7l)
+CPU ABI:                      armeabi-v7a
+CPU features:                 swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls vfpv4 idiva idivt
+
+CPU frequency:
+  CPU0 = 1001.0 MHz
+CPU max frequency:
+  CPU0 = 1300.0 MHz
+CPU all frequencies (Hz):
+  CPU0 = []
+***************************************************************************************
+Detecting accelerator features ...
+
+GPU name: ARM, Mali-400 MP, OpenGL ES-CM 1.1
+
+Trying to read GPU frequency:
+  adb  -s SWQ49TFIT8YLU4DE shell /data/local/tmp/tools/ck-print-gpu-freq >c:\temp\tmp-ck-f1kbga
+***************************************************************************************
+Detecting system features ...
+
+Platform name:   HUAWEI Y330-U01
+Platform vendor: HUAWEI
+Platform model:  Y330-U01
+***************************************************************************************
+Compile program ...
+
+Cleaning working directory ...
+
+***************************************************************************************
+Current directory: D:\Work1\CK\ck-repos\reproduce-adapt16\program\adapt16-adpcm\tmp
+
+***************************************************************************************
+
+Resolving dependencies ...
+
+D:\Work1\CK\ck-repos\reproduce-adapt16\program\adapt16-adpcm\tmp>call D:\Work1\CK\ck-repos\fgg-local-win\env\1004ad4886b499b6\env.bat 
+***************************************************************************************
+Detected compiler version: 4.9
+
+***************************************************************************************
+Compiler vars:
+  XOPENME=
+***************************************************************************************
+
+Executing prepared batch file tmp-jsavf9.bat ...
+
+D:\Work1\CK\ck-repos\reproduce-adapt16\program\adapt16-adpcm\tmp>call D:\Work1\CK\ck-repos\fgg-local-win\env\1004ad4886b499b6\env.bat 
+arm-linux-androideabi-gcc -c --sysroot "D:\!FGG\Installations\android-ndk-r10d\platforms\android-5\arch-arm"   -I..\ -DXOPENME -I"D:\!FGG\Installations\lib-rtl-xopenme-0.3-gcc-4.6.0-android5-arm-32\include" -O3 -fopenmp -flto -fsched-stalled-insns-dep=0 -fsched-stalled-insns=0 -finline-limit=17 --param min-crossjump-insns=3 --param max-grow-copy-bb-insns=4 --param max-goto-duplication-insns=4 --param max-inline-insns-single=256 --param max-inline-insns-auto=32 --param large-function-insns=1024 --param large-function-growth=32 --param large-unit-insns=4096 --param inline-unit-growth=16 --param ipcp-unit-growth=4 --param large-stack-frame=128 --param large-stack-frame-growth=512 --param max-inline-insns-recursive=128 --param max-inline-insns-recursive-auto=128 --param max-inline-recursive-depth=4 --param max-inline-recursive-depth-auto=4 --param min-inline-recursive-probability=4 --param min-vect-loop-bound=1 --param max-unrolled-insns=32 --param max-unroll-times=2 --param omega-max-vars=64 --param omega-max-geqs=200 --param omega-max-eqs=164 --param omega-max-wild-cards=35 --param omega-hash-table-size=523 --param omega-max-keys=1000 --param omega-eliminate-redundant-constraints=0 --param tracer-min-branch-ratio=0 --param max-cse-path-length=4 --param max-cse-insns=512 --param max-reload-search-insns=64 --param max-cselib-memory-locations=256 --param max-sched-ready-insns=64 --param max-sched-region-blocks=4 --param max-pipeline-region-blocks=8 --param max-sched-region-insns=32 --param max-pipeline-region-insns=64 --param min-spec-prob=30 --param max-sched-extend-regions-iters=0 --param max-sched-insn-conflict-delay=2 --param sched-spec-prob-cutoff=30 --param sched-mem-true-dep-cost=1 --param selsched-max-lookahead=32 --param selsched-max-sched-times=1 --param max-last-value-rtl=4096 --param min-virtual-mappings=32 --param virtual-mappings-ratio=1 --param max-fields-for-field-sensitive=0 --param sccvn-max-scc-size=4096 --param ira-max-loops-num=32 --param ira-max-conflict-table-size=1024 -falign-functions -fno-align-jumps -falign-labels -falign-loops -fbranch-count-reg -fbranch-target-load-optimize -fbranch-target-load-optimize2 -fbtr-bb-exclusive -fcaller-saves -fconserve-stack -fcprop-registers -fcrossjumping -fcse-follow-jumps -fcse-skip-blocks -fcx-limited-range -fdce -fdefer-pop -fdelete-null-pointer-checks -fdse -fearly-inlining -fexpensive-optimizations -fforward-propagate -ffunction-cse -fgcse -fgcse-after-reload -fgcse-las -fgcse-lm -fgcse-sm -fguess-branch-probability -fif-conversion -fif-conversion2 -findirect-inlining -finline-functions -finline-functions-called-once -finline-small-functions -fipa-cp -fno-ipa-cp-clone -fipa-matrix-reorg -fipa-pta -fipa-pure-const -fipa-reference -fipa-struct-reorg -fira-share-save-slots -fira-share-spill-slots -fivopts -floop-block -floop-interchange -floop-strip-mine -fmerge-constants -fmodulo-sched -fmodulo-sched-allow-regmoves -fmove-loop-invariants -fomit-frame-pointer -foptimize-sibling-calls -fpeel-loops -fpeephole -fpeephole2 -fpredictive-commoning -fprefetch-loop-arrays -fregmove -frename-registers -freorder-blocks -freorder-blocks-and-partition -freorder-functions -frerun-cse-after-loop -freschedule-modulo-scheduled-loops -fsched-interblock -fsched-spec -fsched-spec-load -fsched-spec-load-dangerous -fsched2-use-superblocks -fschedule-insns -fschedule-insns2 -fsee -fsel-sched-pipelining -fsel-sched-pipelining-outer-loops -fselective-scheduling -fselective-scheduling2 -fsignaling-nans -fsingle-precision-constant -fsplit-ivs-in-unroller -fsplit-wide-types -fstrict-aliasing -fno-strict-overflow -fthread-jumps -ftracer -ftree-builtin-call-dce -ftree-ccp -ftree-ch -ftree-copy-prop -ftree-copyrename -ftree-dce -ftree-dominator-opts -ftree-dse -ftree-fre -ftree-loop-distribution -ftree-loop-im -ftree-loop-ivcanon -ftree-loop-linear -ftree-loop-optimize -ftree-pre -ftree-reassoc -ftree-sink -ftree-sra -ftree-switch-conversion -ftree-ter -ftree-vect-loop-version -ftree-vectorize -fno-tree-vrp -funroll-all-loops -funsafe-loop-optimizations -funsafe-math-optimizations -funswitch-loops -fvariable-expansion-in-unroller -fvect-cost-model -fweb ..\base.c  -o base.o
+***************************************************************************************
+Compilation time: 0.096 sec.; Object size: 0; MD5: 
+Warning: compilation failed!
+***************************************************************************************
+Pipeline failed (compilation failed - return code 1 !=0 )!
+***************************************************************************************
+Pipeline iteration: 5 of 100
+
+  Vector of flattened and updated choices:
+    ##compiler_flags#base_opt=-O3
+    ##compiler_flags#openmp=-fopenmp
+    ##compiler_flags#flto=-flto
+    ##compiler_flags#fsched_stalled_insns_dep=-fsched-stalled-insns-dep=0
+    ##compiler_flags#fsched_stalled_insns=-fsched-stalled-insns=0
+    ##compiler_flags#finline_limit=-finline-limit=2
+    ##compiler_flags#param_min_crossjump_insns=--param min-crossjump-insns=3
+    ##compiler_flags#param_max_grow_copy_bb_insns=--param max-grow-copy-bb-insns=5
+    ##compiler_flags#param_max_goto_duplication_insns=--param max-goto-duplication-insns=4
+    ##compiler_flags#param_max_inline_insns_single=--param max-inline-insns-single=256
+    ##compiler_flags#param_max_inline_insns_auto=--param max-inline-insns-auto=32
+    ##compiler_flags#param_large_function_insns=--param large-function-insns=1024
+    ##compiler_flags#param_large_function_growth=--param large-function-growth=32
+    ##compiler_flags#param_large_unit_insns=--param large-unit-insns=4096
+    ##compiler_flags#param_inline_unit_growth=--param inline-unit-growth=16
+    ##compiler_flags#param_ipcp_unit_growth=--param ipcp-unit-growth=4
+    ##compiler_flags#param_large_stack_frame=--param large-stack-frame=128
+    ##compiler_flags#param_large_stack_frame_growth=--param large-stack-frame-growth=512
+    ##compiler_flags#param_max_inline_insns_recursive=--param max-inline-insns-recursive=696
+    ##compiler_flags#param_max_inline_insns_recursive_auto=--param max-inline-insns-recursive-auto=128
+    ##compiler_flags#param_max_inline_recursive_depth=--param max-inline-recursive-depth=4
+    ##compiler_flags#param_max_inline_recursive_depth_auto=--param max-inline-recursive-depth-auto=4
+    ##compiler_flags#param_min_inline_recursive_probability=--param min-inline-recursive-probability=4
+    ##compiler_flags#param_min_vect_loop_bound=--param min-vect-loop-bound=1
+    ##compiler_flags#param_max_unrolled_insns=--param max-unrolled-insns=32
+    ##compiler_flags#param_max_unroll_times=--param max-unroll-times=2
+    ##compiler_flags#param_omega_max_vars=--param omega-max-vars=64
+    ##compiler_flags#param_omega_max_geqs=--param omega-max-geqs=128
+    ##compiler_flags#param_omega_max_eqs=--param omega-max-eqs=64
+    ##compiler_flags#param_omega_max_wild_cards=--param omega-max-wild-cards=8
+    ##compiler_flags#param_omega_hash_table_size=--param omega-hash-table-size=256
+    ##compiler_flags#param_omega_max_keys=--param omega-max-keys=256
+    ##compiler_flags#param_omega_eliminate_redundant_constraints=--param omega-eliminate-redundant-constraints=0
+    ##compiler_flags#param_tracer_min_branch_ratio=--param tracer-min-branch-ratio=0
+    ##compiler_flags#param_max_cse_path_length=--param max-cse-path-length=4
+    ##compiler_flags#param_max_cse_insns=--param max-cse-insns=512
+    ##compiler_flags#param_max_reload_search_insns=--param max-reload-search-insns=64
+    ##compiler_flags#param_max_cselib_memory_locations=--param max-cselib-memory-locations=256
+    ##compiler_flags#param_max_sched_ready_insns=--param max-sched-ready-insns=64
+    ##compiler_flags#param_max_sched_region_blocks=--param max-sched-region-blocks=4
+    ##compiler_flags#param_max_pipeline_region_blocks=--param max-pipeline-region-blocks=13
+    ##compiler_flags#param_max_sched_region_insns=--param max-sched-region-insns=32
+    ##compiler_flags#param_max_pipeline_region_insns=--param max-pipeline-region-insns=64
+    ##compiler_flags#param_min_spec_prob=--param min-spec-prob=30
+    ##compiler_flags#param_max_sched_extend_regions_iters=--param max-sched-extend-regions-iters=0
+    ##compiler_flags#param_max_sched_insn_conflict_delay=--param max-sched-insn-conflict-delay=2
+    ##compiler_flags#param_sched_spec_prob_cutoff=--param sched-spec-prob-cutoff=30
+    ##compiler_flags#param_sched_mem_true_dep_cost=--param sched-mem-true-dep-cost=1
+    ##compiler_flags#param_selsched_max_lookahead=--param selsched-max-lookahead=32
+    ##compiler_flags#param_selsched_max_sched_times=--param selsched-max-sched-times=1
+    ##compiler_flags#param_max_last_value_rtl=--param max-last-value-rtl=4096
+    ##compiler_flags#param_min_virtual_mappings=--param min-virtual-mappings=32
+    ##compiler_flags#param_virtual_mappings_ratio=--param virtual-mappings-ratio=1
+    ##compiler_flags#param_max_fields_for_field_sensitive=--param max-fields-for-field-sensitive=0
+    ##compiler_flags#param_sccvn_max_scc_size=--param sccvn-max-scc-size=4096
+    ##compiler_flags#param_ira_max_loops_num=--param ira-max-loops-num=32
+    ##compiler_flags#param_ira_max_conflict_table_size=--param ira-max-conflict-table-size=1024
+    ##compiler_flags#falign_functions=-falign-functions
+    ##compiler_flags#falign_jumps=-falign-jumps
+    ##compiler_flags#falign_labels=-falign-labels
+    ##compiler_flags#falign_loops=-fno-align-loops
+    ##compiler_flags#fbranch_count_reg=-fbranch-count-reg
+    ##compiler_flags#fbranch_target_load_optimize=-fbranch-target-load-optimize
+    ##compiler_flags#fbranch_target_load_optimize2=-fbranch-target-load-optimize2
+    ##compiler_flags#fbtr_bb_exclusive=-fbtr-bb-exclusive
+    ##compiler_flags#fcaller_saves=-fcaller-saves
+    ##compiler_flags#fconserve_stack=-fconserve-stack
+    ##compiler_flags#fcprop_registers=-fcprop-registers
+    ##compiler_flags#fcrossjumping=-fcrossjumping
+    ##compiler_flags#fcse_follow_jumps=-fcse-follow-jumps
+    ##compiler_flags#fcse_skip_blocks=-fcse-skip-blocks
+    ##compiler_flags#fcx_limited_range=-fcx-limited-range
+    ##compiler_flags#fdce=-fdce
+    ##compiler_flags#fdefer_pop=-fdefer-pop
+    ##compiler_flags#fdelete_null_pointer_checks=-fdelete-null-pointer-checks
+    ##compiler_flags#fdse=-fdse
+    ##compiler_flags#fearly_inlining=-fearly-inlining
+    ##compiler_flags#fexpensive_optimizations=-fexpensive-optimizations
+    ##compiler_flags#fforward_propagate=-fforward-propagate
+    ##compiler_flags#ffunction_cse=-ffunction-cse
+    ##compiler_flags#fgcse=-fgcse
+    ##compiler_flags#fgcse_after_reload=-fgcse-after-reload
+    ##compiler_flags#fgcse_las=-fgcse-las
+    ##compiler_flags#fgcse_lm=-fgcse-lm
+    ##compiler_flags#fgcse_sm=-fgcse-sm
+    ##compiler_flags#fguess_branch_probability=-fguess-branch-probability
+    ##compiler_flags#fif_conversion=-fif-conversion
+    ##compiler_flags#fif_conversion2=-fif-conversion2
+    ##compiler_flags#findirect_inlining=-findirect-inlining
+    ##compiler_flags#finline_functions=-fno-inline-functions
+    ##compiler_flags#finline_functions_called_once=-finline-functions-called-once
+    ##compiler_flags#finline_small_functions=-finline-small-functions
+    ##compiler_flags#fipa_cp=-fno-ipa-cp
+    ##compiler_flags#fipa_cp_clone=-fipa-cp-clone
+    ##compiler_flags#fipa_matrix_reorg=-fipa-matrix-reorg
+    ##compiler_flags#fipa_pta=-fipa-pta
+    ##compiler_flags#fipa_pure_const=-fipa-pure-const
+    ##compiler_flags#fipa_reference=-fipa-reference
+    ##compiler_flags#fipa_struct_reorg=-fipa-struct-reorg
+    ##compiler_flags#fira_share_save_slots=-fira-share-save-slots
+    ##compiler_flags#fira_share_spill_slots=-fira-share-spill-slots
+    ##compiler_flags#fivopts=-fivopts
+    ##compiler_flags#floop_block=-floop-block
+    ##compiler_flags#floop_interchange=-floop-interchange
+    ##compiler_flags#floop_strip_mine=-floop-strip-mine
+    ##compiler_flags#fmerge_constants=-fmerge-constants
+    ##compiler_flags#fmodulo_sched=-fmodulo-sched
+    ##compiler_flags#fmodulo_sched_allow_regmoves=-fmodulo-sched-allow-regmoves
+    ##compiler_flags#fmove_loop_invariants=-fmove-loop-invariants
+    ##compiler_flags#fomit_frame_pointer=-fomit-frame-pointer
+    ##compiler_flags#foptimize_sibling_calls=-foptimize-sibling-calls
+    ##compiler_flags#fpeel_loops=-fpeel-loops
+    ##compiler_flags#fpeephole=-fpeephole
+    ##compiler_flags#fpeephole2=-fpeephole2
+    ##compiler_flags#fpredictive_commoning=-fpredictive-commoning
+    ##compiler_flags#fprefetch_loop_arrays=-fprefetch-loop-arrays
+    ##compiler_flags#fregmove=-fregmove
+    ##compiler_flags#frename_registers=-frename-registers
+    ##compiler_flags#freorder_blocks=-freorder-blocks
+    ##compiler_flags#freorder_blocks_and_partition=-freorder-blocks-and-partition
+    ##compiler_flags#freorder_functions=-freorder-functions
+    ##compiler_flags#frerun_cse_after_loop=-frerun-cse-after-loop
+    ##compiler_flags#freschedule_modulo_scheduled_loops=-freschedule-modulo-scheduled-loops
+    ##compiler_flags#fsched_interblock=-fsched-interblock
+    ##compiler_flags#fsched_spec=-fsched-spec
+    ##compiler_flags#fsched_spec_load=-fsched-spec-load
+    ##compiler_flags#fsched_spec_load_dangerous=-fsched-spec-load-dangerous
+    ##compiler_flags#fsched2_use_superblocks=-fsched2-use-superblocks
+    ##compiler_flags#fschedule_insns=-fschedule-insns
+    ##compiler_flags#fschedule_insns2=-fschedule-insns2
+    ##compiler_flags#fsee=-fsee
+    ##compiler_flags#fsel_sched_pipelining=-fsel-sched-pipelining
+    ##compiler_flags#fsel_sched_pipelining_outer_loops=-fsel-sched-pipelining-outer-loops
+    ##compiler_flags#fselective_scheduling=-fselective-scheduling
+    ##compiler_flags#fselective_scheduling2=-fselective-scheduling2
+    ##compiler_flags#fsignaling_nans=-fsignaling-nans
+    ##compiler_flags#fsingle_precision_constant=-fsingle-precision-constant
+    ##compiler_flags#fsplit_ivs_in_unroller=-fsplit-ivs-in-unroller
+    ##compiler_flags#fsplit_wide_types=-fsplit-wide-types
+    ##compiler_flags#fstrict_aliasing=-fstrict-aliasing
+    ##compiler_flags#fstrict_overflow=-fstrict-overflow
+    ##compiler_flags#fthread_jumps=-fthread-jumps
+    ##compiler_flags#ftracer=-ftracer
+    ##compiler_flags#ftree_builtin_call_dce=-fno-tree-builtin-call-dce
+    ##compiler_flags#ftree_ccp=-ftree-ccp
+    ##compiler_flags#ftree_ch=-ftree-ch
+    ##compiler_flags#ftree_copy_prop=-ftree-copy-prop
+    ##compiler_flags#ftree_copyrename=-ftree-copyrename
+    ##compiler_flags#ftree_dce=-ftree-dce
+    ##compiler_flags#ftree_dominator_opts=-ftree-dominator-opts
+    ##compiler_flags#ftree_dse=-fno-tree-dse
+    ##compiler_flags#ftree_fre=-ftree-fre
+    ##compiler_flags#ftree_loop_distribution=-ftree-loop-distribution
+    ##compiler_flags#ftree_loop_im=-ftree-loop-im
+    ##compiler_flags#ftree_loop_ivcanon=-ftree-loop-ivcanon
+    ##compiler_flags#ftree_loop_linear=-ftree-loop-linear
+    ##compiler_flags#ftree_loop_optimize=-ftree-loop-optimize
+    ##compiler_flags#ftree_pre=-ftree-pre
+    ##compiler_flags#ftree_reassoc=-ftree-reassoc
+    ##compiler_flags#ftree_sink=-ftree-sink
+    ##compiler_flags#ftree_sra=-ftree-sra
+    ##compiler_flags#ftree_switch_conversion=-ftree-switch-conversion
+    ##compiler_flags#ftree_ter=-ftree-ter
+    ##compiler_flags#ftree_vect_loop_version=-ftree-vect-loop-version
+    ##compiler_flags#ftree_vectorize=-ftree-vectorize
+    ##compiler_flags#ftree_vrp=-ftree-vrp
+    ##compiler_flags#funroll_all_loops=-funroll-all-loops
+    ##compiler_flags#funsafe_loop_optimizations=-funsafe-loop-optimizations
+    ##compiler_flags#funsafe_math_optimizations=-funsafe-math-optimizations
+    ##compiler_flags#funswitch_loops=-funswitch-loops
+    ##compiler_flags#fvariable_expansion_in_unroller=-fvariable-expansion-in-unroller
+    ##compiler_flags#fvect_cost_model=-fvect-cost-model
+    ##compiler_flags#fweb=-fweb
+
+      ------------------- Statistical repetition: 1 of 2 -------------------
+
+Initializing universal program pipeline ...
+
+***************************************************************************************
+Obtaining platform parameters and checking other obligatory choices for the pipeline ...
+
+Initializing device ...
+
+OS CK UOA:     android5-arm (66395254948c0b71)
+
+OS name:       Android 4.2.2
+Short OS name: Linux version 3.4.5
+Long OS name:  Linux version 3.4.5 (z00182893@ubuntu) (gcc version 4.6.x-google 20120106 (prerelease) (GCC) ) #1 SMP PREEMPT Thu Aug 14 21:28:23 CST 2014
+OS bits:       32
+***************************************************************************************
+  Selected host platform: windows-64
+  Selected target platform: android5-arm
+  Selected target device ID: SWQ49TFIT8YLU4DE
+  Selected program: adapt16-adpcm (4947d2131df8ff45)
+  Selected command line: default
+  Selected dependencies: 
+      xopenme env = d49499018a9eddac; tags = ["32bits", "host-os-windows-64", "lang-c", "lang-cpp", "lang-f77", "lang-f90", "lang-f95", "lib", "rtl", "target-os-android5-arm", "v0", "v0.3", "xopenme"]
+      compiler env = 1004ad4886b499b6; tags = ["32bits", "compiler", "gcc", "host-os-windows-64", "lang-c", "lang-cpp", "target-os-android5-arm", "v4", "v4.9", "v4.9.0"]
+
+Loading compiler description: gcc-49x (a013e4e4d92ed26a) ...
+***************************************************************************************
+Setting CPU frequency to max (if supported) ...
+
+
+CMD to set CPU frequency:
+  /data/local/tmp/tools/ck-set-cpu-performance
+/system/bin/sh: /data/local/tmp/tools/ck-set-cpu-performance: not found
+***************************************************************************************
+Setting GPU frequency to max (if supported) ...
+
+
+CMD to set GPU frequency:
+  /data/local/tmp/tools/ck-set-gpu-performance
+/system/bin/sh: /data/local/tmp/tools/ck-set-gpu-performance: not found
+***************************************************************************************
+Detecting all target platform features ...
+
+***************************************************************************************
+Detecting OS and CPU features ...
+
+Number of logical processors: 1
+CPU name:                     MT6572
+CPU sub name:                 ARMv7 Processor rev 3 (v7l)
+CPU ABI:                      armeabi-v7a
+CPU features:                 swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls vfpv4 idiva idivt
+
+CPU frequency:
+  CPU0 = 1001.0 MHz
+CPU max frequency:
+  CPU0 = 1300.0 MHz
+CPU all frequencies (Hz):
+  CPU0 = []
+***************************************************************************************
+Detecting accelerator features ...
+
+GPU name: ARM, Mali-400 MP, OpenGL ES-CM 1.1
+
+Trying to read GPU frequency:
+  adb  -s SWQ49TFIT8YLU4DE shell /data/local/tmp/tools/ck-print-gpu-freq >c:\temp\tmp-ck-6t2mc0
+***************************************************************************************
+Detecting system features ...
+
+Platform name:   HUAWEI Y330-U01
+Platform vendor: HUAWEI
+Platform model:  Y330-U01
+***************************************************************************************
+Compile program ...
+
+Cleaning working directory ...
+
+***************************************************************************************
+Current directory: D:\Work1\CK\ck-repos\reproduce-adapt16\program\adapt16-adpcm\tmp
+
+***************************************************************************************
+
+Resolving dependencies ...
+
+D:\Work1\CK\ck-repos\reproduce-adapt16\program\adapt16-adpcm\tmp>call D:\Work1\CK\ck-repos\fgg-local-win\env\1004ad4886b499b6\env.bat 
+***************************************************************************************
+Detected compiler version: 4.9
+
+***************************************************************************************
+Compiler vars:
+  XOPENME=
+***************************************************************************************
+
+Executing prepared batch file tmp-pn87gp.bat ...
+
+D:\Work1\CK\ck-repos\reproduce-adapt16\program\adapt16-adpcm\tmp>call D:\Work1\CK\ck-repos\fgg-local-win\env\1004ad4886b499b6\env.bat 
+arm-linux-androideabi-gcc -c --sysroot "D:\!FGG\Installations\android-ndk-r10d\platforms\android-5\arch-arm"   -I..\ -DXOPENME -I"D:\!FGG\Installations\lib-rtl-xopenme-0.3-gcc-4.6.0-android5-arm-32\include" -O3 -fopenmp -flto -fsched-stalled-insns-dep=0 -fsched-stalled-insns=0 -finline-limit=2 --param min-crossjump-insns=3 --param max-grow-copy-bb-insns=5 --param max-goto-duplication-insns=4 --param max-inline-insns-single=256 --param max-inline-insns-auto=32 --param large-function-insns=1024 --param large-function-growth=32 --param large-unit-insns=4096 --param inline-unit-growth=16 --param ipcp-unit-growth=4 --param large-stack-frame=128 --param large-stack-frame-growth=512 --param max-inline-insns-recursive=696 --param max-inline-insns-recursive-auto=128 --param max-inline-recursive-depth=4 --param max-inline-recursive-depth-auto=4 --param min-inline-recursive-probability=4 --param min-vect-loop-bound=1 --param max-unrolled-insns=32 --param max-unroll-times=2 --param omega-max-vars=64 --param omega-max-geqs=128 --param omega-max-eqs=64 --param omega-max-wild-cards=8 --param omega-hash-table-size=256 --param omega-max-keys=256 --param omega-eliminate-redundant-constraints=0 --param tracer-min-branch-ratio=0 --param max-cse-path-length=4 --param max-cse-insns=512 --param max-reload-search-insns=64 --param max-cselib-memory-locations=256 --param max-sched-ready-insns=64 --param max-sched-region-blocks=4 --param max-pipeline-region-blocks=13 --param max-sched-region-insns=32 --param max-pipeline-region-insns=64 --param min-spec-prob=30 --param max-sched-extend-regions-iters=0 --param max-sched-insn-conflict-delay=2 --param sched-spec-prob-cutoff=30 --param sched-mem-true-dep-cost=1 --param selsched-max-lookahead=32 --param selsched-max-sched-times=1 --param max-last-value-rtl=4096 --param min-virtual-mappings=32 --param virtual-mappings-ratio=1 --param max-fields-for-field-sensitive=0 --param sccvn-max-scc-size=4096 --param ira-max-loops-num=32 --param ira-max-conflict-table-size=1024 -falign-functions -falign-jumps -falign-labels -fno-align-loops -fbranch-count-reg -fbranch-target-load-optimize -fbranch-target-load-optimize2 -fbtr-bb-exclusive -fcaller-saves -fconserve-stack -fcprop-registers -fcrossjumping -fcse-follow-jumps -fcse-skip-blocks -fcx-limited-range -fdce -fdefer-pop -fdelete-null-pointer-checks -fdse -fearly-inlining -fexpensive-optimizations -fforward-propagate -ffunction-cse -fgcse -fgcse-after-reload -fgcse-las -fgcse-lm -fgcse-sm -fguess-branch-probability -fif-conversion -fif-conversion2 -findirect-inlining -fno-inline-functions -finline-functions-called-once -finline-small-functions -fno-ipa-cp -fipa-cp-clone -fipa-matrix-reorg -fipa-pta -fipa-pure-const -fipa-reference -fipa-struct-reorg -fira-share-save-slots -fira-share-spill-slots -fivopts -floop-block -floop-interchange -floop-strip-mine -fmerge-constants -fmodulo-sched -fmodulo-sched-allow-regmoves -fmove-loop-invariants -fomit-frame-pointer -foptimize-sibling-calls -fpeel-loops -fpeephole -fpeephole2 -fpredictive-commoning -fprefetch-loop-arrays -fregmove -frename-registers -freorder-blocks -freorder-blocks-and-partition -freorder-functions -frerun-cse-after-loop -freschedule-modulo-scheduled-loops -fsched-interblock -fsched-spec -fsched-spec-load -fsched-spec-load-dangerous -fsched2-use-superblocks -fschedule-insns -fschedule-insns2 -fsee -fsel-sched-pipelining -fsel-sched-pipelining-outer-loops -fselective-scheduling -fselective-scheduling2 -fsignaling-nans -fsingle-precision-constant -fsplit-ivs-in-unroller -fsplit-wide-types -fstrict-aliasing -fstrict-overflow -fthread-jumps -ftracer -fno-tree-builtin-call-dce -ftree-ccp -ftree-ch -ftree-copy-prop -ftree-copyrename -ftree-dce -ftree-dominator-opts -fno-tree-dse -ftree-fre -ftree-loop-distribution -ftree-loop-im -ftree-loop-ivcanon -ftree-loop-linear -ftree-loop-optimize -ftree-pre -ftree-reassoc -ftree-sink -ftree-sra -ftree-switch-conversion -ftree-ter -ftree-vect-loop-version -ftree-vectorize -ftree-vrp -funroll-all-loops -funsafe-loop-optimizations -funsafe-math-optimizations -funswitch-loops -fvariable-expansion-in-unroller -fvect-cost-model -fweb ..\base.c  -o base.o
+***************************************************************************************
+Compilation time: 0.098 sec.; Object size: 0; MD5: 
+Warning: compilation failed!
+***************************************************************************************
+Pipeline failed (compilation failed - return code 1 !=0 )!
+***************************************************************************************
+Pipeline iteration: 6 of 100
+
+  Vector of flattened and updated choices:
+    ##compiler_flags#base_opt=-O3
+    ##compiler_flags#openmp=-fopenmp
+    ##compiler_flags#flto=-flto
+    ##compiler_flags#fsched_stalled_insns_dep=-fsched-stalled-insns-dep=0
+    ##compiler_flags#fsched_stalled_insns=-fsched-stalled-insns=0
+    ##compiler_flags#finline_limit=-finline-limit=2
+    ##compiler_flags#param_min_crossjump_insns=--param min-crossjump-insns=3
+    ##compiler_flags#param_max_grow_copy_bb_insns=--param max-grow-copy-bb-insns=4
+    ##compiler_flags#param_max_goto_duplication_insns=--param max-goto-duplication-insns=4
+    ##compiler_flags#param_max_inline_insns_single=--param max-inline-insns-single=256
+    ##compiler_flags#param_max_inline_insns_auto=--param max-inline-insns-auto=107
+    ##compiler_flags#param_large_function_insns=--param large-function-insns=1024
+    ##compiler_flags#param_large_function_growth=--param large-function-growth=32
+    ##compiler_flags#param_large_unit_insns=--param large-unit-insns=4096
+    ##compiler_flags#param_inline_unit_growth=--param inline-unit-growth=16
+    ##compiler_flags#param_ipcp_unit_growth=--param ipcp-unit-growth=4
+    ##compiler_flags#param_large_stack_frame=--param large-stack-frame=128
+    ##compiler_flags#param_large_stack_frame_growth=--param large-stack-frame-growth=512
+    ##compiler_flags#param_max_inline_insns_recursive=--param max-inline-insns-recursive=128
+    ##compiler_flags#param_max_inline_insns_recursive_auto=--param max-inline-insns-recursive-auto=128
+    ##compiler_flags#param_max_inline_recursive_depth=--param max-inline-recursive-depth=4
+    ##compiler_flags#param_max_inline_recursive_depth_auto=--param max-inline-recursive-depth-auto=4
+    ##compiler_flags#param_min_inline_recursive_probability=--param min-inline-recursive-probability=4
+    ##compiler_flags#param_min_vect_loop_bound=--param min-vect-loop-bound=1
+    ##compiler_flags#param_max_unrolled_insns=--param max-unrolled-insns=297
+    ##compiler_flags#param_max_unroll_times=--param max-unroll-times=2
+    ##compiler_flags#param_omega_max_vars=--param omega-max-vars=64
+    ##compiler_flags#param_omega_max_geqs=--param omega-max-geqs=128
+    ##compiler_flags#param_omega_max_eqs=--param omega-max-eqs=64
+    ##compiler_flags#param_omega_max_wild_cards=--param omega-max-wild-cards=8
+    ##compiler_flags#param_omega_hash_table_size=--param omega-hash-table-size=607
+    ##compiler_flags#param_omega_max_keys=--param omega-max-keys=658
+    ##compiler_flags#param_omega_eliminate_redundant_constraints=--param omega-eliminate-redundant-constraints=0
+    ##compiler_flags#param_tracer_min_branch_ratio=--param tracer-min-branch-ratio=0
+    ##compiler_flags#param_max_cse_path_length=--param max-cse-path-length=4
+    ##compiler_flags#param_max_cse_insns=--param max-cse-insns=512
+    ##compiler_flags#param_max_reload_search_insns=--param max-reload-search-insns=251
+    ##compiler_flags#param_max_cselib_memory_locations=--param max-cselib-memory-locations=256
+    ##compiler_flags#param_max_sched_ready_insns=--param max-sched-ready-insns=64
+    ##compiler_flags#param_max_sched_region_blocks=--param max-sched-region-blocks=4
+    ##compiler_flags#param_max_pipeline_region_blocks=--param max-pipeline-region-blocks=8
+    ##compiler_flags#param_max_sched_region_insns=--param max-sched-region-insns=32
+    ##compiler_flags#param_max_pipeline_region_insns=--param max-pipeline-region-insns=64
+    ##compiler_flags#param_min_spec_prob=--param min-spec-prob=30
+    ##compiler_flags#param_max_sched_extend_regions_iters=--param max-sched-extend-regions-iters=0
+    ##compiler_flags#param_max_sched_insn_conflict_delay=--param max-sched-insn-conflict-delay=2
+    ##compiler_flags#param_sched_spec_prob_cutoff=--param sched-spec-prob-cutoff=30
+    ##compiler_flags#param_sched_mem_true_dep_cost=--param sched-mem-true-dep-cost=1
+    ##compiler_flags#param_selsched_max_lookahead=--param selsched-max-lookahead=33
+    ##compiler_flags#param_selsched_max_sched_times=--param selsched-max-sched-times=1
+    ##compiler_flags#param_max_last_value_rtl=--param max-last-value-rtl=25600
+    ##compiler_flags#param_min_virtual_mappings=--param min-virtual-mappings=32
+    ##compiler_flags#param_virtual_mappings_ratio=--param virtual-mappings-ratio=1
+    ##compiler_flags#param_max_fields_for_field_sensitive=--param max-fields-for-field-sensitive=0
+    ##compiler_flags#param_sccvn_max_scc_size=--param sccvn-max-scc-size=4096
+    ##compiler_flags#param_ira_max_loops_num=--param ira-max-loops-num=32
+    ##compiler_flags#param_ira_max_conflict_table_size=--param ira-max-conflict-table-size=1024
+    ##compiler_flags#falign_functions=-falign-functions
+    ##compiler_flags#falign_jumps=-falign-jumps
+    ##compiler_flags#falign_labels=-falign-labels
+    ##compiler_flags#falign_loops=-falign-loops
+    ##compiler_flags#fbranch_count_reg=-fbranch-count-reg
+    ##compiler_flags#fbranch_target_load_optimize=-fbranch-target-load-optimize
+    ##compiler_flags#fbranch_target_load_optimize2=-fbranch-target-load-optimize2
+    ##compiler_flags#fbtr_bb_exclusive=-fbtr-bb-exclusive
+    ##compiler_flags#fcaller_saves=-fcaller-saves
+    ##compiler_flags#fconserve_stack=-fconserve-stack
+    ##compiler_flags#fcprop_registers=-fcprop-registers
+    ##compiler_flags#fcrossjumping=-fcrossjumping
+    ##compiler_flags#fcse_follow_jumps=-fcse-follow-jumps
+    ##compiler_flags#fcse_skip_blocks=-fcse-skip-blocks
+    ##compiler_flags#fcx_limited_range=-fcx-limited-range
+    ##compiler_flags#fdce=-fdce
+    ##compiler_flags#fdefer_pop=-fdefer-pop
+    ##compiler_flags#fdelete_null_pointer_checks=-fdelete-null-pointer-checks
+    ##compiler_flags#fdse=-fdse
+    ##compiler_flags#fearly_inlining=-fearly-inlining
+    ##compiler_flags#fexpensive_optimizations=-fexpensive-optimizations
+    ##compiler_flags#fforward_propagate=-fforward-propagate
+    ##compiler_flags#ffunction_cse=-ffunction-cse
+    ##compiler_flags#fgcse=-fgcse
+    ##compiler_flags#fgcse_after_reload=-fgcse-after-reload
+    ##compiler_flags#fgcse_las=-fgcse-las
+    ##compiler_flags#fgcse_lm=-fno-gcse-lm
+    ##compiler_flags#fgcse_sm=-fgcse-sm
+    ##compiler_flags#fguess_branch_probability=-fguess-branch-probability
+    ##compiler_flags#fif_conversion=-fif-conversion
+    ##compiler_flags#fif_conversion2=-fif-conversion2
+    ##compiler_flags#findirect_inlining=-findirect-inlining
+    ##compiler_flags#finline_functions=-finline-functions
+    ##compiler_flags#finline_functions_called_once=-finline-functions-called-once
+    ##compiler_flags#finline_small_functions=-finline-small-functions
+    ##compiler_flags#fipa_cp=-fipa-cp
+    ##compiler_flags#fipa_cp_clone=-fipa-cp-clone
+    ##compiler_flags#fipa_matrix_reorg=-fipa-matrix-reorg
+    ##compiler_flags#fipa_pta=-fipa-pta
+    ##compiler_flags#fipa_pure_const=-fipa-pure-const
+    ##compiler_flags#fipa_reference=-fipa-reference
+    ##compiler_flags#fipa_struct_reorg=-fipa-struct-reorg
+    ##compiler_flags#fira_share_save_slots=-fira-share-save-slots
+    ##compiler_flags#fira_share_spill_slots=-fira-share-spill-slots
+    ##compiler_flags#fivopts=-fivopts
+    ##compiler_flags#floop_block=-floop-block
+    ##compiler_flags#floop_interchange=-floop-interchange
+    ##compiler_flags#floop_strip_mine=-floop-strip-mine
+    ##compiler_flags#fmerge_constants=-fmerge-constants
+    ##compiler_flags#fmodulo_sched=-fmodulo-sched
+    ##compiler_flags#fmodulo_sched_allow_regmoves=-fno-modulo-sched-allow-regmoves
+    ##compiler_flags#fmove_loop_invariants=-fno-move-loop-invariants
+    ##compiler_flags#fomit_frame_pointer=-fomit-frame-pointer
+    ##compiler_flags#foptimize_sibling_calls=-foptimize-sibling-calls
+    ##compiler_flags#fpeel_loops=-fpeel-loops
+    ##compiler_flags#fpeephole=-fpeephole
+    ##compiler_flags#fpeephole2=-fpeephole2
+    ##compiler_flags#fpredictive_commoning=-fpredictive-commoning
+    ##compiler_flags#fprefetch_loop_arrays=-fprefetch-loop-arrays
+    ##compiler_flags#fregmove=-fregmove
+    ##compiler_flags#frename_registers=-frename-registers
+    ##compiler_flags#freorder_blocks=-freorder-blocks
+    ##compiler_flags#freorder_blocks_and_partition=-freorder-blocks-and-partition
+    ##compiler_flags#freorder_functions=-freorder-functions
+    ##compiler_flags#frerun_cse_after_loop=-frerun-cse-after-loop
+    ##compiler_flags#freschedule_modulo_scheduled_loops=-freschedule-modulo-scheduled-loops
+    ##compiler_flags#fsched_interblock=-fsched-interblock
+    ##compiler_flags#fsched_spec=-fsched-spec
+    ##compiler_flags#fsched_spec_load=-fsched-spec-load
+    ##compiler_flags#fsched_spec_load_dangerous=-fsched-spec-load-dangerous
+    ##compiler_flags#fsched2_use_superblocks=-fsched2-use-superblocks
+    ##compiler_flags#fschedule_insns=-fschedule-insns
+    ##compiler_flags#fschedule_insns2=-fschedule-insns2
+    ##compiler_flags#fsee=-fsee
+    ##compiler_flags#fsel_sched_pipelining=-fsel-sched-pipelining
+    ##compiler_flags#fsel_sched_pipelining_outer_loops=-fsel-sched-pipelining-outer-loops
+    ##compiler_flags#fselective_scheduling=-fselective-scheduling
+    ##compiler_flags#fselective_scheduling2=-fselective-scheduling2
+    ##compiler_flags#fsignaling_nans=-fsignaling-nans
+    ##compiler_flags#fsingle_precision_constant=-fsingle-precision-constant
+    ##compiler_flags#fsplit_ivs_in_unroller=-fsplit-ivs-in-unroller
+    ##compiler_flags#fsplit_wide_types=-fsplit-wide-types
+    ##compiler_flags#fstrict_aliasing=-fstrict-aliasing
+    ##compiler_flags#fstrict_overflow=-fstrict-overflow
+    ##compiler_flags#fthread_jumps=-fno-thread-jumps
+    ##compiler_flags#ftracer=-ftracer
+    ##compiler_flags#ftree_builtin_call_dce=-ftree-builtin-call-dce
+    ##compiler_flags#ftree_ccp=-ftree-ccp
+    ##compiler_flags#ftree_ch=-ftree-ch
+    ##compiler_flags#ftree_copy_prop=-ftree-copy-prop
+    ##compiler_flags#ftree_copyrename=-ftree-copyrename
+    ##compiler_flags#ftree_dce=-ftree-dce
+    ##compiler_flags#ftree_dominator_opts=-ftree-dominator-opts
+    ##compiler_flags#ftree_dse=-ftree-dse
+    ##compiler_flags#ftree_fre=-ftree-fre
+    ##compiler_flags#ftree_loop_distribution=-ftree-loop-distribution
+    ##compiler_flags#ftree_loop_im=-ftree-loop-im
+    ##compiler_flags#ftree_loop_ivcanon=-ftree-loop-ivcanon
+    ##compiler_flags#ftree_loop_linear=-ftree-loop-linear
+    ##compiler_flags#ftree_loop_optimize=-ftree-loop-optimize
+    ##compiler_flags#ftree_pre=-ftree-pre
+    ##compiler_flags#ftree_reassoc=-ftree-reassoc
+    ##compiler_flags#ftree_sink=-ftree-sink
+    ##compiler_flags#ftree_sra=-ftree-sra
+    ##compiler_flags#ftree_switch_conversion=-ftree-switch-conversion
+    ##compiler_flags#ftree_ter=-ftree-ter
+    ##compiler_flags#ftree_vect_loop_version=-ftree-vect-loop-version
+    ##compiler_flags#ftree_vectorize=-ftree-vectorize
+    ##compiler_flags#ftree_vrp=-ftree-vrp
+    ##compiler_flags#funroll_all_loops=-funroll-all-loops
+    ##compiler_flags#funsafe_loop_optimizations=-funsafe-loop-optimizations
+    ##compiler_flags#funsafe_math_optimizations=-funsafe-math-optimizations
+    ##compiler_flags#funswitch_loops=-funswitch-loops
+    ##compiler_flags#fvariable_expansion_in_unroller=-fvariable-expansion-in-unroller
+    ##compiler_flags#fvect_cost_model=-fvect-cost-model
+    ##compiler_flags#fweb=-fweb
+
+      ------------------- Statistical repetition: 1 of 2 -------------------
+
+Initializing universal program pipeline ...
+
+***************************************************************************************
+Obtaining platform parameters and checking other obligatory choices for the pipeline ...
+
+Initializing device ...
+
+OS CK UOA:     android5-arm (66395254948c0b71)
+
+OS name:       Android 4.2.2
+Short OS name: Linux version 3.4.5
+Long OS name:  Linux version 3.4.5 (z00182893@ubuntu) (gcc version 4.6.x-google 20120106 (prerelease) (GCC) ) #1 SMP PREEMPT Thu Aug 14 21:28:23 CST 2014
+OS bits:       32
+***************************************************************************************
+  Selected host platform: windows-64
+  Selected target platform: android5-arm
+  Selected target device ID: SWQ49TFIT8YLU4DE
+  Selected program: adapt16-adpcm (4947d2131df8ff45)
+  Selected command line: default
+  Selected dependencies: 
+      xopenme env = d49499018a9eddac; tags = ["32bits", "host-os-windows-64", "lang-c", "lang-cpp", "lang-f77", "lang-f90", "lang-f95", "lib", "rtl", "target-os-android5-arm", "v0", "v0.3", "xopenme"]
+      compiler env = 1004ad4886b499b6; tags = ["32bits", "compiler", "gcc", "host-os-windows-64", "lang-c", "lang-cpp", "target-os-android5-arm", "v4", "v4.9", "v4.9.0"]
+
+Loading compiler description: gcc-49x (a013e4e4d92ed26a) ...
+***************************************************************************************
+Setting CPU frequency to max (if supported) ...
+
+
+CMD to set CPU frequency:
+  /data/local/tmp/tools/ck-set-cpu-performance
+/system/bin/sh: /data/local/tmp/tools/ck-set-cpu-performance: not found
+***************************************************************************************
+Setting GPU frequency to max (if supported) ...
+
+
+CMD to set GPU frequency:
+  /data/local/tmp/tools/ck-set-gpu-performance
+/system/bin/sh: /data/local/tmp/tools/ck-set-gpu-performance: not found
+***************************************************************************************
+Detecting all target platform features ...
+
+***************************************************************************************
+Detecting OS and CPU features ...
+
+Number of logical processors: 1
+CPU name:                     MT6572
+CPU sub name:                 ARMv7 Processor rev 3 (v7l)
+CPU ABI:                      armeabi-v7a
+CPU features:                 swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls vfpv4 idiva idivt
+
+CPU frequency:
+  CPU0 = 1001.0 MHz
+CPU max frequency:
+  CPU0 = 1300.0 MHz
+CPU all frequencies (Hz):
+  CPU0 = []
+***************************************************************************************
+Detecting accelerator features ...
+
+GPU name: ARM, Mali-400 MP, OpenGL ES-CM 1.1
+
+Trying to read GPU frequency:
+  adb  -s SWQ49TFIT8YLU4DE shell /data/local/tmp/tools/ck-print-gpu-freq >c:\temp\tmp-ck-gn0jb_
+***************************************************************************************
+Detecting system features ...
+
+Platform name:   HUAWEI Y330-U01
+Platform vendor: HUAWEI
+Platform model:  Y330-U01
+***************************************************************************************
+Compile program ...
+
+Cleaning working directory ...
+
+***************************************************************************************
+Current directory: D:\Work1\CK\ck-repos\reproduce-adapt16\program\adapt16-adpcm\tmp
+
+***************************************************************************************
+
+Resolving dependencies ...
+
+D:\Work1\CK\ck-repos\reproduce-adapt16\program\adapt16-adpcm\tmp>call D:\Work1\CK\ck-repos\fgg-local-win\env\1004ad4886b499b6\env.bat 
+***************************************************************************************
+Detected compiler version: 4.9
+
+***************************************************************************************
+Compiler vars:
+  XOPENME=
+***************************************************************************************
+
+Executing prepared batch file tmp-ncavbb.bat ...
+
+D:\Work1\CK\ck-repos\reproduce-adapt16\program\adapt16-adpcm\tmp>call D:\Work1\CK\ck-repos\fgg-local-win\env\1004ad4886b499b6\env.bat 
+arm-linux-androideabi-gcc -c --sysroot "D:\!FGG\Installations\android-ndk-r10d\platforms\android-5\arch-arm"   -I..\ -DXOPENME -I"D:\!FGG\Installations\lib-rtl-xopenme-0.3-gcc-4.6.0-android5-arm-32\include" -O3 -fopenmp -flto -fsched-stalled-insns-dep=0 -fsched-stalled-insns=0 -finline-limit=2 --param min-crossjump-insns=3 --param max-grow-copy-bb-insns=4 --param max-goto-duplication-insns=4 --param max-inline-insns-single=256 --param max-inline-insns-auto=107 --param large-function-insns=1024 --param large-function-growth=32 --param large-unit-insns=4096 --param inline-unit-growth=16 --param ipcp-unit-growth=4 --param large-stack-frame=128 --param large-stack-frame-growth=512 --param max-inline-insns-recursive=128 --param max-inline-insns-recursive-auto=128 --param max-inline-recursive-depth=4 --param max-inline-recursive-depth-auto=4 --param min-inline-recursive-probability=4 --param min-vect-loop-bound=1 --param max-unrolled-insns=297 --param max-unroll-times=2 --param omega-max-vars=64 --param omega-max-geqs=128 --param omega-max-eqs=64 --param omega-max-wild-cards=8 --param omega-hash-table-size=607 --param omega-max-keys=658 --param omega-eliminate-redundant-constraints=0 --param tracer-min-branch-ratio=0 --param max-cse-path-length=4 --param max-cse-insns=512 --param max-reload-search-insns=251 --param max-cselib-memory-locations=256 --param max-sched-ready-insns=64 --param max-sched-region-blocks=4 --param max-pipeline-region-blocks=8 --param max-sched-region-insns=32 --param max-pipeline-region-insns=64 --param min-spec-prob=30 --param max-sched-extend-regions-iters=0 --param max-sched-insn-conflict-delay=2 --param sched-spec-prob-cutoff=30 --param sched-mem-true-dep-cost=1 --param selsched-max-lookahead=33 --param selsched-max-sched-times=1 --param max-last-value-rtl=25600 --param min-virtual-mappings=32 --param virtual-mappings-ratio=1 --param max-fields-for-field-sensitive=0 --param sccvn-max-scc-size=4096 --param ira-max-loops-num=32 --param ira-max-conflict-table-size=1024 -falign-functions -falign-jumps -falign-labels -falign-loops -fbranch-count-reg -fbranch-target-load-optimize -fbranch-target-load-optimize2 -fbtr-bb-exclusive -fcaller-saves -fconserve-stack -fcprop-registers -fcrossjumping -fcse-follow-jumps -fcse-skip-blocks -fcx-limited-range -fdce -fdefer-pop -fdelete-null-pointer-checks -fdse -fearly-inlining -fexpensive-optimizations -fforward-propagate -ffunction-cse -fgcse -fgcse-after-reload -fgcse-las -fno-gcse-lm -fgcse-sm -fguess-branch-probability -fif-conversion -fif-conversion2 -findirect-inlining -finline-functions -finline-functions-called-once -finline-small-functions -fipa-cp -fipa-cp-clone -fipa-matrix-reorg -fipa-pta -fipa-pure-const -fipa-reference -fipa-struct-reorg -fira-share-save-slots -fira-share-spill-slots -fivopts -floop-block -floop-interchange -floop-strip-mine -fmerge-constants -fmodulo-sched -fno-modulo-sched-allow-regmoves -fno-move-loop-invariants -fomit-frame-pointer -foptimize-sibling-calls -fpeel-loops -fpeephole -fpeephole2 -fpredictive-commoning -fprefetch-loop-arrays -fregmove -frename-registers -freorder-blocks -freorder-blocks-and-partition -freorder-functions -frerun-cse-after-loop -freschedule-modulo-scheduled-loops -fsched-interblock -fsched-spec -fsched-spec-load -fsched-spec-load-dangerous -fsched2-use-superblocks -fschedule-insns -fschedule-insns2 -fsee -fsel-sched-pipelining -fsel-sched-pipelining-outer-loops -fselective-scheduling -fselective-scheduling2 -fsignaling-nans -fsingle-precision-constant -fsplit-ivs-in-unroller -fsplit-wide-types -fstrict-aliasing -fstrict-overflow -fno-thread-jumps -ftracer -ftree-builtin-call-dce -ftree-ccp -ftree-ch -ftree-copy-prop -ftree-copyrename -ftree-dce -ftree-dominator-opts -ftree-dse -ftree-fre -ftree-loop-distribution -ftree-loop-im -ftree-loop-ivcanon -ftree-loop-linear -ftree-loop-optimize -ftree-pre -ftree-reassoc -ftree-sink -ftree-sra -ftree-switch-conversion -ftree-ter -ftree-vect-loop-version -ftree-vectorize -ftree-vrp -funroll-all-loops -funsafe-loop-optimizations -funsafe-math-optimizations -funswitch-loops -fvariable-expansion-in-unroller -fvect-cost-model -fweb ..\base.c  -o base.o
+***************************************************************************************
+Compilation time: 0.132 sec.; Object size: 0; MD5: 
+Warning: compilation failed!
+***************************************************************************************
+Pipeline failed (compilation failed - return code 1 !=0 )!
+***************************************************************************************
+Pipeline iteration: 7 of 100
+
+  Vector of flattened and updated choices:
+    ##compiler_flags#base_opt=-O0
+    ##compiler_flags#openmp=-fopenmp
+    ##compiler_flags#flto=-flto
+    ##compiler_flags#fsched_stalled_insns_dep=-fsched-stalled-insns-dep=0
+    ##compiler_flags#fsched_stalled_insns=-fsched-stalled-insns=0
+    ##compiler_flags#finline_limit=-finline-limit=2
+    ##compiler_flags#param_min_crossjump_insns=--param min-crossjump-insns=3
+    ##compiler_flags#param_max_grow_copy_bb_insns=--param max-grow-copy-bb-insns=11
+    ##compiler_flags#param_max_goto_duplication_insns=--param max-goto-duplication-insns=14
+    ##compiler_flags#param_max_inline_insns_single=--param max-inline-insns-single=256
+    ##compiler_flags#param_max_inline_insns_auto=--param max-inline-insns-auto=32
+    ##compiler_flags#param_large_function_insns=--param large-function-insns=1024
+    ##compiler_flags#param_large_function_growth=--param large-function-growth=32
+    ##compiler_flags#param_large_unit_insns=--param large-unit-insns=4096
+    ##compiler_flags#param_inline_unit_growth=--param inline-unit-growth=16
+    ##compiler_flags#param_ipcp_unit_growth=--param ipcp-unit-growth=4
+    ##compiler_flags#param_large_stack_frame=--param large-stack-frame=128
+    ##compiler_flags#param_large_stack_frame_growth=--param large-stack-frame-growth=512
+    ##compiler_flags#param_max_inline_insns_recursive=--param max-inline-insns-recursive=128
+    ##compiler_flags#param_max_inline_insns_recursive_auto=--param max-inline-insns-recursive-auto=128
+    ##compiler_flags#param_max_inline_recursive_depth=--param max-inline-recursive-depth=4
+    ##compiler_flags#param_max_inline_recursive_depth_auto=--param max-inline-recursive-depth-auto=4
+    ##compiler_flags#param_min_inline_recursive_probability=--param min-inline-recursive-probability=4
+    ##compiler_flags#param_min_vect_loop_bound=--param min-vect-loop-bound=1
+    ##compiler_flags#param_max_unrolled_insns=--param max-unrolled-insns=809
+    ##compiler_flags#param_max_unroll_times=--param max-unroll-times=2
+    ##compiler_flags#param_omega_max_vars=--param omega-max-vars=64
+    ##compiler_flags#param_omega_max_geqs=--param omega-max-geqs=128
+    ##compiler_flags#param_omega_max_eqs=--param omega-max-eqs=64
+    ##compiler_flags#param_omega_max_wild_cards=--param omega-max-wild-cards=8
+    ##compiler_flags#param_omega_hash_table_size=--param omega-hash-table-size=256
+    ##compiler_flags#param_omega_max_keys=--param omega-max-keys=256
+    ##compiler_flags#param_omega_eliminate_redundant_constraints=--param omega-eliminate-redundant-constraints=0
+    ##compiler_flags#param_tracer_min_branch_ratio=--param tracer-min-branch-ratio=0
+    ##compiler_flags#param_max_cse_path_length=--param max-cse-path-length=4
+    ##compiler_flags#param_max_cse_insns=--param max-cse-insns=512
+    ##compiler_flags#param_max_reload_search_insns=--param max-reload-search-insns=64
+    ##compiler_flags#param_max_cselib_memory_locations=--param max-cselib-memory-locations=256
+    ##compiler_flags#param_max_sched_ready_insns=--param max-sched-ready-insns=134
+    ##compiler_flags#param_max_sched_region_blocks=--param max-sched-region-blocks=4
+    ##compiler_flags#param_max_pipeline_region_blocks=--param max-pipeline-region-blocks=8
+    ##compiler_flags#param_max_sched_region_insns=--param max-sched-region-insns=32
+    ##compiler_flags#param_max_pipeline_region_insns=--param max-pipeline-region-insns=64
+    ##compiler_flags#param_min_spec_prob=--param min-spec-prob=30
+    ##compiler_flags#param_max_sched_extend_regions_iters=--param max-sched-extend-regions-iters=0
+    ##compiler_flags#param_max_sched_insn_conflict_delay=--param max-sched-insn-conflict-delay=2
+    ##compiler_flags#param_sched_spec_prob_cutoff=--param sched-spec-prob-cutoff=30
+    ##compiler_flags#param_sched_mem_true_dep_cost=--param sched-mem-true-dep-cost=1
+    ##compiler_flags#param_selsched_max_lookahead=--param selsched-max-lookahead=32
+    ##compiler_flags#param_selsched_max_sched_times=--param selsched-max-sched-times=1
+    ##compiler_flags#param_max_last_value_rtl=--param max-last-value-rtl=4096
+    ##compiler_flags#param_min_virtual_mappings=--param min-virtual-mappings=99
+    ##compiler_flags#param_virtual_mappings_ratio=--param virtual-mappings-ratio=1
+    ##compiler_flags#param_max_fields_for_field_sensitive=--param max-fields-for-field-sensitive=0
+    ##compiler_flags#param_sccvn_max_scc_size=--param sccvn-max-scc-size=4096
+    ##compiler_flags#param_ira_max_loops_num=--param ira-max-loops-num=32
+    ##compiler_flags#param_ira_max_conflict_table_size=--param ira-max-conflict-table-size=1024
+    ##compiler_flags#falign_functions=-falign-functions
+    ##compiler_flags#falign_jumps=-falign-jumps
+    ##compiler_flags#falign_labels=-falign-labels
+    ##compiler_flags#falign_loops=-falign-loops
+    ##compiler_flags#fbranch_count_reg=-fbranch-count-reg
+    ##compiler_flags#fbranch_target_load_optimize=-fno-branch-target-load-optimize
+    ##compiler_flags#fbranch_target_load_optimize2=-fbranch-target-load-optimize2
+    ##compiler_flags#fbtr_bb_exclusive=-fbtr-bb-exclusive
+    ##compiler_flags#fcaller_saves=-fcaller-saves
+    ##compiler_flags#fconserve_stack=-fconserve-stack
+    ##compiler_flags#fcprop_registers=-fcprop-registers
+    ##compiler_flags#fcrossjumping=-fcrossjumping
+    ##compiler_flags#fcse_follow_jumps=-fcse-follow-jumps
+    ##compiler_flags#fcse_skip_blocks=-fcse-skip-blocks
+    ##compiler_flags#fcx_limited_range=-fcx-limited-range
+    ##compiler_flags#fdce=-fno-dce
+    ##compiler_flags#fdefer_pop=-fdefer-pop
+    ##compiler_flags#fdelete_null_pointer_checks=-fdelete-null-pointer-checks
+    ##compiler_flags#fdse=-fdse
+    ##compiler_flags#fearly_inlining=-fearly-inlining
+    ##compiler_flags#fexpensive_optimizations=-fexpensive-optimizations
+    ##compiler_flags#fforward_propagate=-fforward-propagate
+    ##compiler_flags#ffunction_cse=-ffunction-cse
+    ##compiler_flags#fgcse=-fgcse
+    ##compiler_flags#fgcse_after_reload=-fgcse-after-reload
+    ##compiler_flags#fgcse_las=-fgcse-las
+    ##compiler_flags#fgcse_lm=-fno-gcse-lm
+    ##compiler_flags#fgcse_sm=-fno-gcse-sm
+    ##compiler_flags#fguess_branch_probability=-fguess-branch-probability
+    ##compiler_flags#fif_conversion=-fif-conversion
+    ##compiler_flags#fif_conversion2=-fif-conversion2
+    ##compiler_flags#findirect_inlining=-findirect-inlining
+    ##compiler_flags#finline_functions=-finline-functions
+    ##compiler_flags#finline_functions_called_once=-finline-functions-called-once
+    ##compiler_flags#finline_small_functions=-finline-small-functions
+    ##compiler_flags#fipa_cp=-fipa-cp
+    ##compiler_flags#fipa_cp_clone=-fipa-cp-clone
+    ##compiler_flags#fipa_matrix_reorg=-fipa-matrix-reorg
+    ##compiler_flags#fipa_pta=-fipa-pta
+    ##compiler_flags#fipa_pure_const=-fipa-pure-const
+    ##compiler_flags#fipa_reference=-fipa-reference
+    ##compiler_flags#fipa_struct_reorg=-fno-ipa-struct-reorg
+    ##compiler_flags#fira_share_save_slots=-fira-share-save-slots
+    ##compiler_flags#fira_share_spill_slots=-fira-share-spill-slots
+    ##compiler_flags#fivopts=-fivopts
+    ##compiler_flags#floop_block=-floop-block
+    ##compiler_flags#floop_interchange=-floop-interchange
+    ##compiler_flags#floop_strip_mine=-floop-strip-mine
+    ##compiler_flags#fmerge_constants=-fmerge-constants
+    ##compiler_flags#fmodulo_sched=-fmodulo-sched
+    ##compiler_flags#fmodulo_sched_allow_regmoves=-fno-modulo-sched-allow-regmoves
+    ##compiler_flags#fmove_loop_invariants=-fmove-loop-invariants
+    ##compiler_flags#fomit_frame_pointer=-fno-omit-frame-pointer
+    ##compiler_flags#foptimize_sibling_calls=-foptimize-sibling-calls
+    ##compiler_flags#fpeel_loops=-fpeel-loops
+    ##compiler_flags#fpeephole=-fpeephole
+    ##compiler_flags#fpeephole2=-fpeephole2
+    ##compiler_flags#fpredictive_commoning=-fpredictive-commoning
+    ##compiler_flags#fprefetch_loop_arrays=-fprefetch-loop-arrays
+    ##compiler_flags#fregmove=-fregmove
+    ##compiler_flags#frename_registers=-frename-registers
+    ##compiler_flags#freorder_blocks=-freorder-blocks
+    ##compiler_flags#freorder_blocks_and_partition=-freorder-blocks-and-partition
+    ##compiler_flags#freorder_functions=-freorder-functions
+    ##compiler_flags#frerun_cse_after_loop=-frerun-cse-after-loop
+    ##compiler_flags#freschedule_modulo_scheduled_loops=-freschedule-modulo-scheduled-loops
+    ##compiler_flags#fsched_interblock=-fsched-interblock
+    ##compiler_flags#fsched_spec=-fsched-spec
+    ##compiler_flags#fsched_spec_load=-fsched-spec-load
+    ##compiler_flags#fsched_spec_load_dangerous=-fsched-spec-load-dangerous
+    ##compiler_flags#fsched2_use_superblocks=-fsched2-use-superblocks
+    ##compiler_flags#fschedule_insns=-fno-schedule-insns
+    ##compiler_flags#fschedule_insns2=-fschedule-insns2
+    ##compiler_flags#fsee=-fsee
+    ##compiler_flags#fsel_sched_pipelining=-fsel-sched-pipelining
+    ##compiler_flags#fsel_sched_pipelining_outer_loops=-fsel-sched-pipelining-outer-loops
+    ##compiler_flags#fselective_scheduling=-fselective-scheduling
+    ##compiler_flags#fselective_scheduling2=-fselective-scheduling2
+    ##compiler_flags#fsignaling_nans=-fsignaling-nans
+    ##compiler_flags#fsingle_precision_constant=-fsingle-precision-constant
+    ##compiler_flags#fsplit_ivs_in_unroller=-fsplit-ivs-in-unroller
+    ##compiler_flags#fsplit_wide_types=-fsplit-wide-types
+    ##compiler_flags#fstrict_aliasing=-fstrict-aliasing
+    ##compiler_flags#fstrict_overflow=-fstrict-overflow
+    ##compiler_flags#fthread_jumps=-fthread-jumps
+    ##compiler_flags#ftracer=-ftracer
+    ##compiler_flags#ftree_builtin_call_dce=-ftree-builtin-call-dce
+    ##compiler_flags#ftree_ccp=-ftree-ccp
+    ##compiler_flags#ftree_ch=-ftree-ch
+    ##compiler_flags#ftree_copy_prop=-ftree-copy-prop
+    ##compiler_flags#ftree_copyrename=-ftree-copyrename
+    ##compiler_flags#ftree_dce=-fno-tree-dce
+    ##compiler_flags#ftree_dominator_opts=-ftree-dominator-opts
+    ##compiler_flags#ftree_dse=-fno-tree-dse
+    ##compiler_flags#ftree_fre=-ftree-fre
+    ##compiler_flags#ftree_loop_distribution=-fno-tree-loop-distribution
+    ##compiler_flags#ftree_loop_im=-ftree-loop-im
+    ##compiler_flags#ftree_loop_ivcanon=-ftree-loop-ivcanon
+    ##compiler_flags#ftree_loop_linear=-ftree-loop-linear
+    ##compiler_flags#ftree_loop_optimize=-ftree-loop-optimize
+    ##compiler_flags#ftree_pre=-ftree-pre
+    ##compiler_flags#ftree_reassoc=-ftree-reassoc
+    ##compiler_flags#ftree_sink=-ftree-sink
+    ##compiler_flags#ftree_sra=-ftree-sra
+    ##compiler_flags#ftree_switch_conversion=-ftree-switch-conversion
+    ##compiler_flags#ftree_ter=-ftree-ter
+    ##compiler_flags#ftree_vect_loop_version=-ftree-vect-loop-version
+    ##compiler_flags#ftree_vectorize=-ftree-vectorize
+    ##compiler_flags#ftree_vrp=-ftree-vrp
+    ##compiler_flags#funroll_all_loops=-funroll-all-loops
+    ##compiler_flags#funsafe_loop_optimizations=-fno-unsafe-loop-optimizations
+    ##compiler_flags#funsafe_math_optimizations=-funsafe-math-optimizations
+    ##compiler_flags#funswitch_loops=-funswitch-loops
+    ##compiler_flags#fvariable_expansion_in_unroller=-fvariable-expansion-in-unroller
+    ##compiler_flags#fvect_cost_model=-fvect-cost-model
+    ##compiler_flags#fweb=-fweb
+
+      ------------------- Statistical repetition: 1 of 2 -------------------
+
+Initializing universal program pipeline ...
+
+***************************************************************************************
+Obtaining platform parameters and checking other obligatory choices for the pipeline ...
+
+Initializing device ...
+
+OS CK UOA:     android5-arm (66395254948c0b71)
+
+OS name:       Android 4.2.2
+Short OS name: Linux version 3.4.5
+Long OS name:  Linux version 3.4.5 (z00182893@ubuntu) (gcc version 4.6.x-google 20120106 (prerelease) (GCC) ) #1 SMP PREEMPT Thu Aug 14 21:28:23 CST 2014
+OS bits:       32
+***************************************************************************************
+  Selected host platform: windows-64
+  Selected target platform: android5-arm
+  Selected target device ID: SWQ49TFIT8YLU4DE
+  Selected program: adapt16-adpcm (4947d2131df8ff45)
+  Selected command line: default
+  Selected dependencies: 
+      xopenme env = d49499018a9eddac; tags = ["32bits", "host-os-windows-64", "lang-c", "lang-cpp", "lang-f77", "lang-f90", "lang-f95", "lib", "rtl", "target-os-android5-arm", "v0", "v0.3", "xopenme"]
+      compiler env = 1004ad4886b499b6; tags = ["32bits", "compiler", "gcc", "host-os-windows-64", "lang-c", "lang-cpp", "target-os-android5-arm", "v4", "v4.9", "v4.9.0"]
+
+Loading compiler description: gcc-49x (a013e4e4d92ed26a) ...
+***************************************************************************************
+Setting CPU frequency to max (if supported) ...
+
+
+CMD to set CPU frequency:
+  /data/local/tmp/tools/ck-set-cpu-performance
+/system/bin/sh: /data/local/tmp/tools/ck-set-cpu-performance: not found
+***************************************************************************************
+Setting GPU frequency to max (if supported) ...
+
+
+CMD to set GPU frequency:
+  /data/local/tmp/tools/ck-set-gpu-performance
+/system/bin/sh: /data/local/tmp/tools/ck-set-gpu-performance: not found
+***************************************************************************************
+Detecting all target platform features ...
+
+***************************************************************************************
+Detecting OS and CPU features ...
+
+Number of logical processors: 1
+CPU name:                     MT6572
+CPU sub name:                 ARMv7 Processor rev 3 (v7l)
+CPU ABI:                      armeabi-v7a
+CPU features:                 swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls vfpv4 idiva idivt
+
+CPU frequency:
+  CPU0 = 1001.0 MHz
+CPU max frequency:
+  CPU0 = 1300.0 MHz
+CPU all frequencies (Hz):
+  CPU0 = []
+***************************************************************************************
+Detecting accelerator features ...
+
+GPU name: ARM, Mali-400 MP, OpenGL ES-CM 1.1
+
+Trying to read GPU frequency:
+  adb  -s SWQ49TFIT8YLU4DE shell /data/local/tmp/tools/ck-print-gpu-freq >c:\temp\tmp-ck-xu4ppc
+***************************************************************************************
+Detecting system features ...
+
+Platform name:   HUAWEI Y330-U01
+Platform vendor: HUAWEI
+Platform model:  Y330-U01
+***************************************************************************************
+Compile program ...
+
+Cleaning working directory ...
+
+***************************************************************************************
+Current directory: D:\Work1\CK\ck-repos\reproduce-adapt16\program\adapt16-adpcm\tmp
+
+***************************************************************************************
+
+Resolving dependencies ...
+
+D:\Work1\CK\ck-repos\reproduce-adapt16\program\adapt16-adpcm\tmp>call D:\Work1\CK\ck-repos\fgg-local-win\env\1004ad4886b499b6\env.bat 
+***************************************************************************************
+Detected compiler version: 4.9
+
+***************************************************************************************
+Compiler vars:
+  XOPENME=
+***************************************************************************************
+
+Executing prepared batch file tmp-yxt7de.bat ...
+
+D:\Work1\CK\ck-repos\reproduce-adapt16\program\adapt16-adpcm\tmp>call D:\Work1\CK\ck-repos\fgg-local-win\env\1004ad4886b499b6\env.bat 
+arm-linux-androideabi-gcc -c --sysroot "D:\!FGG\Installations\android-ndk-r10d\platforms\android-5\arch-arm"   -I..\ -DXOPENME -I"D:\!FGG\Installations\lib-rtl-xopenme-0.3-gcc-4.6.0-android5-arm-32\include" -O3 -fopenmp -flto -fsched-stalled-insns-dep=0 -fsched-stalled-insns=0 -finline-limit=2 --param min-crossjump-insns=3 --param max-grow-copy-bb-insns=11 --param max-goto-duplication-insns=14 --param max-inline-insns-single=256 --param max-inline-insns-auto=32 --param large-function-insns=1024 --param large-function-growth=32 --param large-unit-insns=4096 --param inline-unit-growth=16 --param ipcp-unit-growth=4 --param large-stack-frame=128 --param large-stack-frame-growth=512 --param max-inline-insns-recursive=128 --param max-inline-insns-recursive-auto=128 --param max-inline-recursive-depth=4 --param max-inline-recursive-depth-auto=4 --param min-inline-recursive-probability=4 --param min-vect-loop-bound=1 --param max-unrolled-insns=809 --param max-unroll-times=2 --param omega-max-vars=64 --param omega-max-geqs=128 --param omega-max-eqs=64 --param omega-max-wild-cards=8 --param omega-hash-table-size=256 --param omega-max-keys=256 --param omega-eliminate-redundant-constraints=0 --param tracer-min-branch-ratio=0 --param max-cse-path-length=4 --param max-cse-insns=512 --param max-reload-search-insns=64 --param max-cselib-memory-locations=256 --param max-sched-ready-insns=134 --param max-sched-region-blocks=4 --param max-pipeline-region-blocks=8 --param max-sched-region-insns=32 --param max-pipeline-region-insns=64 --param min-spec-prob=30 --param max-sched-extend-regions-iters=0 --param max-sched-insn-conflict-delay=2 --param sched-spec-prob-cutoff=30 --param sched-mem-true-dep-cost=1 --param selsched-max-lookahead=32 --param selsched-max-sched-times=1 --param max-last-value-rtl=4096 --param min-virtual-mappings=99 --param virtual-mappings-ratio=1 --param max-fields-for-field-sensitive=0 --param sccvn-max-scc-size=4096 --param ira-max-loops-num=32 --param ira-max-conflict-table-size=1024 -falign-functions -falign-jumps -falign-labels -falign-loops -fbranch-count-reg -fno-branch-target-load-optimize -fbranch-target-load-optimize2 -fbtr-bb-exclusive -fcaller-saves -fconserve-stack -fcprop-registers -fcrossjumping -fcse-follow-jumps -fcse-skip-blocks -fcx-limited-range -fno-dce -fdefer-pop -fdelete-null-pointer-checks -fdse -fearly-inlining -fexpensive-optimizations -fforward-propagate -ffunction-cse -fgcse -fgcse-after-reload -fgcse-las -fno-gcse-lm -fno-gcse-sm -fguess-branch-probability -fif-conversion -fif-conversion2 -findirect-inlining -finline-functions -finline-functions-called-once -finline-small-functions -fipa-cp -fipa-cp-clone -fipa-matrix-reorg -fipa-pta -fipa-pure-const -fipa-reference -fno-ipa-struct-reorg -fira-share-save-slots -fira-share-spill-slots -fivopts -floop-block -floop-interchange -floop-strip-mine -fmerge-constants -fmodulo-sched -fno-modulo-sched-allow-regmoves -fmove-loop-invariants -fno-omit-frame-pointer -foptimize-sibling-calls -fpeel-loops -fpeephole -fpeephole2 -fpredictive-commoning -fprefetch-loop-arrays -fregmove -frename-registers -freorder-blocks -freorder-blocks-and-partition -freorder-functions -frerun-cse-after-loop -freschedule-modulo-scheduled-loops -fsched-interblock -fsched-spec -fsched-spec-load -fsched-spec-load-dangerous -fsched2-use-superblocks -fno-schedule-insns -fschedule-insns2 -fsee -fsel-sched-pipelining -fsel-sched-pipelining-outer-loops -fselective-scheduling -fselective-scheduling2 -fsignaling-nans -fsingle-precision-constant -fsplit-ivs-in-unroller -fsplit-wide-types -fstrict-aliasing -fstrict-overflow -fthread-jumps -ftracer -ftree-builtin-call-dce -ftree-ccp -ftree-ch -ftree-copy-prop -ftree-copyrename -fno-tree-dce -ftree-dominator-opts -fno-tree-dse -ftree-fre -fno-tree-loop-distribution -ftree-loop-im -ftree-loop-ivcanon -ftree-loop-linear -ftree-loop-optimize -ftree-pre -ftree-reassoc -ftree-sink -ftree-sra -ftree-switch-conversion -ftree-ter -ftree-vect-loop-version -ftree-vectorize -ftree-vrp -funroll-all-loops -fno-unsafe-loop-optimizations -funsafe-math-optimizations -funswitch-loops -fvariable-expansion-in-unroller -fvect-cost-model -fweb ..\base.c  -o base.o
+***************************************************************************************
+Compilation time: 0.138 sec.; Object size: 0; MD5: 
+Warning: compilation failed!
+***************************************************************************************
+Pipeline failed (compilation failed - return code 1 !=0 )!
+***************************************************************************************
+Pipeline iteration: 8 of 100
+
+  Vector of flattened and updated choices:
+    ##compiler_flags#base_opt=-Os
+    ##compiler_flags#openmp=-fopenmp
+    ##compiler_flags#flto=-flto
+    ##compiler_flags#fsched_stalled_insns_dep=-fsched-stalled-insns-dep=0
+    ##compiler_flags#fsched_stalled_insns=-fsched-stalled-insns=0
+    ##compiler_flags#finline_limit=-finline-limit=2
+    ##compiler_flags#param_min_crossjump_insns=--param min-crossjump-insns=9
+    ##compiler_flags#param_max_grow_copy_bb_insns=--param max-grow-copy-bb-insns=4
+    ##compiler_flags#param_max_goto_duplication_insns=--param max-goto-duplication-insns=4
+    ##compiler_flags#param_max_inline_insns_single=--param max-inline-insns-single=256
+    ##compiler_flags#param_max_inline_insns_auto=--param max-inline-insns-auto=32
+    ##compiler_flags#param_large_function_insns=--param large-function-insns=1024
+    ##compiler_flags#param_large_function_growth=--param large-function-growth=32
+    ##compiler_flags#param_large_unit_insns=--param large-unit-insns=4096
+    ##compiler_flags#param_inline_unit_growth=--param inline-unit-growth=16
+    ##compiler_flags#param_ipcp_unit_growth=--param ipcp-unit-growth=22
+    ##compiler_flags#param_large_stack_frame=--param large-stack-frame=128
+    ##compiler_flags#param_large_stack_frame_growth=--param large-stack-frame-growth=1515
+    ##compiler_flags#param_max_inline_insns_recursive=--param max-inline-insns-recursive=128
+    ##compiler_flags#param_max_inline_insns_recursive_auto=--param max-inline-insns-recursive-auto=454
+    ##compiler_flags#param_max_inline_recursive_depth=--param max-inline-recursive-depth=4
+    ##compiler_flags#param_max_inline_recursive_depth_auto=--param max-inline-recursive-depth-auto=4
+    ##compiler_flags#param_min_inline_recursive_probability=--param min-inline-recursive-probability=4
+    ##compiler_flags#param_min_vect_loop_bound=--param min-vect-loop-bound=1
+    ##compiler_flags#param_max_unrolled_insns=--param max-unrolled-insns=32
+    ##compiler_flags#param_max_unroll_times=--param max-unroll-times=2
+    ##compiler_flags#param_omega_max_vars=--param omega-max-vars=64
+    ##compiler_flags#param_omega_max_geqs=--param omega-max-geqs=128
+    ##compiler_flags#param_omega_max_eqs=--param omega-max-eqs=64
+    ##compiler_flags#param_omega_max_wild_cards=--param omega-max-wild-cards=8
+    ##compiler_flags#param_omega_hash_table_size=--param omega-hash-table-size=256
+    ##compiler_flags#param_omega_max_keys=--param omega-max-keys=256
+    ##compiler_flags#param_omega_eliminate_redundant_constraints=--param omega-eliminate-redundant-constraints=1
+    ##compiler_flags#param_tracer_min_branch_ratio=--param tracer-min-branch-ratio=0
+    ##compiler_flags#param_max_cse_path_length=--param max-cse-path-length=4
+    ##compiler_flags#param_max_cse_insns=--param max-cse-insns=512
+    ##compiler_flags#param_max_reload_search_insns=--param max-reload-search-insns=64
+    ##compiler_flags#param_max_cselib_memory_locations=--param max-cselib-memory-locations=256
+    ##compiler_flags#param_max_sched_ready_insns=--param max-sched-ready-insns=64
+    ##compiler_flags#param_max_sched_region_blocks=--param max-sched-region-blocks=17
+    ##compiler_flags#param_max_pipeline_region_blocks=--param max-pipeline-region-blocks=32
+    ##compiler_flags#param_max_sched_region_insns=--param max-sched-region-insns=32
+    ##compiler_flags#param_max_pipeline_region_insns=--param max-pipeline-region-insns=64
+    ##compiler_flags#param_min_spec_prob=--param min-spec-prob=32
+    ##compiler_flags#param_max_sched_extend_regions_iters=--param max-sched-extend-regions-iters=0
+    ##compiler_flags#param_max_sched_insn_conflict_delay=--param max-sched-insn-conflict-delay=2
+    ##compiler_flags#param_sched_spec_prob_cutoff=--param sched-spec-prob-cutoff=30
+    ##compiler_flags#param_sched_mem_true_dep_cost=--param sched-mem-true-dep-cost=1
+    ##compiler_flags#param_selsched_max_lookahead=--param selsched-max-lookahead=32
+    ##compiler_flags#param_selsched_max_sched_times=--param selsched-max-sched-times=1
+    ##compiler_flags#param_max_last_value_rtl=--param max-last-value-rtl=16530
+    ##compiler_flags#param_min_virtual_mappings=--param min-virtual-mappings=32
+    ##compiler_flags#param_virtual_mappings_ratio=--param virtual-mappings-ratio=1
+    ##compiler_flags#param_max_fields_for_field_sensitive=--param max-fields-for-field-sensitive=0
+    ##compiler_flags#param_sccvn_max_scc_size=--param sccvn-max-scc-size=4096
+    ##compiler_flags#param_ira_max_loops_num=--param ira-max-loops-num=32
+    ##compiler_flags#param_ira_max_conflict_table_size=--param ira-max-conflict-table-size=1024
+    ##compiler_flags#falign_functions=-falign-functions
+    ##compiler_flags#falign_jumps=-falign-jumps
+    ##compiler_flags#falign_labels=-falign-labels
+    ##compiler_flags#falign_loops=-falign-loops
+    ##compiler_flags#fbranch_count_reg=-fbranch-count-reg
+    ##compiler_flags#fbranch_target_load_optimize=-fbranch-target-load-optimize
+    ##compiler_flags#fbranch_target_load_optimize2=-fbranch-target-load-optimize2
+    ##compiler_flags#fbtr_bb_exclusive=-fbtr-bb-exclusive
+    ##compiler_flags#fcaller_saves=-fcaller-saves
+    ##compiler_flags#fconserve_stack=-fconserve-stack
+    ##compiler_flags#fcprop_registers=-fcprop-registers
+    ##compiler_flags#fcrossjumping=-fcrossjumping
+    ##compiler_flags#fcse_follow_jumps=-fcse-follow-jumps
+    ##compiler_flags#fcse_skip_blocks=-fcse-skip-blocks
+    ##compiler_flags#fcx_limited_range=-fcx-limited-range
+    ##compiler_flags#fdce=-fdce
+    ##compiler_flags#fdefer_pop=-fdefer-pop
+    ##compiler_flags#fdelete_null_pointer_checks=-fdelete-null-pointer-checks
+    ##compiler_flags#fdse=-fdse
+    ##compiler_flags#fearly_inlining=-fearly-inlining
+    ##compiler_flags#fexpensive_optimizations=-fexpensive-optimizations
+    ##compiler_flags#fforward_propagate=-fforward-propagate
+    ##compiler_flags#ffunction_cse=-ffunction-cse
+    ##compiler_flags#fgcse=-fgcse
+    ##compiler_flags#fgcse_after_reload=-fno-gcse-after-reload
+    ##compiler_flags#fgcse_las=-fgcse-las
+    ##compiler_flags#fgcse_lm=-fgcse-lm
+    ##compiler_flags#fgcse_sm=-fgcse-sm
+    ##compiler_flags#fguess_branch_probability=-fguess-branch-probability
+    ##compiler_flags#fif_conversion=-fif-conversion
+    ##compiler_flags#fif_conversion2=-fif-conversion2
+    ##compiler_flags#findirect_inlining=-findirect-inlining
+    ##compiler_flags#finline_functions=-finline-functions
+    ##compiler_flags#finline_functions_called_once=-finline-functions-called-once
+    ##compiler_flags#finline_small_functions=-finline-small-functions
+    ##compiler_flags#fipa_cp=-fipa-cp
+    ##compiler_flags#fipa_cp_clone=-fipa-cp-clone
+    ##compiler_flags#fipa_matrix_reorg=-fipa-matrix-reorg
+    ##compiler_flags#fipa_pta=-fipa-pta
+    ##compiler_flags#fipa_pure_const=-fipa-pure-const
+    ##compiler_flags#fipa_reference=-fipa-reference
+    ##compiler_flags#fipa_struct_reorg=-fipa-struct-reorg
+    ##compiler_flags#fira_share_save_slots=-fira-share-save-slots
+    ##compiler_flags#fira_share_spill_slots=-fira-share-spill-slots
+    ##compiler_flags#fivopts=-fivopts
+    ##compiler_flags#floop_block=-floop-block
+    ##compiler_flags#floop_interchange=-fno-loop-interchange
+    ##compiler_flags#floop_strip_mine=-floop-strip-mine
+    ##compiler_flags#fmerge_constants=-fmerge-constants
+    ##compiler_flags#fmodulo_sched=-fmodulo-sched
+    ##compiler_flags#fmodulo_sched_allow_regmoves=-fmodulo-sched-allow-regmoves
+    ##compiler_flags#fmove_loop_invariants=-fmove-loop-invariants
+    ##compiler_flags#fomit_frame_pointer=-fomit-frame-pointer
+    ##compiler_flags#foptimize_sibling_calls=-foptimize-sibling-calls
+    ##compiler_flags#fpeel_loops=-fpeel-loops
+    ##compiler_flags#fpeephole=-fpeephole
+    ##compiler_flags#fpeephole2=-fpeephole2
+    ##compiler_flags#fpredictive_commoning=-fpredictive-commoning
+    ##compiler_flags#fprefetch_loop_arrays=-fprefetch-loop-arrays
+    ##compiler_flags#fregmove=-fregmove
+    ##compiler_flags#frename_registers=-frename-registers
+    ##compiler_flags#freorder_blocks=-freorder-blocks
+    ##compiler_flags#freorder_blocks_and_partition=-freorder-blocks-and-partition
+    ##compiler_flags#freorder_functions=-freorder-functions
+    ##compiler_flags#frerun_cse_after_loop=-frerun-cse-after-loop
+    ##compiler_flags#freschedule_modulo_scheduled_loops=-freschedule-modulo-scheduled-loops
+    ##compiler_flags#fsched_interblock=-fsched-interblock
+    ##compiler_flags#fsched_spec=-fsched-spec
+    ##compiler_flags#fsched_spec_load=-fsched-spec-load
+    ##compiler_flags#fsched_spec_load_dangerous=-fsched-spec-load-dangerous
+    ##compiler_flags#fsched2_use_superblocks=-fsched2-use-superblocks
+    ##compiler_flags#fschedule_insns=-fschedule-insns
+    ##compiler_flags#fschedule_insns2=-fschedule-insns2
+    ##compiler_flags#fsee=-fsee
+    ##compiler_flags#fsel_sched_pipelining=-fsel-sched-pipelining
+    ##compiler_flags#fsel_sched_pipelining_outer_loops=-fsel-sched-pipelining-outer-loops
+    ##compiler_flags#fselective_scheduling=-fselective-scheduling
+    ##compiler_flags#fselective_scheduling2=-fselective-scheduling2
+    ##compiler_flags#fsignaling_nans=-fsignaling-nans
+    ##compiler_flags#fsingle_precision_constant=-fno-single-precision-constant
+    ##compiler_flags#fsplit_ivs_in_unroller=-fsplit-ivs-in-unroller
+    ##compiler_flags#fsplit_wide_types=-fsplit-wide-types
+    ##compiler_flags#fstrict_aliasing=-fstrict-aliasing
+    ##compiler_flags#fstrict_overflow=-fstrict-overflow
+    ##compiler_flags#fthread_jumps=-fthread-jumps
+    ##compiler_flags#ftracer=-ftracer
+    ##compiler_flags#ftree_builtin_call_dce=-ftree-builtin-call-dce
+    ##compiler_flags#ftree_ccp=-ftree-ccp
+    ##compiler_flags#ftree_ch=-fno-tree-ch
+    ##compiler_flags#ftree_copy_prop=-fno-tree-copy-prop
+    ##compiler_flags#ftree_copyrename=-ftree-copyrename
+    ##compiler_flags#ftree_dce=-ftree-dce
+    ##compiler_flags#ftree_dominator_opts=-ftree-dominator-opts
+    ##compiler_flags#ftree_dse=-ftree-dse
+    ##compiler_flags#ftree_fre=-ftree-fre
+    ##compiler_flags#ftree_loop_distribution=-ftree-loop-distribution
+    ##compiler_flags#ftree_loop_im=-ftree-loop-im
+    ##compiler_flags#ftree_loop_ivcanon=-ftree-loop-ivcanon
+    ##compiler_flags#ftree_loop_linear=-ftree-loop-linear
+    ##compiler_flags#ftree_loop_optimize=-ftree-loop-optimize
+    ##compiler_flags#ftree_pre=-ftree-pre
+    ##compiler_flags#ftree_reassoc=-ftree-reassoc
+    ##compiler_flags#ftree_sink=-ftree-sink
+    ##compiler_flags#ftree_sra=-ftree-sra
+    ##compiler_flags#ftree_switch_conversion=-ftree-switch-conversion
+    ##compiler_flags#ftree_ter=-ftree-ter
+    ##compiler_flags#ftree_vect_loop_version=-ftree-vect-loop-version
+    ##compiler_flags#ftree_vectorize=-ftree-vectorize
+    ##compiler_flags#ftree_vrp=-ftree-vrp
+    ##compiler_flags#funroll_all_loops=-funroll-all-loops
+    ##compiler_flags#funsafe_loop_optimizations=-funsafe-loop-optimizations
+    ##compiler_flags#funsafe_math_optimizations=-fno-unsafe-math-optimizations
+    ##compiler_flags#funswitch_loops=-funswitch-loops
+    ##compiler_flags#fvariable_expansion_in_unroller=-fvariable-expansion-in-unroller
+    ##compiler_flags#fvect_cost_model=-fvect-cost-model
+    ##compiler_flags#fweb=-fweb
+
+      ------------------- Statistical repetition: 1 of 2 -------------------
+
+Initializing universal program pipeline ...
+
+***************************************************************************************
+Obtaining platform parameters and checking other obligatory choices for the pipeline ...
+
+Initializing device ...
+
+OS CK UOA:     android5-arm (66395254948c0b71)
+
+OS name:       Android 4.2.2
+Short OS name: Linux version 3.4.5
+Long OS name:  Linux version 3.4.5 (z00182893@ubuntu) (gcc version 4.6.x-google 20120106 (prerelease) (GCC) ) #1 SMP PREEMPT Thu Aug 14 21:28:23 CST 2014
+OS bits:       32
+***************************************************************************************
+  Selected host platform: windows-64
+  Selected target platform: android5-arm
+  Selected target device ID: SWQ49TFIT8YLU4DE
+  Selected program: adapt16-adpcm (4947d2131df8ff45)
+  Selected command line: default
+  Selected dependencies: 
+      xopenme env = d49499018a9eddac; tags = ["32bits", "host-os-windows-64", "lang-c", "lang-cpp", "lang-f77", "lang-f90", "lang-f95", "lib", "rtl", "target-os-android5-arm", "v0", "v0.3", "xopenme"]
+      compiler env = 1004ad4886b499b6; tags = ["32bits", "compiler", "gcc", "host-os-windows-64", "lang-c", "lang-cpp", "target-os-android5-arm", "v4", "v4.9", "v4.9.0"]
+
+Loading compiler description: gcc-49x (a013e4e4d92ed26a) ...
+***************************************************************************************
+Setting CPU frequency to max (if supported) ...
+
+
+CMD to set CPU frequency:
+  /data/local/tmp/tools/ck-set-cpu-performance
+/system/bin/sh: /data/local/tmp/tools/ck-set-cpu-performance: not found
+***************************************************************************************
+Setting GPU frequency to max (if supported) ...
+
+
+CMD to set GPU frequency:
+  /data/local/tmp/tools/ck-set-gpu-performance
+/system/bin/sh: /data/local/tmp/tools/ck-set-gpu-performance: not found
+***************************************************************************************
+Detecting all target platform features ...
+
+***************************************************************************************
+Detecting OS and CPU features ...
+
+Number of logical processors: 1
+CPU name:                     MT6572
+CPU sub name:                 ARMv7 Processor rev 3 (v7l)
+CPU ABI:                      armeabi-v7a
+CPU features:                 swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls vfpv4 idiva idivt
+
+CPU frequency:
+  CPU0 = 1001.0 MHz
+CPU max frequency:
+  CPU0 = 1300.0 MHz
+CPU all frequencies (Hz):
+  CPU0 = []
+***************************************************************************************
+Detecting accelerator features ...
+
+GPU name: ARM, Mali-400 MP, OpenGL ES-CM 1.1
+
+Trying to read GPU frequency:
+  adb  -s SWQ49TFIT8YLU4DE shell /data/local/tmp/tools/ck-print-gpu-freq >c:\temp\tmp-ck-bivyo7
+***************************************************************************************
+Detecting system features ...
+
+Platform name:   HUAWEI Y330-U01
+Platform vendor: HUAWEI
+Platform model:  Y330-U01
+***************************************************************************************
+Compile program ...
+
+Cleaning working directory ...
+
+***************************************************************************************
+Current directory: D:\Work1\CK\ck-repos\reproduce-adapt16\program\adapt16-adpcm\tmp
+
+***************************************************************************************
+
+Resolving dependencies ...
+
+D:\Work1\CK\ck-repos\reproduce-adapt16\program\adapt16-adpcm\tmp>call D:\Work1\CK\ck-repos\fgg-local-win\env\1004ad4886b499b6\env.bat 
+***************************************************************************************
+Detected compiler version: 4.9
+
+***************************************************************************************
+Compiler vars:
+  XOPENME=
+***************************************************************************************
+
+Executing prepared batch file tmp-1vvvlv.bat ...
+
+D:\Work1\CK\ck-repos\reproduce-adapt16\program\adapt16-adpcm\tmp>call D:\Work1\CK\ck-repos\fgg-local-win\env\1004ad4886b499b6\env.bat 
+arm-linux-androideabi-gcc -c --sysroot "D:\!FGG\Installations\android-ndk-r10d\platforms\android-5\arch-arm"   -I..\ -DXOPENME -I"D:\!FGG\Installations\lib-rtl-xopenme-0.3-gcc-4.6.0-android5-arm-32\include" -O3 -fopenmp -flto -fsched-stalled-insns-dep=0 -fsched-stalled-insns=0 -finline-limit=2 --param min-crossjump-insns=9 --param max-grow-copy-bb-insns=4 --param max-goto-duplication-insns=4 --param max-inline-insns-single=256 --param max-inline-insns-auto=32 --param large-function-insns=1024 --param large-function-growth=32 --param large-unit-insns=4096 --param inline-unit-growth=16 --param ipcp-unit-growth=22 --param large-stack-frame=128 --param large-stack-frame-growth=1515 --param max-inline-insns-recursive=128 --param max-inline-insns-recursive-auto=454 --param max-inline-recursive-depth=4 --param max-inline-recursive-depth-auto=4 --param min-inline-recursive-probability=4 --param min-vect-loop-bound=1 --param max-unrolled-insns=32 --param max-unroll-times=2 --param omega-max-vars=64 --param omega-max-geqs=128 --param omega-max-eqs=64 --param omega-max-wild-cards=8 --param omega-hash-table-size=256 --param omega-max-keys=256 --param omega-eliminate-redundant-constraints=1 --param tracer-min-branch-ratio=0 --param max-cse-path-length=4 --param max-cse-insns=512 --param max-reload-search-insns=64 --param max-cselib-memory-locations=256 --param max-sched-ready-insns=64 --param max-sched-region-blocks=17 --param max-pipeline-region-blocks=32 --param max-sched-region-insns=32 --param max-pipeline-region-insns=64 --param min-spec-prob=32 --param max-sched-extend-regions-iters=0 --param max-sched-insn-conflict-delay=2 --param sched-spec-prob-cutoff=30 --param sched-mem-true-dep-cost=1 --param selsched-max-lookahead=32 --param selsched-max-sched-times=1 --param max-last-value-rtl=16530 --param min-virtual-mappings=32 --param virtual-mappings-ratio=1 --param max-fields-for-field-sensitive=0 --param sccvn-max-scc-size=4096 --param ira-max-loops-num=32 --param ira-max-conflict-table-size=1024 -falign-functions -falign-jumps -falign-labels -falign-loops -fbranch-count-reg -fbranch-target-load-optimize -fbranch-target-load-optimize2 -fbtr-bb-exclusive -fcaller-saves -fconserve-stack -fcprop-registers -fcrossjumping -fcse-follow-jumps -fcse-skip-blocks -fcx-limited-range -fdce -fdefer-pop -fdelete-null-pointer-checks -fdse -fearly-inlining -fexpensive-optimizations -fforward-propagate -ffunction-cse -fgcse -fno-gcse-after-reload -fgcse-las -fgcse-lm -fgcse-sm -fguess-branch-probability -fif-conversion -fif-conversion2 -findirect-inlining -finline-functions -finline-functions-called-once -finline-small-functions -fipa-cp -fipa-cp-clone -fipa-matrix-reorg -fipa-pta -fipa-pure-const -fipa-reference -fipa-struct-reorg -fira-share-save-slots -fira-share-spill-slots -fivopts -floop-block -fno-loop-interchange -floop-strip-mine -fmerge-constants -fmodulo-sched -fmodulo-sched-allow-regmoves -fmove-loop-invariants -fomit-frame-pointer -foptimize-sibling-calls -fpeel-loops -fpeephole -fpeephole2 -fpredictive-commoning -fprefetch-loop-arrays -fregmove -frename-registers -freorder-blocks -freorder-blocks-and-partition -freorder-functions -frerun-cse-after-loop -freschedule-modulo-scheduled-loops -fsched-interblock -fsched-spec -fsched-spec-load -fsched-spec-load-dangerous -fsched2-use-superblocks -fschedule-insns -fschedule-insns2 -fsee -fsel-sched-pipelining -fsel-sched-pipelining-outer-loops -fselective-scheduling -fselective-scheduling2 -fsignaling-nans -fno-single-precision-constant -fsplit-ivs-in-unroller -fsplit-wide-types -fstrict-aliasing -fstrict-overflow -fthread-jumps -ftracer -ftree-builtin-call-dce -ftree-ccp -fno-tree-ch -fno-tree-copy-prop -ftree-copyrename -ftree-dce -ftree-dominator-opts -ftree-dse -ftree-fre -ftree-loop-distribution -ftree-loop-im -ftree-loop-ivcanon -ftree-loop-linear -ftree-loop-optimize -ftree-pre -ftree-reassoc -ftree-sink -ftree-sra -ftree-switch-conversion -ftree-ter -ftree-vect-loop-version -ftree-vectorize -ftree-vrp -funroll-all-loops -funsafe-loop-optimizations -fno-unsafe-math-optimizations -funswitch-loops -fvariable-expansion-in-unroller -fvect-cost-model -fweb ..\base.c  -o base.o
+***************************************************************************************
+Compilation time: 0.115 sec.; Object size: 0; MD5: 
+Warning: compilation failed!
+***************************************************************************************
+Pipeline failed (compilation failed - return code 1 !=0 )!
+***************************************************************************************
+Pipeline iteration: 9 of 100
+
+  Vector of flattened and updated choices:
+    ##compiler_flags#base_opt=-O1
+    ##compiler_flags#openmp=-fopenmp
+    ##compiler_flags#flto=-flto
+    ##compiler_flags#fsched_stalled_insns_dep=-fsched-stalled-insns-dep=0
+    ##compiler_flags#fsched_stalled_insns=-fsched-stalled-insns=0
+    ##compiler_flags#finline_limit=-finline-limit=2
+    ##compiler_flags#param_min_crossjump_insns=--param min-crossjump-insns=3
+    ##compiler_flags#param_max_grow_copy_bb_insns=--param max-grow-copy-bb-insns=4
+    ##compiler_flags#param_max_goto_duplication_insns=--param max-goto-duplication-insns=4
+    ##compiler_flags#param_max_inline_insns_single=--param max-inline-insns-single=256
+    ##compiler_flags#param_max_inline_insns_auto=--param max-inline-insns-auto=32
+    ##compiler_flags#param_large_function_insns=--param large-function-insns=1024
+    ##compiler_flags#param_large_function_growth=--param large-function-growth=32
+    ##compiler_flags#param_large_unit_insns=--param large-unit-insns=16995
+    ##compiler_flags#param_inline_unit_growth=--param inline-unit-growth=40
+    ##compiler_flags#param_ipcp_unit_growth=--param ipcp-unit-growth=6
+    ##compiler_flags#param_large_stack_frame=--param large-stack-frame=128
+    ##compiler_flags#param_large_stack_frame_growth=--param large-stack-frame-growth=512
+    ##compiler_flags#param_max_inline_insns_recursive=--param max-inline-insns-recursive=128
+    ##compiler_flags#param_max_inline_insns_recursive_auto=--param max-inline-insns-recursive-auto=128
+    ##compiler_flags#param_max_inline_recursive_depth=--param max-inline-recursive-depth=4
+    ##compiler_flags#param_max_inline_recursive_depth_auto=--param max-inline-recursive-depth-auto=5
+    ##compiler_flags#param_min_inline_recursive_probability=--param min-inline-recursive-probability=4
+    ##compiler_flags#param_min_vect_loop_bound=--param min-vect-loop-bound=1
+    ##compiler_flags#param_max_unrolled_insns=--param max-unrolled-insns=32
+    ##compiler_flags#param_max_unroll_times=--param max-unroll-times=2
+    ##compiler_flags#param_omega_max_vars=--param omega-max-vars=64
+    ##compiler_flags#param_omega_max_geqs=--param omega-max-geqs=129
+    ##compiler_flags#param_omega_max_eqs=--param omega-max-eqs=64
+    ##compiler_flags#param_omega_max_wild_cards=--param omega-max-wild-cards=8
+    ##compiler_flags#param_omega_hash_table_size=--param omega-hash-table-size=256
+    ##compiler_flags#param_omega_max_keys=--param omega-max-keys=256
+    ##compiler_flags#param_omega_eliminate_redundant_constraints=--param omega-eliminate-redundant-constraints=0
+    ##compiler_flags#param_tracer_min_branch_ratio=--param tracer-min-branch-ratio=0
+    ##compiler_flags#param_max_cse_path_length=--param max-cse-path-length=4
+    ##compiler_flags#param_max_cse_insns=--param max-cse-insns=512
+    ##compiler_flags#param_max_reload_search_insns=--param max-reload-search-insns=64
+    ##compiler_flags#param_max_cselib_memory_locations=--param max-cselib-memory-locations=256
+    ##compiler_flags#param_max_sched_ready_insns=--param max-sched-ready-insns=64
+    ##compiler_flags#param_max_sched_region_blocks=--param max-sched-region-blocks=29
+    ##compiler_flags#param_max_pipeline_region_blocks=--param max-pipeline-region-blocks=8
+    ##compiler_flags#param_max_sched_region_insns=--param max-sched-region-insns=32
+    ##compiler_flags#param_max_pipeline_region_insns=--param max-pipeline-region-insns=64
+    ##compiler_flags#param_min_spec_prob=--param min-spec-prob=30
+    ##compiler_flags#param_max_sched_extend_regions_iters=--param max-sched-extend-regions-iters=0
+    ##compiler_flags#param_max_sched_insn_conflict_delay=--param max-sched-insn-conflict-delay=2
+    ##compiler_flags#param_sched_spec_prob_cutoff=--param sched-spec-prob-cutoff=30
+    ##compiler_flags#param_sched_mem_true_dep_cost=--param sched-mem-true-dep-cost=1
+    ##compiler_flags#param_selsched_max_lookahead=--param selsched-max-lookahead=32
+    ##compiler_flags#param_selsched_max_sched_times=--param selsched-max-sched-times=1
+    ##compiler_flags#param_max_last_value_rtl=--param max-last-value-rtl=4096
+    ##compiler_flags#param_min_virtual_mappings=--param min-virtual-mappings=32
+    ##compiler_flags#param_virtual_mappings_ratio=--param virtual-mappings-ratio=4
+    ##compiler_flags#param_max_fields_for_field_sensitive=--param max-fields-for-field-sensitive=0
+    ##compiler_flags#param_sccvn_max_scc_size=--param sccvn-max-scc-size=4096
+    ##compiler_flags#param_ira_max_loops_num=--param ira-max-loops-num=32
+    ##compiler_flags#param_ira_max_conflict_table_size=--param ira-max-conflict-table-size=1024
+    ##compiler_flags#falign_functions=-falign-functions
+    ##compiler_flags#falign_jumps=-falign-jumps
+    ##compiler_flags#falign_labels=-falign-labels
+    ##compiler_flags#falign_loops=-falign-loops
+    ##compiler_flags#fbranch_count_reg=-fbranch-count-reg
+    ##compiler_flags#fbranch_target_load_optimize=-fbranch-target-load-optimize
+    ##compiler_flags#fbranch_target_load_optimize2=-fbranch-target-load-optimize2
+    ##compiler_flags#fbtr_bb_exclusive=-fbtr-bb-exclusive
+    ##compiler_flags#fcaller_saves=-fcaller-saves
+    ##compiler_flags#fconserve_stack=-fconserve-stack
+    ##compiler_flags#fcprop_registers=-fcprop-registers
+    ##compiler_flags#fcrossjumping=-fcrossjumping
+    ##compiler_flags#fcse_follow_jumps=-fcse-follow-jumps
+    ##compiler_flags#fcse_skip_blocks=-fcse-skip-blocks
+    ##compiler_flags#fcx_limited_range=-fcx-limited-range
+    ##compiler_flags#fdce=-fdce
+    ##compiler_flags#fdefer_pop=-fdefer-pop
+    ##compiler_flags#fdelete_null_pointer_checks=-fdelete-null-pointer-checks
+    ##compiler_flags#fdse=-fdse
+    ##compiler_flags#fearly_inlining=-fearly-inlining
+    ##compiler_flags#fexpensive_optimizations=-fexpensive-optimizations
+    ##compiler_flags#fforward_propagate=-fforward-propagate
+    ##compiler_flags#ffunction_cse=-ffunction-cse
+    ##compiler_flags#fgcse=-fgcse
+    ##compiler_flags#fgcse_after_reload=-fgcse-after-reload
+    ##compiler_flags#fgcse_las=-fgcse-las
+    ##compiler_flags#fgcse_lm=-fgcse-lm
+    ##compiler_flags#fgcse_sm=-fgcse-sm
+    ##compiler_flags#fguess_branch_probability=-fguess-branch-probability
+    ##compiler_flags#fif_conversion=-fno-if-conversion
+    ##compiler_flags#fif_conversion2=-fif-conversion2
+    ##compiler_flags#findirect_inlining=-findirect-inlining
+    ##compiler_flags#finline_functions=-finline-functions
+    ##compiler_flags#finline_functions_called_once=-finline-functions-called-once
+    ##compiler_flags#finline_small_functions=-finline-small-functions
+    ##compiler_flags#fipa_cp=-fipa-cp
+    ##compiler_flags#fipa_cp_clone=-fipa-cp-clone
+    ##compiler_flags#fipa_matrix_reorg=-fipa-matrix-reorg
+    ##compiler_flags#fipa_pta=-fipa-pta
+    ##compiler_flags#fipa_pure_const=-fipa-pure-const
+    ##compiler_flags#fipa_reference=-fipa-reference
+    ##compiler_flags#fipa_struct_reorg=-fipa-struct-reorg
+    ##compiler_flags#fira_share_save_slots=-fira-share-save-slots
+    ##compiler_flags#fira_share_spill_slots=-fira-share-spill-slots
+    ##compiler_flags#fivopts=-fivopts
+    ##compiler_flags#floop_block=-fno-loop-block
+    ##compiler_flags#floop_interchange=-fno-loop-interchange
+    ##compiler_flags#floop_strip_mine=-floop-strip-mine
+    ##compiler_flags#fmerge_constants=-fno-merge-constants
+    ##compiler_flags#fmodulo_sched=-fmodulo-sched
+    ##compiler_flags#fmodulo_sched_allow_regmoves=-fmodulo-sched-allow-regmoves
+    ##compiler_flags#fmove_loop_invariants=-fmove-loop-invariants
+    ##compiler_flags#fomit_frame_pointer=-fomit-frame-pointer
+    ##compiler_flags#foptimize_sibling_calls=-fno-optimize-sibling-calls
+    ##compiler_flags#fpeel_loops=-fpeel-loops
+    ##compiler_flags#fpeephole=-fpeephole
+    ##compiler_flags#fpeephole2=-fpeephole2
+    ##compiler_flags#fpredictive_commoning=-fpredictive-commoning
+    ##compiler_flags#fprefetch_loop_arrays=-fprefetch-loop-arrays
+    ##compiler_flags#fregmove=-fregmove
+    ##compiler_flags#frename_registers=-frename-registers
+    ##compiler_flags#freorder_blocks=-freorder-blocks
+    ##compiler_flags#freorder_blocks_and_partition=-freorder-blocks-and-partition
+    ##compiler_flags#freorder_functions=-freorder-functions
+    ##compiler_flags#frerun_cse_after_loop=-frerun-cse-after-loop
+    ##compiler_flags#freschedule_modulo_scheduled_loops=-freschedule-modulo-scheduled-loops
+    ##compiler_flags#fsched_interblock=-fsched-interblock
+    ##compiler_flags#fsched_spec=-fsched-spec
+    ##compiler_flags#fsched_spec_load=-fsched-spec-load
+    ##compiler_flags#fsched_spec_load_dangerous=-fsched-spec-load-dangerous
+    ##compiler_flags#fsched2_use_superblocks=-fsched2-use-superblocks
+    ##compiler_flags#fschedule_insns=-fschedule-insns
+    ##compiler_flags#fschedule_insns2=-fschedule-insns2
+    ##compiler_flags#fsee=-fsee
+    ##compiler_flags#fsel_sched_pipelining=-fsel-sched-pipelining
+    ##compiler_flags#fsel_sched_pipelining_outer_loops=-fsel-sched-pipelining-outer-loops
+    ##compiler_flags#fselective_scheduling=-fselective-scheduling
+    ##compiler_flags#fselective_scheduling2=-fselective-scheduling2
+    ##compiler_flags#fsignaling_nans=-fsignaling-nans
+    ##compiler_flags#fsingle_precision_constant=-fsingle-precision-constant
+    ##compiler_flags#fsplit_ivs_in_unroller=-fsplit-ivs-in-unroller
+    ##compiler_flags#fsplit_wide_types=-fsplit-wide-types
+    ##compiler_flags#fstrict_aliasing=-fstrict-aliasing
+    ##compiler_flags#fstrict_overflow=-fstrict-overflow
+    ##compiler_flags#fthread_jumps=-fthread-jumps
+    ##compiler_flags#ftracer=-ftracer
+    ##compiler_flags#ftree_builtin_call_dce=-ftree-builtin-call-dce
+    ##compiler_flags#ftree_ccp=-ftree-ccp
+    ##compiler_flags#ftree_ch=-ftree-ch
+    ##compiler_flags#ftree_copy_prop=-ftree-copy-prop
+    ##compiler_flags#ftree_copyrename=-ftree-copyrename
+    ##compiler_flags#ftree_dce=-ftree-dce
+    ##compiler_flags#ftree_dominator_opts=-ftree-dominator-opts
+    ##compiler_flags#ftree_dse=-fno-tree-dse
+    ##compiler_flags#ftree_fre=-ftree-fre
+    ##compiler_flags#ftree_loop_distribution=-ftree-loop-distribution
+    ##compiler_flags#ftree_loop_im=-ftree-loop-im
+    ##compiler_flags#ftree_loop_ivcanon=-ftree-loop-ivcanon
+    ##compiler_flags#ftree_loop_linear=-ftree-loop-linear
+    ##compiler_flags#ftree_loop_optimize=-ftree-loop-optimize
+    ##compiler_flags#ftree_pre=-ftree-pre
+    ##compiler_flags#ftree_reassoc=-ftree-reassoc
+    ##compiler_flags#ftree_sink=-ftree-sink
+    ##compiler_flags#ftree_sra=-ftree-sra
+    ##compiler_flags#ftree_switch_conversion=-ftree-switch-conversion
+    ##compiler_flags#ftree_ter=-fno-tree-ter
+    ##compiler_flags#ftree_vect_loop_version=-ftree-vect-loop-version
+    ##compiler_flags#ftree_vectorize=-ftree-vectorize
+    ##compiler_flags#ftree_vrp=-ftree-vrp
+    ##compiler_flags#funroll_all_loops=-funroll-all-loops
+    ##compiler_flags#funsafe_loop_optimizations=-funsafe-loop-optimizations
+    ##compiler_flags#funsafe_math_optimizations=-funsafe-math-optimizations
+    ##compiler_flags#funswitch_loops=-funswitch-loops
+    ##compiler_flags#fvariable_expansion_in_unroller=-fno-variable-expansion-in-unroller
+    ##compiler_flags#fvect_cost_model=-fvect-cost-model
+    ##compiler_flags#fweb=-fweb
+
+      ------------------- Statistical repetition: 1 of 2 -------------------
+
+Initializing universal program pipeline ...
+
+***************************************************************************************
+Obtaining platform parameters and checking other obligatory choices for the pipeline ...
+
+Initializing device ...
+
+OS CK UOA:     android5-arm (66395254948c0b71)
+
+OS name:       Android 4.2.2
+Short OS name: Linux version 3.4.5
+Long OS name:  Linux version 3.4.5 (z00182893@ubuntu) (gcc version 4.6.x-google 20120106 (prerelease) (GCC) ) #1 SMP PREEMPT Thu Aug 14 21:28:23 CST 2014
+OS bits:       32
+***************************************************************************************
+  Selected host platform: windows-64
+  Selected target platform: android5-arm
+  Selected target device ID: SWQ49TFIT8YLU4DE
+  Selected program: adapt16-adpcm (4947d2131df8ff45)
+  Selected command line: default
+  Selected dependencies: 
+      xopenme env = d49499018a9eddac; tags = ["32bits", "host-os-windows-64", "lang-c", "lang-cpp", "lang-f77", "lang-f90", "lang-f95", "lib", "rtl", "target-os-android5-arm", "v0", "v0.3", "xopenme"]
+      compiler env = 1004ad4886b499b6; tags = ["32bits", "compiler", "gcc", "host-os-windows-64", "lang-c", "lang-cpp", "target-os-android5-arm", "v4", "v4.9", "v4.9.0"]
+
+Loading compiler description: gcc-49x (a013e4e4d92ed26a) ...
+***************************************************************************************
+Setting CPU frequency to max (if supported) ...
+
+
+CMD to set CPU frequency:
+  /data/local/tmp/tools/ck-set-cpu-performance
+/system/bin/sh: /data/local/tmp/tools/ck-set-cpu-performance: not found
+***************************************************************************************
+Setting GPU frequency to max (if supported) ...
+
+
+CMD to set GPU frequency:
+  /data/local/tmp/tools/ck-set-gpu-performance
+/system/bin/sh: /data/local/tmp/tools/ck-set-gpu-performance: not found
+***************************************************************************************
+Detecting all target platform features ...
+
+***************************************************************************************
+Detecting OS and CPU features ...
+
+Number of logical processors: 1
+CPU name:                     MT6572
+CPU sub name:                 ARMv7 Processor rev 3 (v7l)
+CPU ABI:                      armeabi-v7a
+CPU features:                 swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls vfpv4 idiva idivt
+
+CPU frequency:
+  CPU0 = 1001.0 MHz
+CPU max frequency:
+  CPU0 = 1300.0 MHz
+CPU all frequencies (Hz):
+  CPU0 = []
+***************************************************************************************
+Detecting accelerator features ...
+Terminate batch job (Y/N)? 

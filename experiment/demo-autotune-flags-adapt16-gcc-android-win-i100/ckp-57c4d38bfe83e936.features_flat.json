@@ -1,0 +1,23 @@
+{
+  "##choices#cmd_key": "default", 
+  "##choices#compile_type": "dynamic", 
+  "##choices#compiler_flags#base_opt": "-O3", 
+  "##choices#compiler_flags#bool-cx-fortran-rules": "-fno-cx-fortran-rules", 
+  "##choices#compiler_flags#bool-expensive-optimizations": "-fno-expensive-optimizations", 
+  "##choices#compiler_flags#bool-gcse-lm": "-fno-gcse-lm", 
+  "##choices#compiler_flags#bool-keep-inline-functions": "-fkeep-inline-functions", 
+  "##choices#compiler_flags#bool-loop-nest-optimize": "-floop-nest-optimize", 
+  "##choices#compiler_flags#bool-loop-parallelize-all": "-fno-loop-parallelize-all", 
+  "##choices#compiler_flags#bool-sched-critical-path-heuristic": "-fsched-critical-path-heuristic", 
+  "##choices#compiler_flags#bool-tree-phiprop": "-ftree-phiprop", 
+  "##choices#data_uoa": "adapt16-adpcm", 
+  "##choices#dataset_file": "", 
+  "##choices#device_id": "SWQ49TFIT8YLU4DE", 
+  "##choices#host_os": "windows-64", 
+  "##choices#joined_compiler_flags": "-O3 -fno-cx-fortran-rules -fno-expensive-optimizations -fno-gcse-lm -fkeep-inline-functions -floop-nest-optimize -fno-loop-parallelize-all -fsched-critical-path-heuristic -ftree-phiprop", 
+  "##choices#module_uoa": "b0ac08fe1d3c2615", 
+  "##choices#no_state_check": "yes", 
+  "##choices#repeat": 500000, 
+  "##choices#target_os": "android5-arm", 
+  "##choices#target_os_bits": "32"
+}

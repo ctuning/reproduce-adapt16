@@ -1,16 +1,18 @@
 {
   "backup_data_uid": "452c9667592eb998", 
   "build_compiler_vars": {
-    "XOPENME": "",
-    "NUMELEMS":10000
+    "NUMELEMS": 10000, 
+    "XOPENME": ""
   }, 
   "compile_deps": {
     "compiler": {
       "local": "yes", 
+      "name": "C compiler", 
       "tags": "compiler,lang-c"
     }, 
     "xopenme": {
       "local": "yes", 
+      "name": "xOpenME library", 
       "sort": 20, 
       "tags": "lib,xopenme"
     }

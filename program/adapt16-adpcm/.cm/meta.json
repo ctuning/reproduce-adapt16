@@ -6,10 +6,12 @@
   "compile_deps": {
     "compiler": {
       "local": "yes", 
+      "name": "C compiler", 
       "tags": "compiler,lang-c"
     }, 
     "xopenme": {
       "local": "yes", 
+      "name": "xOpenME library", 
       "sort": 20, 
       "tags": "lib,xopenme"
     }

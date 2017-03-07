@@ -1,6 +1,10 @@
 CK repository to reproduce ADAPT'16 paper
 =========================================
 
+[![logo](https://github.com/ctuning/ck-guide-images/blob/master/logo-powered-by-ck.png)](http://cKnowledge.org)
+[![logo](https://github.com/ctuning/ck-guide-images/blob/master/logo-validated-by-the-community-simple.png)](http://cTuning.org)
+[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+
 Reproducing results from http://arxiv.org/abs/1511.02603 
 via Collective Knowledge's engine to crowdsource 
 compiler flag autotuning (iterative compilation) 

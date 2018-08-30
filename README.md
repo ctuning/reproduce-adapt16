@@ -29,7 +29,7 @@ Our related work:
 * http://arxiv.org/abs/1407.4075
 * http://cknowledge.org/interactive-report
 
-* Android App to crowdsource iterative compilation: https://play.google.com/store/apps/details?id=com.collective_mind.node
+* Android App to crowdsource iterative compilation: http://cKnowledge.org/android-apps.html
 
 * Participating mobile phones and tablets in crowd-tuning: http://cTuning.org/crowdtuning-mobiles
 * Processors from above mobile phones: http://cTuning.org/crowdtuning-processors

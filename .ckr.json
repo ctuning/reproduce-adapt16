@@ -1,10 +1,11 @@
 {
-  "data_uid": "71433a2b4d403d80", 
-  "data_name": "reproduce-adapt16", 
+  "data_alias": "reproduce-adapt16",
+  "data_name": "reproduce-adapt16",
+  "data_uid": "71433a2b4d403d80",
+  "data_uoa": "reproduce-adapt16",
   "dict": {
-    "url": "https://github.com/ctuning/reproduce-adapt16", 
-    "shared": "git"
-  }, 
-  "data_alias": "reproduce-adapt16", 
-  "data_uoa": "reproduce-adapt16"
+    "desc": "CK workflows and packages from reproducible ADAPT'16 paper.",
+    "shared": "git",
+    "url": "https://github.com/ctuning/reproduce-adapt16"
+  }
 }
